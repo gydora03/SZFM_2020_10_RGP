@@ -1,58 +1,58 @@
 # Rendszerterv
 
 
-### A rendszer célja
+### A rendszer célja (Ádám)
 
 
 ---
 
 
-### Projekt terv
+### Projekt terv (Ádám)
 	
 
 ---
 
 
-### Üzleti folyamatok modellje
+### Üzleti folyamatok modellje (Tamás)
 
 
 ---
 
 
-### Követelmények
+### Követelmények (Dóra)
 
 
 --- 
 
 
-### Funkcionális terv 
+### Funkcionális terv (Tamás)
 
 
 ---
 
 
-### Fizikai környezet
+### Fizikai környezet (Dóra)
 
 
 ---
 
 
-### Architekturális terv
+### Architekturális terv (Ádám)
 
 
 ---
 
-### Tesztterv
-
-
----
-
-
-### Telepítési terv
+### Tesztterv (Tamás)
 
 
 ---
 
 
-### Karbantartási terv
+### Telepítési terv (Dóra)
+
+
+---
+
+
+### Karbantartási terv (Dóra)
 
