@@ -1,52 +1,53 @@
 # Funkcionális specifikáció  
 
-### A rendszer céljai és nem céljai
+
+### A rendszer céljai és nem céljai (Ádám)
 
 
 ---
 
 
-### Jelenlegi helyzet leírása
+### Jelenlegi helyzet leírása (Tamás)
 
 
 ---
 
 
-### Vágyálom rendszer leírása  
+### Vágyálom rendszer leírása (Tamás)
 
 
 ---
 
 
-### Jelenlegi üzleti folyamatok modellje
+### Jelenlegi üzleti folyamatok modellje (Ádám)
 
 
 ---
 
 
-### Igényelt üzleti folyamatok modellje
+### Igényelt üzleti folyamatok modellje (Dóra)
 
 
 ---
 
 
-### Követelménylista
+### Követelménylista (Dóra)
 
 
 ---
 
 
-### Használati esetek [Use cases]
+### Használati esetek [Use cases] (Tamás)
 
 
 ---
 
 
-### Képernyő tervek
+### Képernyő tervek (Dóra)
 
 
 ---
 
 
-### Fogalomszótár
+### Fogalomszótár (Közös)
 
