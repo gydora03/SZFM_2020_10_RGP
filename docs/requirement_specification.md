@@ -1,5 +1,6 @@
 # Követelmény specifikáció
 
+
 ### Jelenlegi helyzet leírása (Tamás)
   
 
@@ -36,4 +37,6 @@
 ---
 
 
-### Fogalomszótár (együtt)
+### Fogalomszótár (Közös)
+
+
