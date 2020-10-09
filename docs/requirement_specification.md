@@ -31,7 +31,7 @@
 	- Csak Online felületek vannak
 
 
----
+W---
 
 
 ### Igényelt üzleti folyamatok (Dóra)
