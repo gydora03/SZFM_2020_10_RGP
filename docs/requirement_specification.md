@@ -40,7 +40,7 @@
 - Az alkalmazás legyen reszponzív
 - Az alkalmazás legyen a főbb operációs rendszereken egyaránt használható
 - Legyen szakmai tapasztalat nélkül (pl. informatika tudás nélkül) is könnyen használható
-
+- Az ablak méret legyen szabadon méretezhető
 - A nyelv Java legyen, az eszközök szabadon választhatók
 - GUI legyen JavaFX alapokon
 - Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
