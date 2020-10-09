@@ -24,6 +24,11 @@
 3. A felhasználó egy Online számológépet használ
 	- Nem egységes számológép
 	- Különböző bonyolultabb matematikai műveletek használata
+4. A felhasználó online mértékegység átváltót használ
+	- Nem megfelelő pontossággal számol
+	- Különböző forrásokat használnak
+	- Nem egységes felület
+	- Csak Online felületek vannak
 
 
 ---
