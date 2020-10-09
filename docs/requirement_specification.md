@@ -37,6 +37,15 @@
 
 ### A rendszerre vonatkozó szabályok (Ádám)
 
+- Az alkalmazás legyen reszponzív
+- Az alkalmazás legyen a főbb operációs rendszereken egyaránt használható
+- Legyen szakmai tapasztalat nélkül (pl. informatika tudás nélkül) is könnyen használható
+
+- A nyelv Java legyen, az eszközök szabadon választhatók
+- GUI legyen JavaFX alapokon
+- Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
+- Főbb üzleti folyamatokról készüljön teszt
+
 
 ---
 
