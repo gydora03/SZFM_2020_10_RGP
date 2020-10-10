@@ -67,6 +67,10 @@
 
 3. Legyen valamilyen választási lehetőséget kínáló eszköz, mellyel választani lehet, hogy éppen melyik számológépet akarjuk használni
 
+4. Támogasson History (Előzmény) módot
+    - Az elvégzett számítások mentődjenek le
+    - Az eddigi számításokat lehessen megnézni/kilistázni, a History gomb megnyomásával
+    - Átlátható legyen, az egyes műveletek ne follyanak össze 
 
 
 ---
