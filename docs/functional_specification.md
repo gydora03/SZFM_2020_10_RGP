@@ -108,6 +108,11 @@
 
 ### Képernyő tervek (Dóra)
 
+1. Alap (Basic) számológép 
+![Basic Calculator](./previews/basicCalculator.png)
+
+2. Haladó (Advanced) számológép
+![Advanced Calculator](./previews/advancedCalculator.png)
 
 ---
 
