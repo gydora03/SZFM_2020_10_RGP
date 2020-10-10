@@ -39,24 +39,29 @@
             - Legyenek zárojelezésre alkalmas gombok, melyek segítenek a kifejezések megadásában
             - A számológép tudja kezelni a kijezéseket
             - A számológép ismerje a műveletek helyes kiértékelési sorrendjét (a műveletek prioritása)
-    3. Térfogat/Űrtartalom (Volume) konvertáló
+    3. PI számológép
+        * Támogassa a következő formulákat:
+            - Chudnovsky, Zeta, Ramahujan, Leibniz
+            - ezek mindegyike decimálisan számoljanak, lényegük hogy egyik pontosabb mint a másik
+        * BPP: Intervallumot lehessen megadni, hogy adott számjegytől meddig akarják kiszámolni a hexajegyket
+    4. Térfogat/Űrtartalom (Volume) konvertáló
         * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
             - A liter alapmértékegységet, ennek törtrészeit és többszöröseit
             - A köbméter alapmértékegységet, ennek törtrészeit és többszöröseit
             - Híres mértékegységek (cups, teaspoons, gallon ...)  *[elhanyagolható]*
         * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
-    4. Hosszúség (Length) konvertáló    
+    5. Hosszúség (Length) konvertáló    
         * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
             - A méter alapmértékegységet, ennek törtrészeit és többszöröseit
             - A négyzetméter alapmértékegységet, ennek törtrészeit és többszöröseit
             - Híres mértékegységek (inch, feet ...)  *[elhanyagolható]*
         * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
-    5. Tömeg (Weight) konvertáló
+    6. Tömeg (Weight) konvertáló
         * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
             - A kilogramm alapmértékegységet, ennek törtrészeit és többszöröseit
             - Híres mértékegységek (pounds ...)  *[elhanyagolható]*
         * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
-     6. Hőmérséklet (Temperature) konvertáló
+     7. Hőmérséklet (Temperature) konvertáló
         * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
             - Celsius
             - Kelvin
@@ -92,10 +97,11 @@
 - K06. Matematikai alapműveletek
 - K07. Matematikai haladó műveletek
 - K08. Matematikai kifejezések kiértékelése
-- K09. Térfogat/Űrtartalom konvertáló
-- K10. Hosszúség (Length) konvertáló
-- K11. Tömeg (Weight) konvertáló
-- K12. Hőmérséklet (Temperature) konvertáló
+- K09. PI számológép
+- K10. Térfogat/Űrtartalom konvertáló
+- K11. Hosszúség (Length) konvertáló
+- K12. Tömeg (Weight) konvertáló
+- K13. Hőmérséklet (Temperature) konvertáló
 
 
 ---
