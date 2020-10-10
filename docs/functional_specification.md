@@ -34,7 +34,7 @@
         * Haladó matematikai koncepciókat támogat
             - Konverziók, trigonometriai függvények, híres konstansok ...
             - A funkciók típus szerint vannak csoportosítva, a műveletek könnyebb megtalálása érdekében
-    2. Haladó (Advanced) számológép:
+    2. Haladó (Advanced) számológép
         * Kinézetre hasonló, mint az alap számológép, plusz funkciókat kielégítő gombbal van kiegészítve
         * Alap matematikai műveleteket támogat
             - Az alapműveletek a numerikus billentyűzet közvetlen közelében vannak elhelyezve
@@ -45,24 +45,29 @@
             - Zárojelezésre alkalmas gombok is vannak erre a célra, melyek segítenek a kifejezések megadásában
             - A számológép tudja kezelni a kijezéseket
             - A számológép logikája ismeri a műveletek helyes kiértékelési sorrendjét (a műveletek prioritása)
-    3. Térfogat/Űrtartalom (Volume) konvertáló
+    3. PI számológép
+        * Támogatja a következő formulákat:
+            - Chudnovsky, Zeta, Ramahujan, Leibniz
+            - ezek mindegyike decimálisan számol, lényegük hogy egyik pontosabb mint a másik
+        * BPP: Intervallumot lehet megadni, hogy a felhasználó adott számjegytől meddig akarja kiszámolni a hexajegyket
+    4. Térfogat/Űrtartalom (Volume) konvertáló
         * A számológép támogatja a következő mértékegységeket és az átváltást köztük:
             - A liter alapmértékegységet, ennek törtrészeit és többszöröseit
             - A köbméter alapmértékegységet, ennek törtrészeit és többszöröseit
             - Híres mértékegységek (cups, teaspoons, gallon ...)  *[elhanyagolható]*
         * Egy listából lehet kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
-    4. Hosszúség (Length) konvertáló    
+    5. Hosszúség (Length) konvertáló    
         * A számológép támogatja a következő mértékegységeket és az átváltást köztük:
             - A méter alapmértékegységet, ennek törtrészeit és többszöröseit
             - A négyzetméter alapmértékegységet, ennek törtrészeit és többszöröseit
             - Híres mértékegységek (inch, feet ...)  *[elhanyagolható]*
         * Egy listából lehet kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
-    5. Tömeg (Weight) konvertáló
+    6. Tömeg (Weight) konvertáló
         * A számológép támogatja a következő mértékegységeket és az átváltást köztük:
             - A kilogramm alapmértékegységet, ennek törtrészeit és többszöröseit
             - Híres mértékegységek (pounds ...)  *[elhanyagolható]*
         * Egy listából lehet kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
-     6. Hőmérséklet (Temperature) konvertáló
+     7. Hőmérséklet (Temperature) konvertáló
         * A számológép támogatja a következő mértékegységeket és az átváltást köztük:
             - Celsius
             - Kelvin
@@ -92,10 +97,11 @@
 - K06. Matematikai alapműveletek
 - K07. Matematikai haladó műveletek
 - K08. Matematikai kifejezések kiértékelése
-- K09. Térfogat/Űrtartalom konvertáló
-- K10. Hosszúség (Length) konvertáló
-- K11. Tömeg (Weight) konvertáló
-- K12. Hőmérséklet (Temperature) konvertáló
+- K09. PI számológép
+- K10. Térfogat/Űrtartalom konvertáló
+- K11. Hosszúség (Length) konvertáló
+- K12. Tömeg (Weight) konvertáló
+- K13. Hőmérséklet (Temperature) konvertáló
 
 ---
 
@@ -117,6 +123,7 @@
 3. Térfogat/Űrtartalom (Volume) / Hosszúség (Length) / Tömeg (Weight) / Hőmérséklet (Temperature) konvertáló
 ![Volume Converter](./previews/volumeConverter.png)
 Mindegyik konvertáló esetén a *From* és a *To* legördülő lista más menü elemeket tartalmaz, ami a képernyőterven most nem látszik.
+
 
 ---
 
