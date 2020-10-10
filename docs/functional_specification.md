@@ -84,18 +84,6 @@
 
 ### Követelménylista (Dóra)
 
-
----
-
-
-### Használati esetek [Use cases] (Tamás)
-
-
----
-
-
-### Képernyő tervek (Dóra)
-
 - K01. Könnyen üzemeltethetőség
 - K02. Reszponzív GUI
 - K03. Java
@@ -108,6 +96,18 @@
 - K10. Hosszúség (Length) konvertáló
 - K11. Tömeg (Weight) konvertáló
 - K12. Hőmérséklet (Temperature) konvertáló
+
+---
+
+
+### Használati esetek [Use cases] (Tamás)
+
+
+---
+
+
+### Képernyő tervek (Dóra)
+
 
 ---
 
