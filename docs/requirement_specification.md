@@ -84,6 +84,19 @@
 
 ### Követelménylista (Dóra)
 
+- K01. Könnyen üzemeltethetőség
+- K02. Reszponzív GUI
+- K03. Java
+- K04. Cross-Platform
+- K05. Előzmény mód
+- K06. Matematikai alapműveletek
+- K07. Matematikai haladó műveletek
+- K08. Matematikai kifejezések kiértékelése
+- K09. Térfogat/Űrtartalom konvertáló
+- K10. Hosszúség (Length) konvertáló
+- K11. Tömeg (Weight) konvertáló
+- K12. Hőmérséklet (Temperature) konvertáló
+
 
 ---
 
