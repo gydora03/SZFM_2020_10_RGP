@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -17,20 +18,45 @@
    <children>
       <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <MenuBar fx:id="menuBar">
+            <MenuBar fx:id="menuBar11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                <menus>
-                  <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                  <Menu fx:id="fileMenu11" mnemonicParsing="false" text="File">
                      <items>
-                        <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#handleClickOnCloseMenuItem" text="Close" />
+                        <MenuItem fx:id="closeMenuItem11" mnemonicParsing="false" onAction="#handleClickOnCloseMenuItem" text="Close" />
                      </items>
                   </Menu>
-                  <Menu fx:id="constantsMenu" mnemonicParsing="false" text="Constants">
+                  <Menu mnemonicParsing="false" text="Calculators">
                      <items>
-                        <MenuItem fx:id="piMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Pi" />
-                        <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Euler Constant" />
-                        <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Bernstein Constant" />
-                        <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Golden Ratio" />
+                        <MenuItem fx:id="basicCalculator1" mnemonicParsing="false" text="Basic" />
+                        <MenuItem fx:id="advancedCalculator1" mnemonicParsing="false" text="Advanced" />
+                        <MenuItem fx:id="piCalculator1" mnemonicParsing="false" text="PI" />
                      </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Converters">
+                     <items>
+                        <MenuItem fx:id="volumeConverter1" mnemonicParsing="false" text="Volume" />
+                        <MenuItem fx:id="lencthConverter1" mnemonicParsing="false" text="Length" />
+                        <MenuItem fx:id="weightConverter1" mnemonicParsing="false" text="Weight" />
+                        <MenuItem fx:id="temperatureConverter1" mnemonicParsing="false" text="Temperature" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="constantsMenu11" mnemonicParsing="false" text="Constants">
+                     <items>
+                        <MenuItem fx:id="piMenuItem11" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Pi" />
+                        <MenuItem fx:id="eulerMenuItem11" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Euler Constant" />
+                        <MenuItem fx:id="BernsteinMenuItem11" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Bernstein Constant" />
+                        <MenuItem fx:id="goldenRatioMenuItem11" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Golden Ratio" />
+                     </items>
+                     <graphic>
+                        <Separator blendMode="ADD" cache="true" orientation="VERTICAL" prefHeight="15.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Separator>
+                     </graphic>
                   </Menu>
                </menus>
                <VBox.margin>
