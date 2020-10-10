@@ -69,6 +69,14 @@
             - Fahrenheit
         * Egy listából lehet kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
 
+2. Mindegyik számológép típushoz tartozik egy saját scene
+
+3. A menubar-ban egy menu-ben vannak felsorolva menu item-ekként az egyes számológépek és konvertálók, a felhasználó itt tudja kivélasztani, hogy éppen melyik számológépet akarja használni
+
+4. Támogatja a History (Előzmény) módot
+    - Az elvégzett számítások lementódnek
+    - Az eddigi számításokat vissza lehet nézni / ki lehet listázni, a History gomb megnyomásával
+    - Átlátható, az egyes műveletek nem folynak össze 
 
 
 ---
