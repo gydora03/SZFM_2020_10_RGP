@@ -43,7 +43,7 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 ---
 
 
-### Jelenlegi üzleti folyamatok (Ádám)
+### Jelenlegi üzleti folyamatok
 
 1. Windows számológép használata
 	- Felhasználó betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
@@ -69,9 +69,9 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 ---
 
 
-### Igényelt üzleti folyamatok (Dóra)
+### Igényelt üzleti folyamatok
 
-1. A számológépen belül többfajta számológép, illetve konvertáló legyen elérhető:
+1. A PoC programon belül többfajta számológép, illetve konvertáló legyen elérhető:
     1. Alap (Basic) számológép:
         * Támogasson alap matematikai műveleteket
             - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
@@ -131,7 +131,7 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 ---
 
 
-### A rendszerre vonatkozó szabályok (Ádám)
+### A rendszerre vonatkozó szabályok
 
 - Az alkalmazás legyen reszponzív
 - Az alkalmazás legyen a főbb operációs rendszereken egyaránt használható
@@ -148,7 +148,7 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 ---
 
 
-### Követelménylista (Dóra)
+### Követelménylista
 
 - K01. Könnyen üzemeltethetőség
 - K02. Reszponzív GUI
@@ -168,7 +168,7 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 ---
 
 
-### Fogalomszótár (Közös)
+### Fogalomszótár
 * **Linux**: Avagy Linux-rendszermag, rendszermag.  
 * **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  

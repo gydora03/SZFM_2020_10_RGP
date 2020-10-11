@@ -93,7 +93,7 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 
 ### Igényelt üzleti folyamatok modellje (Dóra)
 
-1. A számológépen belül többfajta számológép, illetve konvertáló érhető el:
+1. A számológépen belül(PoC program) többfajta számológép, illetve konvertáló érhető el:
     1. Alap (Basic) számológép:
         * Alap matematikai műveleteket támogat
             - Az alapműveletek a numerikus billentyűzet közvetlen közelében vannak elhelyezve
