@@ -3,7 +3,7 @@
 
 ### A rendszer céljai és nem céljai (Ádám)
 
-A program fő célja, hogy az erediteleg megrendelt program hibáit kijavítsa és a hiányzó elemeket pótolja. Az legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljen a program. Ehez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontoatlanságot. A második célja, hogy a mérleghez is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a program minőségén javítsunk. A harmadik lépés, hogy a randomszámgenerátor is megfelelően működjön. Összefoglalva a program célja, hogy megfeleljen a feltételeknek és, hogy pontos adatokkal támassza alá a tudományos munkát.
+A program fő célja, hogy az erediteleg megrendelt program hibáit kijavítsa és a hiányzó elemeket pótolja. Az legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljen a program. Ehez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontoatlanságot. A második célja, hogy a mérleghez is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a program minőségén javítsunk. A harmadik lépés, hogy a randomszámgenerátor is megfelelően működjön. Összefoglalva a program célja, hogy megfeleljen a feltételeknek és, hogy pontos adatokkal támassza alá a tudományos munkát. Nem célja, hogy a program alapvető funkionaltásaiba nyúljon bele, csak, hogy a hibákat kijavítva egy megfelelő felhasználói élményeket nyújtson, ezzel is egy hatalmas poblémát megoldva napjaink tudományaiban.
 
 
 ---
