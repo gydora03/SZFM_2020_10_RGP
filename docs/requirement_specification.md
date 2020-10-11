@@ -51,6 +51,62 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 
 ### Igényelt üzleti folyamatok (Dóra)
 
+1. A számológépen belül többfajta számológép, illetve konvertáló legyen elérhető:
+    1. Alap (Basic) számológép:
+        * Támogasson alap matematikai műveleteket
+            - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
+        * Támogasson haladó matematikai koncepciókat 
+            - Konverziók, trigonometriai függvények, híres konstansok ...
+            - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
+    2. Haladó (Advanced) számológép:
+        * Kinézetre hasonló vagy ugyanolyan is lehet mint az alap számológép
+        * Támogasson alap matematikai műveleteket
+            - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
+        * Támogasson haladó matematikai koncepciókat 
+            - Konverziók, trigonometriai függvények, híres konstansok...
+            - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
+        * Támogassa matematikai kifejezések megadását
+            - Legyenek zárojelezésre alkalmas gombok, melyek segítenek a kifejezések megadásában
+            - A számológép tudja kezelni a kijezéseket
+            - A számológép ismerje a műveletek helyes kiértékelési sorrendjét (a műveletek prioritása)
+    3. PI számológép
+        * Támogassa a következő formulákat:
+            - Chudnovsky, Zeta, Ramahujan, Leibniz
+            - ezek mindegyike decimálisan számoljanak, lényegük hogy egyik pontosabb mint a másik
+        * BPP: Intervallumot lehessen megadni, hogy adott számjegytől meddig akarják kiszámolni a hexajegyket
+    4. Térfogat/Űrtartalom (Volume) konvertáló
+        * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
+            - A liter alapmértékegységet, ennek törtrészeit és többszöröseit
+            - A köbméter alapmértékegységet, ennek törtrészeit és többszöröseit
+            - Híres mértékegységek (cups, teaspoons, gallon ...)  *[elhanyagolható]*
+        * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
+    5. Hosszúség (Length) konvertáló    
+        * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
+            - A méter alapmértékegységet, ennek törtrészeit és többszöröseit
+            - A négyzetméter alapmértékegységet, ennek törtrészeit és többszöröseit
+            - Híres mértékegységek (inch, feet ...)  *[elhanyagolható]*
+        * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
+    6. Tömeg (Weight) konvertáló
+        * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
+            - A kilogramm alapmértékegységet, ennek törtrészeit és többszöröseit
+            - Híres mértékegységek (pounds ...)  *[elhanyagolható]*
+        * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
+     7. Hőmérséklet (Temperature) konvertáló
+        * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
+            - Celsius
+            - Kelvin
+            - Fahrenheit
+        * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
+
+2. Mindegyik számológép típushoz tartozzon egy saját oldal
+
+3. Legyen valamilyen választási lehetőséget kínáló eszköz, mellyel választani lehet, hogy éppen melyik számológépet akarjuk használni
+
+4. Támogasson History (Előzmény) módot
+    - Az elvégzett számítások mentődjenek le
+    - Az eddigi számításokat lehessen megnézni/kilistázni, a History gomb megnyomásával
+    - Átlátható legyen, az egyes műveletek ne follyanak össze 
+
 
 ---
 
@@ -63,12 +119,25 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 
 ### Követelménylista (Dóra)
 
+- K01. Könnyen üzemeltethetőség
+- K02. Reszponzív GUI
+- K03. Java
+- K04. Cross-Platform
+- K05. Előzmény mód
+- K06. Matematikai alapműveletek
+- K07. Matematikai haladó műveletek
+- K08. Matematikai kifejezések kiértékelése
+- K09. PI számológép
+- K10. Térfogat/Űrtartalom konvertáló
+- K11. Hosszúség (Length) konvertáló
+- K12. Tömeg (Weight) konvertáló
+- K13. Hőmérséklet (Temperature) konvertáló
+
 
 ---
 
 
 ### Fogalomszótár (Közös)
-Fogalmak:
 * **Linux**: Avagy Linux-rendszermag, rendszermag.  
 * **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
