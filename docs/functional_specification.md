@@ -163,12 +163,15 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 - K06. Matematikai alapműveletek
 - K07. Matematikai haladó műveletek
 - K08. Matematikai kifejezések kiértékelése
-- K09. PI számológép
+- K09. PI megközelítése különböző algoritmusokkal
 - K10. Térfogat/Űrtartalom konvertáló
 - K11. Hosszúség (Length) konvertáló
 - K12. Tömeg (Weight) konvertáló
 - K13. Hőmérséklet (Temperature) konvertáló
-
+- K14. BUILD SYSTEM: **MAVEN**
+- K15. GUI TOOLKIT: **JAVAFX**
+- K16. LEBEGŐPONTOS ARITMETIKA: **APFLOAT**
+- K17. PoC program ami demonstrálja a kért _feature-öket_
 ---
 
 
@@ -180,18 +183,18 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 
 ### Képernyő tervek (Dóra)
 
-1. Alap (Basic) számológép 
-![Basic Calculator](./previews/basicCalculator.png)
+1. Alap (Basic) számológép       
+![Basic Calculator](./previews/basicCalculator.png)     
 
-2. Haladó (Advanced) számológép
-![Advanced Calculator](./previews/advancedCalculator.png)
+2. Haladó (Advanced) számológép      
+![Advanced Calculator](./previews/advancedCalculator.png)     
 
-3. PI számológép
-![PI Calculator](./previews/piCalculator.png)
+3. PI számológép     
+![PI Calculator](./previews/piCalculator.png)     
 
-4. Térfogat/Űrtartalom (Volume) / Hosszúség (Length) / Tömeg (Weight) / Hőmérséklet (Temperature) konvertáló
-![Volume Converter](./previews/volumeConverter.png)
-Mindegyik konvertáló esetén a *From* és a *To* legördülő lista más menü elemeket tartalmaz, ami a képernyőterven most nem látszik.
+4. Térfogat/Űrtartalom (Volume) / Hosszúség (Length) / Tömeg (Weight) / Hőmérséklet (Temperature) konvertáló      
+![Volume Converter](./previews/volumeConverter.png)      
+Mindegyik konvertáló esetén a *From* és a *To* legördülő lista más menü elemeket tartalmaz, ami a képernyőterven most nem látszik.    
 
 
 ---
