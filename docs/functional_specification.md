@@ -120,7 +120,10 @@
 2. Haladó (Advanced) számológép
 ![Advanced Calculator](./previews/advancedCalculator.png)
 
-3. Térfogat/Űrtartalom (Volume) / Hosszúség (Length) / Tömeg (Weight) / Hőmérséklet (Temperature) konvertáló
+3. PI számológép
+![PI Calculator](./previews/piCalculator.png)
+
+4. Térfogat/Űrtartalom (Volume) / Hosszúség (Length) / Tömeg (Weight) / Hőmérséklet (Temperature) konvertáló
 ![Volume Converter](./previews/volumeConverter.png)
 Mindegyik konvertáló esetén a *From* és a *To* legördülő lista más menü elemeket tartalmaz, ami a képernyőterven most nem látszik.
 
