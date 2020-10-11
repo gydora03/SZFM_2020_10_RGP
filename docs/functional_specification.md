@@ -198,8 +198,21 @@ Mindegyik konvertáló esetén a *From* és a *To* legördülő lista más menü
 
 
 ### Fogalomszótár (Közös)
-
-* **Előzmény (History) mód**: A korábban elvégzett műveletek listája/táblázata.
+* **Linux**: Avagy Linux-rendszermag, rendszermag.  
+* **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
+* **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
+* **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
+* **GUI (Graphic User Interface)**: A felület amit a felhasználó lát és ahol a program funkcióit használja
 * **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
 * **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
+* **OCR**: Avagy optikai karakterfelismerés vagy az optikai karakterolvasó, amelyet gyakran rövidítettek OCR-ként, a gépelt, kézzel írt vagy nyomtatott szövegek gépi kódolású, mechanikus vagy elektronikus átalakítása, akár beolvasott dokumentumból, akár egy dokumentum fotójából, egy jelenetfotóból (például a tájképen lévő jelzéseken és hirdetőtáblákon található szöveg), vagy a feliratú szöveg egy képben (például egy televíziós műsorból) .
+* **SQL**: Az SQL, azaz Structured Query Language (strukturált lekérdezőnyelv) relációsadatbázis-kezelők lekérdezési nyelve.
+Angol nyelvterületen 'eszkjuel' a kiejtése. A hagyományokhoz való hűség jegyében sokan 'szíkvel'-nek ejtik, ugyanis korábban Structured English Query Language (SEQUEL) volt az elnevezés, és ezt rövidítették le.
+A relációsadatbázis-kezelők általában az SQL nyelven programozhatók. Az SQL alapvető utasításait közel egyformán valósítják meg, de a később beépült nyelvi elemek körében nagyon nagy az eltérés, az inkompatibilitás, emiatt számos SQL nyelvjárásról beszélhetünk.
+Jellegét tekintve ez a szakterület-specifikus nyelv részben procedurális, részben deklaratív. 
+* **Java**: A Java általános célú, objektumorientált programozási nyelv, amelyet a Sun Microsystems fejlesztett a ’90-es évek elejétől kezdve egészen 2009-ig, amikor a céget felvásárolta az Oracle.
+A Java alkalmazásokat jellemzően bájtkód formátumra alakítják, de közvetlenül natív (gépi) kód is készíthető Java forráskódból. A bájtkód futtatása a Java virtuális géppel történik, ami vagy interpretálja a bájtkódot, vagy natív gépi kódot készít belőle, és azt futtatja az adott operációs rendszeren.
+A Java nyelv a szintaxisát főleg a C és a C++ nyelvektől örökölte, viszont sokkal egyszerűbb objektummodellel rendelkezik, mint a C++
+* **JavaFX**: Egy grafikai keretrendszer a Java platform számára.
+* **Maven**: Egy build system a Java platform számára.
 
