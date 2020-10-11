@@ -140,9 +140,9 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 - A nyelv Java legyen, az eszközök szabadon választhatók
 - Maven Project legyen
 - GUI legyen JavaFX alapokon
-- Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
 - Legyenek tesztelhetőek az üzleti funkciók
 - Főbb üzleti folyamatokról készüljön teszt
+- A számítások kerüljenek adatbázisba
 
 
 ---
