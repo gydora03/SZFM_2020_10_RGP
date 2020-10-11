@@ -1,15 +1,21 @@
 # Funkcionális specifikáció  
 
 
-### A rendszer céljai és nem céljai (Ádám)
+### A rendszer céljai és nem céljai
 
-A program fő célja, hogy az erediteleg megrendelt program hibáit kijavítsa és a hiányzó elemeket pótolja. Az legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljen a program. Ehez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontoatlanságot. A második célja, hogy a mérleghez is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a program minőségén javítsunk. A harmadik lépés, hogy a randomszámgenerátor is megfelelően működjön. Összefoglalva a program célja, hogy megfeleljen a feltételeknek és, hogy pontos adatokkal támassza alá a tudományos munkát. Nem célja, hogy a program alapvető funkionaltásaiba nyúljon bele, csak, hogy a hibákat kijavítva egy megfelelő felhasználói élményeket nyújtson, ezzel is egy hatalmas poblémát megoldva napjaink tudományaiban.
+A program fő célja, hogy az erediteleg megrendelt program hibáinak kijavítását és a hiányzó elemek pótolását demonstrálja.      
+A legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljenek a kért algoritmusok.     
+Ehhez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontatlanságát.     
+A második célja, hogy a mérleghez készült szoftveren is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a algoritmus minőségén javítsunk.     
+A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően működjön.     
+
+Összefoglalva a program célja, hogy megfeleljen a feltételeknek és, hogy pontos adatokkal támassza alá a tudományos funkcionalitást. Nem célja, hogy a program alapvető funkionaltásaiba nyúljon bele, csak, hogy a hibákat kijavítva a megfelelő működést és kapcsolódó élményeket nyújtson.   
 
 
 ---
 
 
-### Jelenlegi helyzet leírása (Tamás)
+### Jelenlegi helyzet leírása
 Egy kiállításszervező cég ügyfele tudományos kiállítás szeretne rendezni, az igényelt szoftvereiket már megírta egy cég, viszont a kommunikáció teljes hiánya miatt az elkészült termékek nagyrésze használhatatlan vagy korlátolt működésben.  
 Felkértek minket ezen szoftverek javítására, illetve új programok megírására amennyiben a javítás adott szoftver esetén nem lehetséges.    
 A szoftvereket speciális hardverekre szánják, például egy __*nanogépekkel működő univerzális mérlegre*__, nekünk ezt nem kell figyelembe venni, mert ezekre az architektúrákra implementálva van a Java Virtuális Gép.     
@@ -29,7 +35,7 @@ A megrendelés 3 szoftverre szól, ezeknek speciális hibáik a következőek:
 ---
 
 
-### Vágyálom rendszer leírása (Tamás)
+### Vágyálom rendszer leírása
 
 Legfőbb elvárásuk, hogy helyes működsére bírjuk a hibás szoftvertermékeket.      
 Kérnek egy **PoC** programot is amivel egyszerűen tesztelhetik kézileg és __programmatically__ a funkcionalitásokat.      
@@ -65,7 +71,7 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 ---
 
 
-### Jelenlegi üzleti folyamatok modellje (Ádám)
+### Jelenlegi üzleti folyamatok modellje 
 
 1. Windows számológép használata
 	- Felhasználó betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
@@ -91,7 +97,7 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 ---
 
 
-### Igényelt üzleti folyamatok modellje (Dóra)
+### Igényelt üzleti folyamatok modellje
 
 1. A számológépen belül(PoC program) többfajta számológép, illetve konvertáló érhető el:
     1. Alap (Basic) számológép:
@@ -153,7 +159,7 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 ---
 
 
-### Követelménylista (Dóra)
+### Követelménylista
 
 - K01. Könnyen üzemeltethetőség
 - K02. Reszponzív GUI
@@ -175,13 +181,13 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 ---
 
 
-### Használati esetek [Use cases] (Tamás)
+### Használati esetek [Use cases]
 
 
 ---
 
 
-### Képernyő tervek (Dóra)
+### Képernyő tervek
 
 1. Alap (Basic) számológép       
 ![Basic Calculator](./previews/basicCalculator.png)     
@@ -200,7 +206,7 @@ Mindegyik konvertáló esetén a *From* és a *To* legördülő lista más menü
 ---
 
 
-### Fogalomszótár (Közös)
+### Fogalomszótár
 * **Linux**: Avagy Linux-rendszermag, rendszermag.  
 * **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
