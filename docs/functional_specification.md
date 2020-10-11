@@ -72,7 +72,7 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 
 
 ### Jelenlegi üzleti folyamatok modellje 
-
+BasicCalcualtor, a PoC program matematikát tesztelő demója.    
 1. Windows számológép használata
 	- Felhasználó betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
 	- Alapvető támogatott műveleteket használja
