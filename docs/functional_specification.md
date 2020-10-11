@@ -71,14 +71,13 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 ---
 
 
-### Jelenlegi üzleti folyamatok modellje 
-BasicCalcualtor, a PoC program matematikát tesztelő demója.    
+### Jelenlegi üzleti folyamatok modellje  
 1. Windows számológép használata
 	- Felhasználó betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
 	- Alapvető támogatott műveleteket használja
 2. GNU/Linux számológép használata
 	- Felhasználó betölti a Linux kernelt => shell => userspace
-	- AKtuálisan elérhető számológépet használja
+	- Aktuálisan elérhető számológépet használja
 3. A felhasználó egy Online számológépet használ
 	- Nem egységes számológép
 	- Különböző bonyolultabb matematikai műveletek használata
@@ -182,7 +181,71 @@ BasicCalcualtor, a PoC program matematikát tesztelő demója.
 
 
 ### Használati esetek [Use cases]
+A PoC programunk, technikai és üzleti okok miatt, tartalmaz egy plusz programot: **BasicCalculator**     
+Ennek célja, hogy egyszerűen tudjuk demózni, tesztelni néhány matematikai könyvtárt magunk, fejlesztők, között illetve ügyfelek előtt.     
+Ennek a következők a _Használati esetei_:      
 
+
+1. __Title:__  A demózó számítást végez és eredményt kap
+   __Main Success Scenario:__ 
+    1. A demózó futtatja a programot (JVM elindul előtte :)).
+    2. A program betölti a JavaFX keretrendszert.
+    3. A program betölti classpath útján a GUI-t leíró FXML fájt.
+    4. A user beírja a kiszámítandó kifejezést.
+    5. A számológép részeredményekkel szolgál minden operátor használat esetén.
+    6. A felhasználó az '=' gombra kattinva elindítja a végső kiértékelést
+    7. A számológép a végső ereményt szolgáltatja.               
+
+    __Extensions:__   
+    1a. Nem létezik az FXML fájl    
+   * A rendszer összeomlik. "Keresse fel valamelyik rendszergazdát!"  
+
+   1b. A konfigurációs fájl létezik, de sikertelen a parse-olása
+   * Ekvivalens 1.a kezelésével
+   1c. Értelmezhetetlen matematikai művelet akar elvégezni a user
+   * Pl: 0-val osztás esetén dobjon hibát 
+
+
+2. __Title:__  A demózó megtekinti eddigi számításait  
+   __Main Success Scenario:__     
+   1. Kiválasztja a Történelem funckiót.
+   2. Lemezre lementődnek az eddig elvégzett számítások
+   3. Megnyitja az aktuális _historyLog.txt_ állományt.
+   4. Ha akarja, vágolapra másolja adott számítást.
+   5. Ha akarja, törli az előzményeket.
+
+   __Extensions:__   
+   1a-5a. Bármilyen hiba esetén azonnal megsemmisíti önmagát(processzus) maga után hagyva a log fájlt a host adminisztárotai számára.   
+
+3. __Title:__ A user elmenti memóriába az aktuális értéket        
+   __Main Success Scenario:__       
+   1. A user elvégzett számítást.
+   2. Az értéket a rendszer kijelzi a _kijelzőn_.
+   3. A user a  memóriagombok egyikére kattint
+   4. A rendszer elmenti a megfelelő slotba az értéket
+
+   __Extensions__:    
+   1a. Begépel egy értéket   
+
+4. __Title:__ A user lekér egy mentett értéket     
+   __Main Success Scenario:__      
+   1. A user a memóriagombok egyikére kattint
+   2. A mentett érték bekerül egy rendszerváltozóba
+   3. A rendszer megjeleníti az értéket a _kijelzőn_
+
+   __Extension:__    
+   2a. Amennyiben nincs mentett érték semmi nem történik.   
+
+5. __Title:__ A user lekér egy konstanst   
+   __Main Success Scenario:__    
+   1. A user az kurzort a menüre viszi
+   2. Megnyílik az adott menüelem alatt az opciók
+   3. Választ egy konstanst
+   4. A rendszer megjelenítani a _kijelzőn_ konstans nevével
+
+   __Extensions:__  
+   4a. Neve helyett értékét jeleníti meg.   
+   4b. Ha konstans nem egész akkor adott pontosság mellett jeleníti meg a _kijelzőn_.
 
 ---
 
