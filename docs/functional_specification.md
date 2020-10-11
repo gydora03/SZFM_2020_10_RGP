@@ -247,6 +247,16 @@ Ennek a következők a _Használati esetei_:
    4a. Neve helyett értékét jeleníti meg.   
    4b. Ha konstans nem egész akkor adott pontosság mellett jeleníti meg a _kijelzőn_.   
 
+## **Nanogépekkel működő univerzális mérleg szoftvere**
+1. __Title:__  A user konvertálni szeretne
+   __Main Success Scenario:__ 
+    1. A user futtatja a programot (JVM elindul előtte :)).
+    2. A program betölti a JavaFX keretrendszert.
+    3. A program betölti classpath útján a GUI-t leíró FXML fájt.
+    4. A user kiválasztja a kívánt átváltások egyikét.
+    5. A user megadja az mértékegységeket, értékeket.
+    6. A user a gombra kattint.
+    7. A program a végső ereményt szolgáltatja.         
 
 ## **PI számológép program**
 1. __Title:__  A user megakarja közelíteni PI értékét
