@@ -245,7 +245,39 @@ Ennek a következők a _Használati esetei_:
 
    __Extensions:__  
    4a. Neve helyett értékét jeleníti meg.   
-   4b. Ha konstans nem egész akkor adott pontosság mellett jeleníti meg a _kijelzőn_.
+   4b. Ha konstans nem egész akkor adott pontosság mellett jeleníti meg a _kijelzőn_.   
+
+
+## **PI számológép program**
+1. __Title:__  A user megakarja közelíteni PI értékét
+   __Main Success Scenario:__ 
+    1. A user futtatja a programot (JVM elindul előtte :)).
+    2. A program betölti a JavaFX keretrendszert.
+    3. A program betölti classpath útján a GUI-t leíró FXML fájt.
+    4. A user kiválasztja a decimálisan közelíti metódusok egyikét.
+    5. A user megadja az iterációshatárt.
+    6. A user a _Calculate_ gombra kattint.
+    7. A program a végső ereményt szolgáltatja.               
+
+    __Extensions:__   
+    4a. Nem decimálisan közelítő módszert választ
+   * Akkor a végrehajtás 2.-on alapul tovább  
+
+   5a. Nem számot, vagy nem pozitív számot ad meg
+   * A program figyelmeztet a javításra, és csak javítás után működik tovább.
+
+
+2. __Title:__  A demózó a PI hexadecimális jegyeit szeretné kiszámolni
+   __Main Success Scenario:__     
+   1. Kiválaszt egy hexadecimális számjegyeket számoló metódust
+   2. Megadja az iterációs határt.
+   3. Megadja, hogy hanyadik számjegytől meddig kéri a hexajegyeket.
+   4. A program a végső ereményt szolgáltatja.               
+
+    __Extensions:__   
+
+   2a-3a. Nem számot, vagy nem pozitív számot ad meg
+   * A program figyelmeztet a javításra, és csak javítás után működik tovább.
 
 ---
 
