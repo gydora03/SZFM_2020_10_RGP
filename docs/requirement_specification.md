@@ -29,9 +29,14 @@
 	- Különböző forrásokat használnak
 	- Nem egységes felület
 	- Csak Online felületek vannak
+5. Rendelt program hibái
+	- Esetekben előfordulnak nem működő funkciók
+	- Az alkalmazás megbízhatatlan gyakran hiba türténik egyszerű számolásoknál is
+	- Lebegőpontos számoknál hibás műveletek
+	- Nem minden igényelt műveletet tartalmaz
 
 
-W---
+---
 
 
 ### Igényelt üzleti folyamatok (Dóra)
