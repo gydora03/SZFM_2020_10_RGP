@@ -158,11 +158,15 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 - K06. Matematikai alapműveletek
 - K07. Matematikai haladó műveletek
 - K08. Matematikai kifejezések kiértékelése
-- K09. PI számológép
+- K09. PI megközelítése különböző algoritmusokkal
 - K10. Térfogat/Űrtartalom konvertáló
 - K11. Hosszúség (Length) konvertáló
 - K12. Tömeg (Weight) konvertáló
 - K13. Hőmérséklet (Temperature) konvertáló
+- K14. BUILD SYSTEM: **MAVEN**
+- K15. GUI TOOLKIT: **JAVAFX**
+- K16. LEBEGŐPONTOS ARITMETIKA: **APFLOAT**
+- K17. PoC program ami demonstrálja a kért _feature-öket_
 
 
 ---
