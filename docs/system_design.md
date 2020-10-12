@@ -13,8 +13,7 @@
 ---
 
 
-### Üzleti folyamatok modellje (Tamás)
-
+### Üzleti folyamatok modellje
 
 ---
 
@@ -25,8 +24,43 @@
 --- 
 
 
-### Funkcionális terv (Tamás)
+### Funkcionális terv
+A funkcionális specifikációban leírt használati esetek alapján kell ejárnunk.   
+Implementációs segítségét a Class Diagram és a Database Scheme fog nyújtani.    
 
+## **BasicCalculator esetén a következőket mondhatjuk el:**
+
+A matematikai függvényeket, beleértve az alapműveleteket, saját osztályaink alapján fogjuk szolgáltatni.   
+A rendszer főbb osztályai:   
+* _BasicCalculator_ osztály:
+    * Nyomonköveti egy tagváltozóban az aktuális részeredményt
+    * A "Controller" osztályban példányosodik
+    * Nyomonköveti az aktuálisan alkalmazandó operátort is  
+        * Ha nincs mentve jelenleg, akkor mentés kijelzőről + operátor maga
+        * Ha van mentve, akkor részkiértékelés
+* _BasicMath_ osztály:
+    * Implementálja az _IBasicMathFunctionality_ interfészt
+    * Wrapper a StrictMath-ra nézve
+* _Calculation_ osztály:
+    * Data class
+    * Hordozza az operátort és (egyik) operanduszát            
+* _ConstantProvider_ osztály:
+    * Statikus osztály, nem példányosítható
+    * Statikus függvények révén ad vissza definiált konstans értékeket    
+* _HistoryModule_ osztály:
+    * Singleton osztály
+    * Minden részkiértékelés eredménye rögzítésre kerül ```logCalculation(Calculation c)``` metódusa révén
+    * Biztosítja a Történelem funkciót
+    * Module Interfészből ered
+* _BasiCalculatorApplication_ osztály:
+    * Lényegében a Main()-t definiáló osztály, _Controller_
+    * Itt történik az FXML betöltése     
+    * FXML Contoljainak bekötése..   
+* _BasicCalculatorController_ osztály:
+    * Az MVC modelben ő valósítja meg a Controllert
+    * Összeköti a View és Modellt
+
+![classdiagram](diagrams/class_diagram_bc.png)
 
 ---
 
@@ -42,7 +76,7 @@
 
 ---
 
-### Tesztterv (Tamás)
+### Tesztterv
 Alapvetően a cél a kért forráskódok letesztelése a cél, nem konkrét célunk a hozzá készült PoC program alapos tesztelése, viszont mivel demonstrálásra szeretnék felhasználni muszáj tesztelnünk annak működését:
 1. Vannak-e eseménykezelő metódusok rendelve az egyes Controllokhoz?
 2. Helyes eseménykezelő hívódik-e meg adott Control esetében?
