@@ -109,6 +109,13 @@ _Parser_ osztály:
 * Kapott tokensorozatot értékel ki a beprogramozott nyelvtani szabályok alapján
 * Hibát dob szintaktikai hiba esetén
 
+## **PICalculator esetén a következőket mondhatjuk el:**  
+_Method_ osztály:
+* Interfész amit a PI-t közelítő osztályok implementálnak
+(Chudnovsky, Zeta, Ramahujan, Leibniz, ...)
+_<Method>_ osztály:    
+* A <Method> megközelítést implementálja.
+...
 ---
 
 
