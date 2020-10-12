@@ -14,7 +14,40 @@
 
 
 ### Üzleti folyamatok modellje
+1. Üzleti szereplők
+   * Ügyfél ügyfelének munkatársai
+   * Kiállítás résztvevői
+   * Kiállítás szervezői
+   * A rendezvényben érdekelt illetékes hatóságok
+   * Üzleti munkatársak:
+        * Rendszergazdák
+        * IT osztály tagjai
+        * Fejlesztők
+        * Adatbázis adminisztrátorok
 
+2. Üzleti folyamatok
+    * Tanítás, oktatás
+    * Számítások elvégzése
+    * Könyvelés
+    * Naplózás
+    * Optikai karakterfeldolgozás
+    * Adatbázis elérés
+    * PI megközelítése
+    * Mérések különböző szenzorok segítségével
+    * Karbantartás
+    * Üzemeltetés    
+    * Szoftverek elérhetőségének biztosítása
+
+3. Üzleti entitások
+    * Operációs rendszerek
+    * Internet
+    * Intézmény
+    * Kiálltásszervezők
+    * Kiállítás
+    * Adatbázis
+    * Tárhely
+    * Rendszergazdai csoport
+    * Fejlesztői csapat(ok)
 ---
 
 
