@@ -95,6 +95,20 @@ A rendszer főbb osztályai:
 
 ![classdiagram](diagrams/class_diagram_bc.png)
 
+## **AdvancedCalculator esetén a következőket mondhatjuk el:**  
+Azonos az architekturális a **BasicCalculator** programmal, viszont bővel egy _Tokenizer_ és _Parser_ osztállyal egy új csomagban.   
+
+A _Tokenizer_ osztály:
+* A bemenetet karakterenként olvassa _Token_-eket állít elő
+* Az előállított _Token_-eket olvasási sorrendet megtartva kerül átadásra a _Parser_ példánynak
+* Hibát dob ismeretlen bemenet esetén
+_Token_ osztály:     
+* Érvényes matematikai kifejezést/utasítást reprezentáló osztály
+
+_Parser_ osztály:
+* Kapott tokensorozatot értékel ki a beprogramozott nyelvtani szabályok alapján
+* Hibát dob szintaktikai hiba esetén
+
 ---
 
 
