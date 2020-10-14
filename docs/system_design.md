@@ -97,3 +97,7 @@
 
 ### Karbantartási terv (Dóra)
 
+- A https://github.com/cant0r/SZFM_2020_10_RGP GitHub címen mindig a legújabb verzió lesz az elérhető
+- Új verzió megjelenése esetén a megrendelőt, erről email-ben fogjuk majd értesíteni. Abban, hogy frissítik-e az alkalmazást vagy nem, szabad akaratuk szerint járnak el 
+- A frissítés elvégzése mindig ajánlott, felmerülő problémák, hibák kijavított verziója és/vagy újdonságok lesznek elérhetőek benne.
+
