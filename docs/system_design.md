@@ -56,7 +56,7 @@
     - az egyes műveletek egymástól jól elkülönítve láthatóak
     - az előzmények között csak azok a műveletek láthatóak, amelyek a program elindítása óta lettek elvégezve, a program bezárásával az előzmények is eltünnek.
     - csak az alap és a haladó számológép esetén hívható elő
-    
+
 
 --- 
 
@@ -69,6 +69,11 @@
 
 ### Fizikai környezet (Dóra)
 
+- Reszponzív megjelenés
+- A program Java nyelven legyen írva, a fejlesztéshez és teszteléshez használt felületek, eszközök szabadon választhatóak
+- A GUI JavaFX alapokon legyen, a számológép és a konverterek kinézete SceneBuilder használatával legyen összeállítva
+- Az Előzmény mód nem igényel adatbázist, ezért nem szükséges annak üzemeltetése sem, az előzmények egy ablakban lesznek megjelenítve
+- A program Windows, Mac OS illetve Linux operációs rendszereken egyaránt futtatható és használható
 
 ---
 
