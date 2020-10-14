@@ -51,7 +51,12 @@
 7. Hőmérséklet (Temperature) konvertáló
     - művelet végrehajtásának a menete: kiválasztani hogy melyik mértékegységből szeretnénk konvertálni -> kiválasztani hogy melyik mértékegységbe szeretnénk konvertálni -> megadni a mennyiséget amit konvertálni szeretnénk -> Convert gomb megnyomása -> a konvertálás eredménye megjelenik a megfelelő cellában
     - a Convert gomb megnyomása előtti műveletek sorrendje felcserélhető
-
+8. ELőzmény (History) mód használata
+    - az elózmények előhívása nagyon egyszerű, a "Hist" gomb megnyomásával egy ablakban láthatóvá válnak az eddigi műveletek és eredményeik
+    - az egyes műveletek egymástól jól elkülönítve láthatóak
+    - az előzmények között csak azok a műveletek láthatóak, amelyek a program elindítása óta lettek elvégezve, a program bezárásával az előzmények is eltünnek.
+    - csak az alap és a haladó számológép esetén hívható elő
+    
 
 --- 
 
