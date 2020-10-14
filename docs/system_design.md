@@ -91,6 +91,39 @@
 
 ### Telepítési terv (Dóra)
 
+- Linux operációs rendszeren
+    * a számológép ikon általi indítása
+    * a számológép parancssori futtatása
+
+    ```
+    git clone https://github.com/adampallagi/SZFM_2020_10_RGP.git 
+    cd SZFM_2020_10_RGP/
+    mvn package
+    java -jar ./target/SZFM_2020_10_RGP-1.0.jar
+    ```
+
+- Windows operációs rendszeren:
+    * a számológép ikon általi indítása
+    * a számológép (PowerShell vagy Linux alapú terminálból való) parancssori futtatása 
+
+    ```
+    git clone https://github.com/adampallagi/SZFM_2020_10_RGP.git 
+    cd SZFM_2020_10_RGP/
+    mvn package
+    java -jar ./target/SZFM_2020_10_RGP-1.0.jar
+    ```
+
+- MacOS operációs rendszeren:
+    * a számológép ikon általi indítása
+    * a számológép (Linux alapú terminálból való) parancssori futtatása 
+
+    ```
+    git clone https://github.com/adampallagi/SZFM_2020_10_RGP.git 
+    cd SZFM_2020_10_RGP/
+    mvn package
+    java -jar ./target/SZFM_2020_10_RGP-1.0.jar
+    ```
+
 
 ---
 
