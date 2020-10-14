@@ -39,12 +39,19 @@
         * művelet végrehajtásának a menete: zárójelek, operandusok és operátorok segítéségével megadni a matematikai kifejezést -> egyenló operátor -> az ifejezés eredménye megjelenik a kijelzőn.
 3. PI számológép
     - művelet végrehajtásának a menete: ki kell választani hogy melyik módszert szeretnénk használni -> megadni a számításhoz szükséges paramétereket -> Calculate gomb megnyomása -> az eredmény megjelenik a képernyőn
+4. Térfogat/Űrtartalom (Volume) konvertáló
+    - művelet végrehajtásának a menete: kiválasztani hogy melyik mértékegységből szeretnénk konvertálni -> kiválasztani hogy melyik mértékegységbe szeretnénk konvertálni -> megadni a mennyiséget amit konvertálni szeretnénk -> Convert gomb megnyomása -> a konvertálás eredménye megjelenik a megfelelő cellában
+    - a Convert gomb megnyomása előtti műveletek sorrendje felcserélhető
+ 5. Hosszúség (Length) konvertáló
+    - művelet végrehajtásának a menete: kiválasztani hogy melyik mértékegységből szeretnénk konvertálni -> kiválasztani hogy melyik mértékegységbe szeretnénk konvertálni -> megadni a mennyiséget amit konvertálni szeretnénk -> Convert gomb megnyomása -> a konvertálás eredménye megjelenik a megfelelő cellában
+    - a Convert gomb megnyomása előtti műveletek sorrendje felcserélhető
+6. Tömeg (Weight) konvertáló
+    - művelet végrehajtásának a menete: kiválasztani hogy melyik mértékegységből szeretnénk konvertálni -> kiválasztani hogy melyik mértékegységbe szeretnénk konvertálni -> megadni a mennyiséget amit konvertálni szeretnénk -> Convert gomb megnyomása -> a konvertálás eredménye megjelenik a megfelelő cellában
+    - a Convert gomb megnyomása előtti műveletek sorrendje felcserélhető
+7. Hőmérséklet (Temperature) konvertáló
+    - művelet végrehajtásának a menete: kiválasztani hogy melyik mértékegységből szeretnénk konvertálni -> kiválasztani hogy melyik mértékegységbe szeretnénk konvertálni -> megadni a mennyiséget amit konvertálni szeretnénk -> Convert gomb megnyomása -> a konvertálás eredménye megjelenik a megfelelő cellában
+    - a Convert gomb megnyomása előtti műveletek sorrendje felcserélhető
 
-
-3. ELőzmény (History) mód használata
-    - az elózmények előhívása nagyon egyszerű, a "Hist" gomb megnyomásával egy ablakban láthatóvá válnak az eddigi műveletek és eredményeik
-    - az egyes műveletek egymástól jól elkülönítve láthatóak
-    - az előzmények között csak azok a műveletek láthatóak, amelyek a program elindítása óta lettek elvégezve, a program bezárásával az előzmények is eltünnek.
 
 --- 
 
