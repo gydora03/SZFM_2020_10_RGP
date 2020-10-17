@@ -117,6 +117,17 @@ _Method_ osztály:
 (Chudnovsky, Zeta, Ramahujan, Leibniz, ...)
 _<Method>_ osztály:    
 * A <Method> megközelítést implementálja.
+
+
+
+
+
+## **Adatbázis séma**      
+Mivel az ügyfél saját adatbázist üzemeltet nem volt szükség túltervezni az általunk majd a fejlesztés és tesztelés folyamatok alatt használt adatbázissémát.   
+A `tinylog` naplózó könyvtár konfigurációs állományra építve a következő szimpla, naplóbejegyzéseket tartalmazó adatbázist fogjuk létre hozni `h2` relációs adatbázisrendszerben:   
+![classdiagram](diagrams/database_schema.png)
+
+
 ...
 ---
 
