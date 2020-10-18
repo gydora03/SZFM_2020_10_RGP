@@ -27,6 +27,10 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
 	- A projekten dolgozó emberek György Dóra, Racs Tamás és Pallagi Ádám
 	- Minden tag felelős a munkája minőségéért
 	
+3. Ütemterv:
+	- A munka elvégzésére 7 hét áll rendelkezésre
+	- A projekt 3 nagy részre bontható minden részre 2 hét idő áll rendelkezésre
+	- Az utolsó héten a projekt tesztelése történik
 
 ---
 
