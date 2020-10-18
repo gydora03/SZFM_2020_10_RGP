@@ -112,11 +112,18 @@ _Parser_ osztály:
 ![classdiagram](diagrams/ac_class_diagram.png)
 
 ## **PICalculator esetén a következőket mondhatjuk el:**  
-_Method_ osztály:
+_IApproximator_ osztály:
 * Interfész amit a PI-t közelítő osztályok implementálnak
-(Chudnovsky, Zeta, Ramahujan, Leibniz, ...)
-_<Method>_ osztály:    
-* A <Method> megközelítést implementálja.
+(Chudnovsky, Zeta, BBP, Leibniz, ...)
+* Mivel Javaban nem értelmezett az alapértelmezett paraméter megadása, overloadoljuk az `approximatePI` metódust    
+
+_&lt;Approximator&gt;_ alosztályok:
+* Implementálják az _IApproximator_ interfészt
+* Az adott metódus alapján közelítik PI értékét decimális formában
+
+_BBPApproximator_ osztály:
+* Speciális közelítő
+* A PI-nek hexadecimális számjegyeit határozza meg
 
 ![classdiagram](diagrams/pi_class_diagram.png)
 
