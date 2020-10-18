@@ -9,6 +9,8 @@ Ehhez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét é
 A második célja, hogy a mérleghez készült szoftveren is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a algoritmus minőségén javítsunk.     
 A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően működjön.     
 
+Összefoglalva a program célja, hogy megfeleljen a feltételeknek és, hogy pontos adatokkal támassza alá a tudományos funkcionalitást. Nem célja, hogy a program alapvető funkionaltásaiba nyúljon bele, csak, hogy a hibákat kijavítva a megfelelő működést és kapcsolódó élményeket nyújtson.   
+
 
 
 
