@@ -128,8 +128,13 @@ _BBPApproximator_ osztály:
 ![classdiagram](diagrams/pi_class_diagram.png)
 
 ## **Converter esetén a következőket mondhatjuk el:**      
-_Converter_ interfész:
-
+_Converter_ absztrakt osztály:
+* Absztrakt osztály amelyet az egyes _Converter_ alosztályok bővítenek
+* Az átváltások egy _conversionTable_ nevű kulcstranszformációs táblázat alapján történik     
+    * Ezek tartalma konstans, soha nem változhat
+* _&lt;*Converter&gt;_  osztályok     
+    * Az átváltásokat valósítják meg      
+    
 ![classdiagram](diagrams/cv_class_diagram.png)
 
 
