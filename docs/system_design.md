@@ -120,6 +120,11 @@ _<Method>_ osztály:
 
 ![classdiagram](diagrams/pi_class_diagram.png)
 
+## **Converter esetén a következőket mondhatjuk el:**      
+_Converter_ interfész:
+
+![classdiagram](diagrams/cv_class_diagram.png)
+
 
 
 ## **Adatbázis séma**      
