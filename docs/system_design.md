@@ -226,6 +226,8 @@ A `tinylog` naplózó könyvtár konfigurációs állományra építve a követk
 
 ### Architekturális terv (Ádám)
 
+Az architekturálsi tervezési mint alapja az MVC, lesz egy nézet és mögötte a vezérlő üzleti folyamatokkal, a rendszer teljes mértékben bővíthető és különösebb biztonsági funkciói nem lesz, tekintve, hogy egy open source számológép.
+
 
 ---
 
