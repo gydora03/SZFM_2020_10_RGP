@@ -18,6 +18,10 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
 
 
 ### Projekt terv (Ádám)
+
+1. Projekt szerepkörök, felelősségei:
+	- A projekt szerepkörök felosztása egyenlően van felosztva a csapatunk tagjai között
+	- Minden tagnak saját felelőssége, hogy az általa írt kód részlet megfelelően működjön
 	
 
 ---
