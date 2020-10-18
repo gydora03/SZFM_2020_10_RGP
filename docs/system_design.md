@@ -32,6 +32,12 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
 	- A projekt 3 nagy részre bontható minden részre 2 hét idő áll rendelkezésre
 	- Az utolsó héten a projekt tesztelése történik
 
+4. Mérföldkövek:
+	- Advanced Calculator létrehozása
+	- PI Calulcator létrehozása
+	- Térfogat/Űrtartalom Calculator létrehozása
+	- Tesztelés elvégzése
+
 ---
 
 
