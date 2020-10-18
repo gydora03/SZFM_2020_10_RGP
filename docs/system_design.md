@@ -1,7 +1,7 @@
 # Rendszerterv
 
 
-### A rendszer célja (Ádám)
+### A rendszer célja
 
 A program fő célja, hogy az erediteleg megrendelt program hibáinak kijavítását és a hiányzó elemek pótolását demonstrálja.      
 A legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljenek a kért algoritmusok.     
@@ -17,7 +17,7 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
 ---
 
 
-### Projekt terv (Ádám)
+### Projekt terv
 
 1. Projekt szerepkörök, felelősségei:
 	- A projekt szerepkörök felosztása egyenlően van felosztva a csapatunk tagjai között
@@ -224,7 +224,7 @@ A `tinylog` naplózó könyvtár konfigurációs állományra építve a követk
 ---
 
 
-### Architekturális terv (Ádám)
+### Architekturális terv
 
 Az architekturális tervezési minta alapja az MVC, lesz egy nézet és mögötte a vezérlő üzleti folyamatokkal, a rendszer teljes mértékben bővíthető és különösebb biztonsági funkciói nem lesz, tekintve, hogy egy open source számológép.
 
