@@ -3,6 +3,14 @@
 
 ### A rendszer célja (Ádám)
 
+A program fő célja, hogy az erediteleg megrendelt program hibáinak kijavítását és a hiányzó elemek pótolását demonstrálja.      
+A legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljenek a kért algoritmusok.     
+Ehhez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontatlanságát.     
+A második célja, hogy a mérleghez készült szoftveren is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a algoritmus minőségén javítsunk.     
+A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően működjön.     
+
+
+
 
 ---
 
