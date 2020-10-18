@@ -134,7 +134,7 @@ _Converter_ absztrakt osztály:
     * Ezek tartalma konstans, soha nem változhat
 * _&lt;*Converter&gt;_  osztályok     
     * Az átváltásokat valósítják meg      
-    
+
 ![classdiagram](diagrams/cv_class_diagram.png)
 
 
@@ -176,10 +176,23 @@ A forráskódokat a megadott igények mentén kell tesztelnünk, ha ezek a teszt
 2. Ha beírt, szintaktikailag helytelen kifejezést értékelünk ki akkor hibával tér-e vissza a metódus?
 3. Ha beírt, szintaktikailag helyes de nem támogatott matematikai kfiejezést értékelünk ki akkor hibával tér-e vissza a kiértékelő metódus?
 4. Használató-e más IAdvancedMath interfészt implementáló osztály-e?
-5. A program helyes naplózza az elvégzett műveleteket az adatbázisba?
+5. A program helyesen naplózza az elvégzett műveleteket az adatbázisba?
 6. A program megfelelő lebegőpontos aritmetikai pontosság mellett dolgozik?
 7. A tokenizer dob-e hibát érvénytelen karakter feldolgozásakor?
 8. A parser helyesen alkalmazza a nyelvtani szabályokat?
+
+
+## **Nanógépes alapokon működő univerzális mérleg konverziós könyvtára esetében**
+1. A megadott és a kért mértékegységek között helyes-e az átváltás?   
+2. Ugyanazt az eredményt kapjuk ha oda-vissza konvertálunk egy adott értéket?   
+3. Dob-e hibát a könyvtár ha különböző mennyiségek közötti konverziót szeretnék elérni?
+4. Dob-e kivételt a könyvtár ha ismeretlen mértékegyséről/re szeretnék konvertálni?
+5. Dob-e kivételt a könyvtár ha érvénytelen értékét szeretnék átkonvertálni?
+6. A program helyes naplózza az elvégzett műveleteket az adatbázisba?
+7. A program megfelelő lebegőpontos aritmetikai pontosság mellett dolgozik?
+
+
+
 ---
 
 
