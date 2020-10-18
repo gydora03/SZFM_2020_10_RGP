@@ -22,6 +22,10 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
 1. Projekt szerepkörök, felelősségei:
 	- A projekt szerepkörök felosztása egyenlően van felosztva a csapatunk tagjai között
 	- Minden tagnak saját felelőssége, hogy az általa írt kód részlet megfelelően működjön
+
+2. Projektmunkások és felelősségeik:
+	- A projekten dolgozó emberek György Dóra, Racs Tamás és Pallagi Ádám
+	- Minden tag felelős a munkája minőségéért
 	
 
 ---
