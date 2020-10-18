@@ -118,7 +118,7 @@ _Method_ osztály:
 _<Method>_ osztály:    
 * A <Method> megközelítést implementálja.
 
-
+![classdiagram](diagrams/pi_class_diagram.png)
 
 
 
