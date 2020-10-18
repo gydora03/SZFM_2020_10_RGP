@@ -182,7 +182,7 @@ A forráskódokat a megadott igények mentén kell tesztelnünk, ha ezek a teszt
 8. A parser helyesen alkalmazza a nyelvtani szabályokat?
 
 
-## **Nanógépes alapokon működő univerzális mérleg konverziós könyvtára esetében**
+## **Nanógépes alapokon működő univerzális mérleg konverziós könyvtára esetében:**
 1. A megadott és a kért mértékegységek között helyes-e az átváltás?   
 2. Ugyanazt az eredményt kapjuk ha oda-vissza konvertálunk egy adott értéket?   
 3. Dob-e hibát a könyvtár ha különböző mennyiségek közötti konverziót szeretnék elérni?
@@ -191,6 +191,18 @@ A forráskódokat a megadott igények mentén kell tesztelnünk, ha ezek a teszt
 6. A program helyes naplózza az elvégzett műveleteket az adatbázisba?
 7. A program megfelelő lebegőpontos aritmetikai pontosság mellett dolgozik?
 
+## **PI részmodul esetében:**    
+1. A program helyes naplózza az elvégzett műveleteket az adatbázisba?
+2. A program megfelelő lebegőpontos aritmetikai pontosság mellett dolgozik?
+3. BPP közelítés   
+    * A kért hexadecimális számjegyeket kapjuk-e vissza?
+    * A helyes hexadecimális számjegyeket kapjuk-e vissza?
+    * Megfelelő-e a pontosság az adott iterációshatárnak megfelelően?
+    * Valódi eredményt szolgáltat?
+    * A párhuzamosság helyessége
+4. A decimális közelítők helyes eredményt szolgáltatnak?
+5. Megfelelően vannak-e párhuzamosítva a decimális közelítők?  
+6. Dob-e kivételt a könyvtár helytelen paraméterek megadása esetén?
 
 
 ---
