@@ -1,14 +1,42 @@
 # Rendszerterv
 
 
-### A rendszer célja (Ádám)
+### A rendszer célja
+
+A program fő célja, hogy az erediteleg megrendelt program hibáinak kijavítását és a hiányzó elemek pótolását demonstrálja.      
+A legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljenek a kért algoritmusok.     
+Ehhez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontatlanságát.     
+A második célja, hogy a mérleghez készült szoftveren is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a algoritmus minőségén javítsunk.     
+A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően működjön.     
+
+Összefoglalva a program célja, hogy megfeleljen a feltételeknek és, hogy pontos adatokkal támassza alá a tudományos funkcionalitást. Nem célja, hogy a program alapvető funkionaltásaiba nyúljon bele, csak, hogy a hibákat kijavítva a megfelelő működést és kapcsolódó élményeket nyújtson.   
+
+
 
 
 ---
 
 
-### Projekt terv (Ádám)
+### Projekt terv
+
+1. Projekt szerepkörök, felelősségei:
+	- A projekt szerepkörök felosztása egyenlően van felosztva a csapatunk tagjai között
+	- Minden tagnak saját felelőssége, hogy az általa írt kód részlet megfelelően működjön
+
+2. Projektmunkások és felelősségeik:
+	- A projekten dolgozó emberek György Dóra, Racs Tamás és Pallagi Ádám
+	- Minden tag felelős a munkája minőségéért
 	
+3. Ütemterv:
+	- A munka elvégzésére 7 hét áll rendelkezésre
+	- A projekt 3 nagy részre bontható minden részre 2 hét idő áll rendelkezésre
+	- Az utolsó héten a projekt tesztelése történik
+
+4. Mérföldkövek:
+	- Advanced Calculator létrehozása
+	- PI Calulcator létrehozása
+	- Térfogat/Űrtartalom Calculator létrehozása
+	- Tesztelés elvégzése
 
 ---
 
@@ -196,7 +224,9 @@ A `tinylog` naplózó könyvtár konfigurációs állományra építve a követk
 ---
 
 
-### Architekturális terv (Ádám)
+### Architekturális terv
+
+Az architekturális tervezési minta alapja az MVC, lesz egy nézet és mögötte a vezérlő üzleti folyamatokkal, a rendszer teljes mértékben bővíthető és különösebb biztonsági funkciói nem lesz, tekintve, hogy egy open source számológép.
 
 
 ---
