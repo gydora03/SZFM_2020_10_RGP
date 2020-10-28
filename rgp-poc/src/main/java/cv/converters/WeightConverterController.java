@@ -74,7 +74,7 @@ public class WeightConverterController {
         stage.show();
         CalculatorApplication.stage.getScene().setRoot(parent);
     }
-    
+
     @FXML
     public void switchToTemperatureConverter(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/temperatureConverter.fxml"));
