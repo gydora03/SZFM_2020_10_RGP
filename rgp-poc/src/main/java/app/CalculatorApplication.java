@@ -8,6 +8,8 @@ import java.io.IOException;
 
 public class CalculatorApplication extends Application {
 
+    public static Stage stage;
+
     @Override
     public void start(Stage stage) throws IOException {
 
