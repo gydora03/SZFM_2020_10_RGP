@@ -43,10 +43,10 @@
             </Menu>
             <Menu fx:id="constantsMenu" mnemonicParsing="false" text="Constants">
                <items>
-                  <MenuItem fx:id="piMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Pi" />
-                  <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Euler Constant" />
-                  <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Bernstein Constant" />
-                  <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Golden Ratio" />
+                  <MenuItem fx:id="piMenuItem" mnemonicParsing="false" text="Pi" />
+                  <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" text="Euler Constant" />
+                  <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" text="Bernstein Constant" />
+                  <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" text="Golden Ratio" />
                </items>
                <graphic>
                   <Separator blendMode="ADD" orientation="VERTICAL">
