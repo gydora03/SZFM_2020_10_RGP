@@ -85,5 +85,5 @@ public class TemperatureConverterController {
         stage.show();
         CalculatorApplication.stage.getScene().setRoot(parent);
     }
-    
+
 }
