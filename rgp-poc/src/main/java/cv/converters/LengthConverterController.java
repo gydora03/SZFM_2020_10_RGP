@@ -64,6 +64,17 @@ public class LengthConverterController {
         CalculatorApplication.stage.getScene().setRoot(parent);
     }
 
+    @FXML
+    public void switchToLengthConverter(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/lengthConverter.fxml"));
+        Scene scene = new Scene(parent);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Length Converter");
+        stage.setScene(scene);
+        stage.show();
+        CalculatorApplication.stage.getScene().setRoot(parent);
+    }
+
 
 
 }
