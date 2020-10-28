@@ -27,17 +27,17 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Calculators">
                <items>
-                  <MenuItem fx:id="basicCalculator1" mnemonicParsing="false" text="Basic" />
-                  <MenuItem fx:id="advancedCalculator1" mnemonicParsing="false" text="Advanced" />
-                  <MenuItem fx:id="piCalculator1" mnemonicParsing="false" text="PI" />
+                  <MenuItem fx:id="basicCalculator" mnemonicParsing="false" onAction="#switchToBasicCalculator" text="Basic" />
+                  <MenuItem fx:id="advancedCalculator" mnemonicParsing="false" onAction="#switchToAdvancedCalculator" text="Advanced" />
+                  <MenuItem fx:id="piCalculator" mnemonicParsing="false" onAction="#switchToPICalculator" text="PI" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Converters">
                <items>
-                  <MenuItem fx:id="volumeConverter1" mnemonicParsing="false" text="Volume" />
-                  <MenuItem fx:id="lencthConverter1" mnemonicParsing="false" text="Length" />
-                  <MenuItem fx:id="weightConverter1" mnemonicParsing="false" text="Weight" />
-                  <MenuItem fx:id="temperatureConverter1" mnemonicParsing="false" text="Temperature" />
+                  <MenuItem fx:id="volumeConverter" mnemonicParsing="false" onAction="#switchToVolumeConverter" text="Volume" />
+                  <MenuItem fx:id="lengthConverter" mnemonicParsing="false" onAction="#switchToLengthConverter" text="Length" />
+                  <MenuItem fx:id="weightConverter" mnemonicParsing="false" text="Weight" />
+                  <MenuItem fx:id="temperatureConverter" mnemonicParsing="false" onAction="#switchToTemperatureConverter" text="Temperature" />
                </items>
             </Menu>
             <Menu fx:id="constantsMenu1" disable="true" mnemonicParsing="false" text="Constants">
