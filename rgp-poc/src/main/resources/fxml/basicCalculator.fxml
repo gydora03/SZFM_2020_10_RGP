@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="420.0" prefWidth="645.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bc.calculator.BasicCalculatorController">
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bc.calculator.BasicCalculatorController">
    <children>
       <MenuBar fx:id="menuBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
          <menus>
@@ -23,14 +23,14 @@
                   <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#handleClickOnCloseMenuItem" text="Close" />
                </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Calculators">
+            <Menu fx:id="calculatorMenu" mnemonicParsing="false" text="Calculators">
                <items>
                   <MenuItem fx:id="basicCalculator" mnemonicParsing="false" text="Basic" />
                   <MenuItem fx:id="advancedCalculator" mnemonicParsing="false" onAction="#switchToAdvancedCalculator" text="Advanced" />
                   <MenuItem fx:id="piCalculator" mnemonicParsing="false" onAction="#switchToPICalculator" text="PI" />
                </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Converters">
+            <Menu fx:id="converterMenu" mnemonicParsing="false" text="Converters">
                <items>
                   <MenuItem fx:id="volumeConverter" mnemonicParsing="false" onAction="#switchToVolumeConverter" text="Volume" />
                   <MenuItem fx:id="lengthConverter" mnemonicParsing="false" onAction="#switchToLengthConverter" text="Length" />
