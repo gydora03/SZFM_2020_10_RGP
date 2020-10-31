@@ -232,7 +232,65 @@ public class BasicCalculatorController {
             return;
         display.setText(display.getText().concat(digit));
     }
+    @FXML
+    private void handleClickOnClear() {
+        display.setText("");
+    }
 
+    @FXML
+    private void handleClickOnAllClear() {
+        basicCalculator.clearCalculations();
+        display.clear();
+        memory_one = "";
+        memory_two = "";
+        memory_three = "";
+        memory_four = "";
+    }
+
+
+    @FXML
+    private void handleClickOnPlusMinusSign(ActionEvent event) {
+        double displayText = Double.parseDouble(display.getText());
+        displayText = displayText * (-1);
+        display.setText(String.valueOf(displayText));
+    }
+
+
+    @FXML
+    private void handleClickOnMemory(ActionEvent event) {
+        if (event.getSource() == memoryOne) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 1);
+            if (memory_one.equals("")) {
+                memory_one = display.getText();
+            } else {
+                display.setText(memory_one);
+            }
+        }
+        if (event.getSource() == memoryTwo) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 2);
+            if (memory_two.equals("")) {
+                memory_two = display.getText();
+            } else {
+                display.setText(memory_two);
+            }
+        }
+        if (event.getSource() == memoryThree) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 3);
+            if (memory_three.equals("")) {
+                memory_three = display.getText();
+            } else {
+                display.setText(memory_three);
+            }
+        }
+        if (event.getSource() == memoryFour) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 4);
+            if (memory_four.equals("")) {
+                memory_four = display.getText();
+            } else {
+                display.setText(memory_four);
+            }
+        }
+    }
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
