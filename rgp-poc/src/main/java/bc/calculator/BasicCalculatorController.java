@@ -1,5 +1,9 @@
 package bc.calculator;
 
+import bc.module.HistoryModule;
+import bc.providers.BasicMath;
+import bc.providers.Calculation;
+import bc.providers.ConstantProvider;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
