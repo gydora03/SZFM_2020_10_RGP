@@ -313,6 +313,13 @@ public class BasicCalculatorController {
             display.setText(String.valueOf(ConstantProvider.getGoldenRatio()));
         }
     }
+    public void handleHistoryButton(ActionEvent actionEvent) {
+        HistoryModule hm = basicCalculator.<HistoryModule>getModule("history");
+        if(hm != null){
+            hm.dumpLogs();
+            display.setText("History was saved to historyLogs.txt!");
+        }
+    }
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
