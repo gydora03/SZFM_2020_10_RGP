@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +16,18 @@ public class AdvancedCalculatorController {
 
     @FXML
     MenuBar menuBar;
+
+    @FXML
+    private MenuItem piMenuItem;
+
+    @FXML
+    private MenuItem eulerMenuItem;
+
+    @FXML
+    private MenuItem BernsteinMenuItem;
+
+    @FXML
+    private MenuItem goldenRatioMenuItem;
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
