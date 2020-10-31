@@ -147,6 +147,11 @@ public class BasicCalculatorController {
     @FXML
     MenuBar menuBar;
 
+    public BasicCalculatorController()
+    {
+        basicCalculator = new BasicCalculator(new BasicMath());
+    }
+
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
