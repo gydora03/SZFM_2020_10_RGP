@@ -16,36 +16,36 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.BasicCalculatorController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cv.converters.LengthConverterController">
    <children>
-      <MenuBar fx:id="menuBar1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+      <MenuBar fx:id="menuBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
          <menus>
-            <Menu fx:id="fileMenu1" mnemonicParsing="false" text="File">
+            <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem fx:id="closeMenuItem1" mnemonicParsing="false" onAction="#handleClickOnCloseMenuItem" text="Close" />
+                  <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#handleClickOnCloseMenuItem" text="Close" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Calculators">
                <items>
-                  <MenuItem fx:id="basicCalculator1" mnemonicParsing="false" text="Basic" />
-                  <MenuItem fx:id="advancedCalculator1" mnemonicParsing="false" text="Advanced" />
-                  <MenuItem fx:id="piCalculator1" mnemonicParsing="false" text="PI" />
+                  <MenuItem fx:id="basicCalculator" mnemonicParsing="false" onAction="#switchToBasicCalculator" text="Basic" />
+                  <MenuItem fx:id="advancedCalculator" mnemonicParsing="false" onAction="#switchToAdvancedCalculator" text="Advanced" />
+                  <MenuItem fx:id="piCalculator" mnemonicParsing="false" onAction="#switchToPICalculator" text="PI" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Converters">
                <items>
-                  <MenuItem fx:id="volumeConverter1" mnemonicParsing="false" text="Volume" />
-                  <MenuItem fx:id="lencthConverter1" mnemonicParsing="false" text="Length" />
-                  <MenuItem fx:id="weightConverter1" mnemonicParsing="false" text="Weight" />
-                  <MenuItem fx:id="temperatureConverter1" mnemonicParsing="false" text="Temperature" />
+                  <MenuItem fx:id="volumeConverter" mnemonicParsing="false" onAction="#switchToVolumeConverter" text="Volume" />
+                  <MenuItem fx:id="lencthConverter" mnemonicParsing="false" text="Length" />
+                  <MenuItem fx:id="weightConverter" mnemonicParsing="false" onAction="#switchToWeightConverter" text="Weight" />
+                  <MenuItem fx:id="temperatureConverter" mnemonicParsing="false" onAction="#switchToTemperatureConverter" text="Temperature" />
                </items>
             </Menu>
             <Menu fx:id="constantsMenu1" disable="true" mnemonicParsing="false" text="Constants">
                <items>
-                  <MenuItem fx:id="piMenuItem1" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Pi" />
-                  <MenuItem fx:id="eulerMenuItem1" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Euler Constant" />
-                  <MenuItem fx:id="BernsteinMenuItem1" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Bernstein Constant" />
-                  <MenuItem fx:id="goldenRatioMenuItem1" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Golden Ratio" />
+                  <MenuItem fx:id="piMenuItem1" mnemonicParsing="false" text="Pi" />
+                  <MenuItem fx:id="eulerMenuItem1" mnemonicParsing="false" text="Euler Constant" />
+                  <MenuItem fx:id="BernsteinMenuItem1" mnemonicParsing="false" text="Bernstein Constant" />
+                  <MenuItem fx:id="goldenRatioMenuItem1" mnemonicParsing="false" text="Golden Ratio" />
                </items>
                <graphic>
                   <Separator blendMode="ADD" orientation="VERTICAL">

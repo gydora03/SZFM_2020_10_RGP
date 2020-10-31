@@ -1,4 +1,4 @@
-package bc.calculator;
+package cv.converters;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BasicCalculatorController {
+public class TemperatureConverterController {
 
     @FXML
     MenuBar menuBar;
@@ -20,6 +20,16 @@ public class BasicCalculatorController {
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
         System.exit(0);
+    }
+
+    @FXML
+    public void switchToBasicCalculator(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/basicCalculator.fxml"));
+        Scene scene = new Scene(parent);
+        Stage stage = (Stage) menuBar.getScene().getWindow();
+        stage.setTitle("Basic Calculator");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -36,7 +46,7 @@ public class BasicCalculatorController {
     public void switchToPICalculator(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/piCalculator.fxml"));
         Scene scene = new Scene(parent);
-        Stage stage = (Stage) menuBar.getScene().getWindow();
+        Stage stage = (Stage)  menuBar.getScene().getWindow();
         stage.setTitle("PI Calculator");
         stage.setScene(scene);
         stage.show();
@@ -68,16 +78,6 @@ public class BasicCalculatorController {
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
         stage.setTitle("Weight Converter");
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    public void switchToTemperatureConverter(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/temperatureConverter.fxml"));
-        Scene scene = new Scene(parent);
-        Stage stage = (Stage) menuBar.getScene().getWindow();
-        stage.setTitle("Temperature Converter");
         stage.setScene(scene);
         stage.show();
     }

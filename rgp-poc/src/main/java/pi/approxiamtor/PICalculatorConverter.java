@@ -1,4 +1,4 @@
-package bc.calculator;
+package pi.approxiamtor;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class BasicCalculatorController {
+public class PICalculatorConverter {
 
     @FXML
     MenuBar menuBar;
@@ -23,21 +23,21 @@ public class BasicCalculatorController {
     }
 
     @FXML
-    public void switchToAdvancedCalculator(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/advancedCalculator.fxml"));
+    public void switchToBasicCalculator(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/basicCalculator.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
-        stage.setTitle("Advanced Calculator");
+        stage.setTitle("Basic Calculator");
         stage.setScene(scene);
         stage.show();
     }
 
     @FXML
-    public void switchToPICalculator(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/piCalculator.fxml"));
+    public void switchToAdvancedCalculator(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/advancedCalculator.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
-        stage.setTitle("PI Calculator");
+        stage.setTitle("Advanced Calculator");
         stage.setScene(scene);
         stage.show();
     }
