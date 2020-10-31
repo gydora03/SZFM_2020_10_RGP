@@ -17,17 +17,7 @@ public class AdvancedCalculatorController {
     @FXML
     MenuBar menuBar;
 
-    @FXML
-    private MenuItem piMenuItem;
 
-    @FXML
-    private MenuItem eulerMenuItem;
-
-    @FXML
-    private MenuItem BernsteinMenuItem;
-
-    @FXML
-    private MenuItem goldenRatioMenuItem;
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
