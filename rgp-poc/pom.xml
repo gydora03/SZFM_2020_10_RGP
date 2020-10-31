@@ -64,6 +64,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.200</version>
+    </dependency>
+    <dependency>
       <groupId>org.apfloat</groupId>
       <artifactId>apfloat</artifactId>
       <version>1.9.1</version>
