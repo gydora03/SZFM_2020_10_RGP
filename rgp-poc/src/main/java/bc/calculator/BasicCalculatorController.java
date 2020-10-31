@@ -136,6 +136,13 @@ public class BasicCalculatorController {
     @FXML
     private MenuItem closeMenuItem;
 
+    private BasicCalculator basicCalculator;
+    private String memory_one = "";
+    private String memory_two = "";
+    private String memory_three = "";
+    private String memory_four = "";
+
+    private boolean isOperatorClicked = false;
 
     @FXML
     MenuBar menuBar;
