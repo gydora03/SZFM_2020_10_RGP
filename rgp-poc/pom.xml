@@ -10,7 +10,7 @@
   <properties>
       <maven.compiler.target>11</maven.compiler.target>
       <maven.compiler.source>11</maven.compiler.source>
-      <!-- <mainClass>calculator.Main</mainClass> -->
+      <mainClass>Main</mainClass>
   </properties>
   <developers>
     <developer>
