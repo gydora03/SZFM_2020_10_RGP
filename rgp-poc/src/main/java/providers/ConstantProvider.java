@@ -1,6 +1,8 @@
 package providers;
 
+import java.lang.StrictMath;
 import org.tinylog.Logger;
+import java.lang.Object;
 
 public class ConstantProvider {
 
