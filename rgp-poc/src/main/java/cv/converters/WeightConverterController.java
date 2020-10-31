@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
 import javafx.stage.Stage;
-import org.tinylog.Logger;
 
 import java.io.IOException;
 
@@ -25,7 +24,6 @@ public class WeightConverterController {
 
     @FXML
     public void switchToBasicCalculator(ActionEvent event) throws IOException {
-        Logger.info("Switch to basic calculator");
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/basicCalculator.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
@@ -36,7 +34,6 @@ public class WeightConverterController {
 
     @FXML
     public void switchToAdvancedCalculator(ActionEvent event) throws IOException {
-        Logger.info("Switch to advanced calculator");
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/advancedCalculator.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
@@ -47,7 +44,6 @@ public class WeightConverterController {
 
     @FXML
     public void switchToPICalculator(ActionEvent event) throws IOException {
-        Logger.info("Switch to Pi calculator");
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/piCalculator.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
@@ -58,7 +54,6 @@ public class WeightConverterController {
 
     @FXML
     public void switchToVolumeConverter(ActionEvent event) throws IOException {
-        Logger.info("Switch to volume converter");
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/volumeConverter.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
@@ -69,7 +64,6 @@ public class WeightConverterController {
 
     @FXML
     public void switchToLengthConverter(ActionEvent event) throws IOException {
-        Logger.info("Switch to length converter");
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/lengthConverter.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
@@ -80,7 +74,6 @@ public class WeightConverterController {
 
     @FXML
     public void switchToTemperatureConverter(ActionEvent event) throws IOException {
-        Logger.info("Switch to temperature converter");
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/temperatureConverter.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
