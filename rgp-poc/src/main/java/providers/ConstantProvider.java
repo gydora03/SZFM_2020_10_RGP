@@ -19,4 +19,10 @@ public class ConstantProvider {
         double GoldenRatio = (1.0 + StrictMath.sqrt(5)) / 2.0;
         return GoldenRatio;
     }
+
+    public static double getBernsteinConstant(){
+        Logger.info("getBernsteinConstant runs");
+        double bernstein = 1 / (2.0 * StrictMath.sqrt(StrictMath.PI));
+        return bernstein;
+    }
 }
