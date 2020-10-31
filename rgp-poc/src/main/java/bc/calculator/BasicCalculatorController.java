@@ -220,6 +220,19 @@ public class BasicCalculatorController {
         isOperatorClicked = true;
     }
 
+    @FXML
+    private void handleClickOnNumber(ActionEvent event) {
+
+        if(isOperatorClicked)
+            display.setText("");
+        isOperatorClicked = false;
+
+        String digit = ((Button) event.getSource()).getText();
+        if(digit.equals(".") && display.getText().contains("."))
+            return;
+        display.setText(display.getText().concat(digit));
+    }
+
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
