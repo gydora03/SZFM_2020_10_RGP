@@ -11,6 +11,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 import java.io.IOException;
 
@@ -291,7 +292,27 @@ public class BasicCalculatorController {
             }
         }
     }
+    @FXML
+    private void handleClickOnConstant(ActionEvent event){
+        isOperatorClicked = false;
 
+        if(event.getSource() == piMenuItem){
+            Logger.tag("BasicCalculatorController").info("Constant PI was clicked");
+            display.setText(String.valueOf(ConstantProvider.getPi()));
+        }
+        else if(event.getSource() == eulerMenuItem){
+            Logger.tag("BasicCalculatorController").info("Constant Euler was clicked");
+            display.setText(String.valueOf(ConstantProvider.getEulerConstant()));
+        }
+        else if(event.getSource() == BernsteinMenuItem){
+            Logger.tag("BasicCalculatorController").info("Constant Bernstein was clicked");
+            display.setText(String.valueOf(ConstantProvider.getBernsteinConstant()));
+        }
+        else if(event.getSource() == goldenRatioMenuItem){
+            Logger.tag("BasicCalculatorController").info("Constant GoldenRatio was clicked");
+            display.setText(String.valueOf(ConstantProvider.getGoldenRatio()));
+        }
+    }
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
