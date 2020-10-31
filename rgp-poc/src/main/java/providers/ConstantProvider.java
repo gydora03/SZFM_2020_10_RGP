@@ -13,4 +13,10 @@ public class ConstantProvider {
         Logger.info("getEulerConstant runs");
         return StrictMath.E;
     }
+
+    public static double getGoldenRatio(){
+        Logger.info("getGoldenRatio runs");
+        double GoldenRatio = (1.0 + StrictMath.sqrt(5)) / 2.0;
+        return GoldenRatio;
+    }
 }
