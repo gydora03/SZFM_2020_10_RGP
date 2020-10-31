@@ -1,9 +1,14 @@
 package bc.calculator;
 
+import bc.module.HistoryModule;
+import bc.module.IModule;
+import bc.providers.Calculation;
+import bc.providers.IBasicMathFunctionality;
 import org.tinylog.Logger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 
 public class BasicCalculator implements ICalculator<Double> {
 
