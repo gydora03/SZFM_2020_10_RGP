@@ -8,13 +8,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class PICalculatorController {
-
+    
+    @FXML
+    TextArea screen;
     @FXML
     TextField iterationTb;
     @FXML
@@ -124,6 +127,25 @@ public class PICalculatorController {
             clearFields();
             return;
         }
+
+        switch(methodCb.getSelectionModel().getSelectedItem()) {
+            case "Chudnovsky":
+                piApproximator = new ChudnovskyApproximator();
+                break;
+            case "Zeta":
+                piApproximator = new ZetaApproximator();
+                break;
+            case "Leibniz":
+                piApproximator = new LeibnizApproximator();
+                break;
+            case "BPP":
+                piApproximator = new BPP();
+                break;
+
+            default: clearFields(); return;
+        }
+
+
     }
 
     @FXML
