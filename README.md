@@ -18,6 +18,9 @@ In order to run the _demo_ program you must execute
 	* This script was tested on a Windows system by ?
 	* Rsult: _**???**_
 
+In order to see the logging entries inside the h2 tables please visit [http://localhost:8082-](the h2 console)    
+
+
 Without the scripts you must run the following _**IN ORDER:**_
 
 0. `cd rgp-poc`
