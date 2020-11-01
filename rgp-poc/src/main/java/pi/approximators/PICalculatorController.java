@@ -130,12 +130,15 @@ public class PICalculatorController {
 
         screen.setText(String.format("A PI megközelítése %s módszer alapján, %d értékű pontossággal!\nLegyen türelemmel!"
                 , piApproximator.getClass().getSimpleName(), iteration));
-        ((Button)actionEvent.getSource()).setDisable(true);
+        ((Button) actionEvent.getSource()).setDisable(true);
 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                screen.setText(piApproximator.approximate(iteration,from,until));
+                if (from == 0 && until == 0)
+                    screen.setText(piApproximator.approximate(iteration));
+                else
+                    screen.setText(piApproximator.approximate(iteration, from, until));
                 calcBtn.setDisable(false);
             }
         }).start();
@@ -144,8 +147,7 @@ public class PICalculatorController {
 
     @FXML
     public void handleCb(ActionEvent actionEvent) {
-        switch(methodCb.getSelectionModel().getSelectedItem())
-        {
+        switch (methodCb.getSelectionModel().getSelectedItem()) {
             case "Chudnovsky":
                 piApproximator = new ChudnovskyApproximator();
                 fromTb.setDisable(true);
@@ -167,7 +169,10 @@ public class PICalculatorController {
                 untilTb.setDisable(false);
                 break;
 
-            default: clearFields(); calcBtn.setDisable(true); return;
+            default:
+                clearFields();
+                calcBtn.setDisable(true);
+                return;
         }
 
         calcBtn.setDisable(false);
