@@ -80,7 +80,7 @@
                     <children>
                         <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
                                 mnemonicParsing="false" onAction="#handleCalculation" text="Calculate"
-                                GridPane.columnIndex="1">
+                                GridPane.columnIndex="1" disable="true" fx:id="calcBtn">
                             <font>
                                 <Font name="Segoe UI Semibold" size="30.0"/>
                             </font>
@@ -118,7 +118,7 @@
                                         </FXCollections>
                                     </items>
                                 </ComboBox>
-                                <Label text="Iteration limit:" GridPane.rowIndex="1">
+                                <Label text="Pontosság:" GridPane.rowIndex="1">
                                     <font>
                                         <Font name="Segoe UI Symbol" size="25.0"/>
                                     </font>
@@ -158,7 +158,7 @@
                                                 <Insets left="15.0"/>
                                             </GridPane.margin>
                                         </Label>
-                                        <TextField fx:id="fromTb" promptText="0" GridPane.columnIndex="1">
+                                        <TextField disable="true" fx:id="fromTb" promptText="0" text="0" GridPane.columnIndex="1">
                                             <font>
                                                 <Font name="Segoe UI Symbol" size="20.0"/>
                                             </font>
@@ -166,7 +166,7 @@
                                                 <Insets right="10.0"/>
                                             </GridPane.margin>
                                         </TextField>
-                                        <TextField fx:id="untilTb" layoutX="100.0" layoutY="16.0" promptText="0"
+                                        <TextField disable="true" fx:id="untilTb" layoutX="100.0" text="0" layoutY="16.0" promptText="0"
                                                    GridPane.columnIndex="3">
                                             <font>
                                                 <Font name="Segoe UI Symbol" size="20.0"/>
