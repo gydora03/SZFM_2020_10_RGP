@@ -15,6 +15,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 import java.io.IOException;
 
