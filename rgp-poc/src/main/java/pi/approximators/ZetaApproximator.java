@@ -8,7 +8,7 @@ public class ZetaApproximator implements IApproximator{
     public String approximate(int precision) {
         Apfloat sum = Apfloat.ZERO;
         int floatPrecision = getFloatPrecision();
-        for(int i = 0; i < precision*2; i++) {
+        for(int i = 1; i < precision*2; i++) {
             sum = sum.add(Apfloat.ONE.
                     divide(ApfloatMath
                             .pow(new Apfloat(i,floatPrecision),
