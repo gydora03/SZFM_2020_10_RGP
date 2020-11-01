@@ -6,16 +6,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class PICalculatorController {
-    
+
     @FXML
     TextArea screen;
     @FXML
@@ -145,6 +142,17 @@ public class PICalculatorController {
             default: clearFields(); return;
         }
 
+        screen.setText(String.format("A PI megközelítése %s módszer alapján, %d értékű pontossággal!\nLegyen türelemmel!"
+                , piApproximator.getClass().getSimpleName(), iteration));
+        ((Button)actionEvent.getSource()).setDisable(true);
+        
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                screen.setText(piApproximator.approximate(iteration,from,until));
+                ((Button)actionEvent.getSource()).setDisable(false);
+            }
+        }).start();
 
     }
 
