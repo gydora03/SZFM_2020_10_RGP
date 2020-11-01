@@ -22,7 +22,7 @@ public class ChudnovskyApproximator implements IApproximator {
             divisor =
                     factorial(new Apint(3).multiply(new Apint(i)))
                             .multiply(ApintMath.pow(factorial(new Apint(i)),3))
-                            .multiply(ApintMath.pow(new Apint("-262537412640768000"), i))
+                            .multiply(ApintMath.pow(new Apint("-262537412640768000"), floatPrecision))
             ;
 
             sum = sum.add(new Apfloat(dividend.toString(), floatPrecision)
