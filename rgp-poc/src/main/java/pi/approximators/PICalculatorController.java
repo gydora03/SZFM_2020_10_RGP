@@ -14,6 +14,8 @@ import java.io.IOException;
 public class PICalculatorController {
 
     @FXML
+    Button calcBtn;
+    @FXML
     TextArea screen;
     @FXML
     TextField iterationTb;
@@ -122,24 +124,8 @@ public class PICalculatorController {
     public void handleCalculation(ActionEvent actionEvent) {
         if (!validateFields()) {
             clearFields();
+            calcBtn.setDisable(true);
             return;
-        }
-
-        switch(methodCb.getSelectionModel().getSelectedItem()) {
-            case "Chudnovsky":
-                piApproximator = new ChudnovskyApproximator();
-                break;
-            case "Zeta":
-                piApproximator = new ZetaApproximator();
-                break;
-            case "Leibniz":
-                piApproximator = new LeibnizApproximator();
-                break;
-            case "BPP":
-                piApproximator = new BPP();
-                break;
-
-            default: clearFields(); return;
         }
 
         screen.setText(String.format("A PI megközelítése %s módszer alapján, %d értékű pontossággal!\nLegyen türelemmel!"
@@ -150,7 +136,7 @@ public class PICalculatorController {
             @Override
             public void run() {
                 screen.setText(piApproximator.approximate(iteration,from,until));
-                ((Button)actionEvent.getSource()).setDisable(false);
+                calcBtn.setDisable(false);
             }
         }).start();
 
@@ -158,5 +144,33 @@ public class PICalculatorController {
 
     @FXML
     public void handleCb(ActionEvent actionEvent) {
+        switch(methodCb.getSelectionModel().getSelectedItem())
+        {
+            case "Chudnovsky":
+                piApproximator = new ChudnovskyApproximator();
+                fromTb.setDisable(true);
+                untilTb.setDisable(true);
+                break;
+            case "Zeta":
+                piApproximator = new ZetaApproximator();
+                fromTb.setDisable(true);
+                untilTb.setDisable(true);
+                break;
+            case "Leibniz":
+                piApproximator = new LeibnizApproximator();
+                fromTb.setDisable(true);
+                untilTb.setDisable(true);
+                break;
+            case "BPP":
+                piApproximator = new BPP();
+                fromTb.setDisable(false);
+                untilTb.setDisable(false);
+                break;
+
+            default: clearFields(); calcBtn.setDisable(true); return;
+        }
+
+        calcBtn.setDisable(false);
+
     }
 }
