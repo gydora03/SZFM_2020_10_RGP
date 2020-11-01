@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PICalculatorConverter {
+public class PICalculatorController {
 
     @FXML
     MenuBar menuBar;
