@@ -1,5 +1,5 @@
 # SZFM_2020_10_RGP 
-## **~BIG PROJECT~**
+## **_BIG PROJECT_**
 
 ### **About**
 Our _company_ was tasked with fixing a lot of badly written, unoptimized and quite shameful mathematical libraries that were meant for a **Scientific Exhibition**.   
@@ -16,7 +16,7 @@ In order to run the _demo_ program you must execute
 	* Result: _**it just works**_
 * the `runDemo.bat` script if you're using Windows
 	* This script was tested on a Windows system by ?
-	* Rsult: _**???**_
+	* Result: _**???**_
 
 In order to see the logging entries inside the h2 tables please visit [http://localhost:8082-](the h2 console)    
 
