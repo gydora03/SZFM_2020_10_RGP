@@ -15,10 +15,14 @@ import java.io.IOException;
 
 public class PICalculatorController {
 
-    public TextField iterationTb;
-    public TextField fromTb;
-    public TextField untilTb;
-    public ComboBox methodCb;
+    @FXML
+    TextField iterationTb;
+    @FXML
+    TextField fromTb;
+    @FXML
+    TextField untilTb;
+    @FXML
+    ComboBox<String> methodCb;
     @FXML
     MenuBar menuBar;
 
@@ -91,8 +95,6 @@ public class PICalculatorController {
     public void handleCalculation(ActionEvent actionEvent) {
     }
 
-    public void handleClickOnMethodItem(ActionEvent actionEvent) {
-    }
 
     public void handleCb(ActionEvent actionEvent) {
     }
