@@ -9,7 +9,7 @@ public class ChudnovskyApproximator implements IApproximator {
     @Override
     public String approximate(int precision) {
         int floatPrecision = getFloatPrecision();
-        Apfloat sum = Apfloat.ZERO;
+        Apfloat sum = new Apfloat(0,floatPrecision);
         Apint dividend, divisor;
 
         for(int i=0; i<precision; i++) {
