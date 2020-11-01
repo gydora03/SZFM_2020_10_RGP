@@ -26,6 +26,9 @@ public class PICalculatorController {
     @FXML
     MenuBar menuBar;
 
+    private IApproximator piApproximator;
+
+
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
@@ -92,10 +95,13 @@ public class PICalculatorController {
         stage.show();
     }
 
+
+    @FXML
     public void handleCalculation(ActionEvent actionEvent) {
+
     }
 
-
+    @FXML
     public void handleCb(ActionEvent actionEvent) {
     }
 }
