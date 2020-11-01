@@ -96,7 +96,12 @@ public class PICalculatorController {
         stage.setScene(scene);
         stage.show();
     }
-    
+    private void clearFields() {
+        iterationTb.setText("0");
+        fromTb.setText("0");
+        untilTb.setText("0");
+        methodCb.getSelectionModel().clearSelection();
+    }
 
     private boolean validateFields() {
         boolean isValid = true;
