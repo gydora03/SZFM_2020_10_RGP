@@ -22,17 +22,15 @@ public class ChudnovskyApproximator implements IApproximator {
             divisor =
                     factorial(new Apint(3).multiply(new Apint(i)))
                             .multiply(ApintMath.pow(factorial(new Apint(i)),3))
-                            .multiply(ApintMath.pow(new Apint("-262537412640768000"), floatPrecision))
+                            .multiply(ApintMath.pow(new Apint("-262537412640768000"), i))
             ;
 
             sum = sum.add(new Apfloat(dividend.toString(), floatPrecision)
                     .divide(new Apfloat(divisor.toString(), floatPrecision)));
         }
-        sum = sum.divide(new Apfloat("426880",floatPrecision)
-                            .multiply(
-                                    ApfloatMath.sqrt(new Apfloat("10005", floatPrecision))
-                                    ));
-        sum = ApfloatMath.pow(sum,new Apfloat("-1", floatPrecision));
+        Apfloat partial = new Apfloat("426880",floatPrecision)
+                .multiply(ApfloatMath.sqrt(new Apfloat("10005")));
+        sum = partial.divide(sum);
         return sum.toString(true);
     }
 
