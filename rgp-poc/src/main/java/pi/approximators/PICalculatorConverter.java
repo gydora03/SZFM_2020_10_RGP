@@ -1,4 +1,4 @@
-package pi.approxiamtor;
+package pi.approximators;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
