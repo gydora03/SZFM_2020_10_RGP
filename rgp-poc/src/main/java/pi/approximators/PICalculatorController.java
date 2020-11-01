@@ -7,12 +7,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class PICalculatorController {
 
+    public TextField iterationTb;
+    public TextField fromTb;
+    public TextField untilTb;
     @FXML
     MenuBar menuBar;
 
@@ -82,4 +86,9 @@ public class PICalculatorController {
         stage.show();
     }
 
+    public void handleCalculation(ActionEvent actionEvent) {
+    }
+
+    public void handleClickOnMethodItem(ActionEvent actionEvent) {
+    }
 }
