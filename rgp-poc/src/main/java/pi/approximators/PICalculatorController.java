@@ -26,7 +26,7 @@ public class PICalculatorController {
     @FXML
     MenuBar menuBar;
 
-    private int iteration,from,until;
+    private int iteration, from, until;
 
     private IApproximator piApproximator;
 
@@ -96,6 +96,7 @@ public class PICalculatorController {
         stage.setScene(scene);
         stage.show();
     }
+
     private void clearFields() {
         iterationTb.setText("0");
         fromTb.setText("0");
@@ -110,8 +111,7 @@ public class PICalculatorController {
             iteration = Integer.parseInt(iterationTb.getText());
             from = Integer.parseInt(fromTb.getText());
             until = Integer.parseInt(untilTb.getText());
-        }
-        catch (NumberFormatException nfe) {
+        } catch (NumberFormatException nfe) {
             isValid = false;
         }
 
@@ -120,7 +120,7 @@ public class PICalculatorController {
 
     @FXML
     public void handleCalculation(ActionEvent actionEvent) {
-        if(!validateFields()) {
+        if (!validateFields()) {
             clearFields();
             return;
         }
