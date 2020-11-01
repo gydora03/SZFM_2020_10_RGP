@@ -108,11 +108,10 @@
                                             text="Select" textAlignment="CENTER" GridPane.columnIndex="1"
                                             GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                                     <items>
-                                        <MenuItem mnemonicParsing="false" text="Chudnovsky"/>
-                                        <MenuItem mnemonicParsing="false" text="Zeta"/>
-                                        <MenuItem mnemonicParsing="false" text="Ramahujan"/>
-                                        <MenuItem mnemonicParsing="false" text="Leibniz"/>
-                                        <MenuItem mnemonicParsing="false" text="BBP"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleClickOnMethodItem" text="Chudnovsky"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleClickOnMethodItem" text="Zeta"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleClickOnMethodItem" text="Leibniz"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleClickOnMethodItem" text="BBP"/>
                                     </items>
                                     <font>
                                         <Font name="Segoe UI Symbol" size="20.0"/>
