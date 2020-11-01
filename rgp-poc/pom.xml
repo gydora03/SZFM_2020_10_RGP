@@ -11,6 +11,7 @@
       <maven.compiler.target>11</maven.compiler.target>
       <maven.compiler.source>11</maven.compiler.source>
       <mainClass>Main</mainClass>
+      <initdb>src/main/resources/init_db.sql</initdb>
   </properties>
   <developers>
     <developer>
@@ -40,6 +41,18 @@
             <id>console</id>
             <configuration>
               <mainClass>org.h2.tools.Console</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>initdb</id>
+            <configuration>
+              <mainClass>org.h2.tools.RunScript</mainClass>
+              <arguments>
+                <argument>-url</argument>
+                <argument>jdbc:h2:mem:</argument>
+                <argument>-script</argument>
+                <argument>${initdb}</argument>
+              </arguments>
             </configuration>
           </execution>
         </executions>
