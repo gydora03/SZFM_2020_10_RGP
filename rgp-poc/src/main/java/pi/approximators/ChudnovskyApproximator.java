@@ -29,7 +29,7 @@ public class ChudnovskyApproximator implements IApproximator {
                     .divide(new Apfloat(divisor.toString(), floatPrecision)));
         }
         sum = ApfloatMath.pow(sum,new Apfloat("-1", floatPrecision));
-        sum = sum.divide(new Apfloat("426880",floatPrecision)
+        sum = sum.multiply(new Apfloat("426880",floatPrecision)
                             .multiply(
                                     ApfloatMath.sqrt(new Apfloat("10005", floatPrecision))
                                     ));

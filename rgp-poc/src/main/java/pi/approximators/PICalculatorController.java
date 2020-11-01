@@ -145,7 +145,7 @@ public class PICalculatorController {
         screen.setText(String.format("A PI megközelítése %s módszer alapján, %d értékű pontossággal!\nLegyen türelemmel!"
                 , piApproximator.getClass().getSimpleName(), iteration));
         ((Button)actionEvent.getSource()).setDisable(true);
-        
+
         new Thread(new Runnable() {
             @Override
             public void run() {
