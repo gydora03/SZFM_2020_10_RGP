@@ -41,24 +41,6 @@
                   <MenuItem fx:id="temperatureConverter" mnemonicParsing="false" onAction="#switchToTemperatureConverter" text="Temperature" />
                </items>
             </Menu>
-            <Menu fx:id="constantsMenu" mnemonicParsing="false" text="Constants">
-               <items>
-                  <MenuItem fx:id="piMenuItem" mnemonicParsing="false" text="Pi" />
-                  <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" text="Euler Constant" />
-                  <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" text="Bernstein Constant" />
-                  <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" text="Golden Ratio" />
-               </items>
-               <graphic>
-                  <Separator blendMode="ADD" orientation="VERTICAL">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <padding>
-                        <Insets right="10.0" />
-                     </padding>
-                  </Separator>
-               </graphic>
-            </Menu>
          </menus>
       </MenuBar>
       <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
