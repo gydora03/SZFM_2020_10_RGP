@@ -58,7 +58,7 @@
               AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
               AnchorPane.topAnchor="40.0">
             <children>
-                <TextArea prefHeight="200.0" prefWidth="200.0" promptText="0" wrapText="true">
+                <TextArea fx:id="screen" prefHeight="200.0" prefWidth="200.0" promptText="0" wrapText="true">
                     <font>
                         <Font name="Segoe UI Symbol" size="25.0"/>
                     </font>
