@@ -64,7 +64,7 @@ public class BPP implements IApproximator {
         Apint i;
         Apint base = new Apint(16);
         Apint exp, mod;
-        for (i = new Apint(0, getFloatPrecision()); i.compareTo(new Apint(d, getFloatPrecision())) < 0; i = i.add(Apint.ONE)) {
+        for (i = new Apint(0); i.compareTo(new Apint(d)) < 0; i = i.add(Apint.ONE)) {
             exp = new Apint(d).subtract(i);
             mod = i.multiply(new Apint(8)).add(new Apint(formulaPartId));
             result = result.add(expmod(base, exp, mod).divide(new Apfloat(mod.toString(), getFloatPrecision())));
