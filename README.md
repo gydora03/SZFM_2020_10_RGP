@@ -12,7 +12,11 @@ Please consult the documentation for further details regarding the order and its
 ### **Usage**    
 In order to run the _demo_ program you must execute   
 * the `runDemo.sh` script if you're using Bash on GNU/Linux system or
+	* This script was tested on an _**Arch Linux**_ system by _Racs Tamás_
+	* Result: _**it just works**_
 * the `runDemo.bat` script if you're using Windows
+	* This script was tested on a Windows system by ?
+	* Rsult: _**???**_
 
 Without the scripts you must run the following _**IN ORDER:**_
 
