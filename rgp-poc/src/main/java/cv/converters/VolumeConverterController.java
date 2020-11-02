@@ -7,6 +7,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +18,22 @@ public class VolumeConverterController {
 
     @FXML
     MenuBar menuBar;
+
+    @FXML
+    MenuButton fromMenuButton;
+
+    @FXML
+    TextField unitFrom;
+
+
+    @FXML
+    public void selectMenuItemFromFromMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        System.out.println(menuItemText.toLowerCase());
+        unitFrom.setText(menuItemText.toLowerCase());
+    }
+
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
