@@ -24,6 +24,12 @@ public class LengthConverterController {
     @FXML
     TextField unitTo;
 
+    @FXML
+    TextField displayFrom;
+
+    @FXML
+    TextField displayTo;
+
 
     @FXML
     public void selectMenuItemFromFromMenuButton(ActionEvent event) {
@@ -107,6 +113,18 @@ public class LengthConverterController {
                 break;
         }
         return targetUnit;
+    }
+
+    @FXML
+    public void handleClickOnConvertButton(ActionEvent event) {
+        String unitFromName = unitFrom.getText();
+        double unitFrom = Double.parseDouble(displayFrom.getText());
+        double inLiter = convertUnitToMeter(unitFromName, unitFrom);
+
+        String unitToName = unitTo.getText();
+        double unitTo = convertToTargetUnit(unitToName, inLiter);
+
+        displayTo.setText(String.valueOf(unitTo));
     }
 
 
