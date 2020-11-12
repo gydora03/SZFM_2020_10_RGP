@@ -56,31 +56,31 @@ public class VolumeConverterController {
     public double convertUnitToLiter(String unitName, double literUnit) {
 
         switch (unitName) {
-            case "Milliliter":
+            case "milliliter":
                 literUnit = literUnit/1000;
                 break;
-            case "Centiliter":
+            case "centiliter":
                 literUnit = literUnit/100;
                 break;
-            case "Deciliter":
+            case "deciliter":
                 literUnit = literUnit/10;
                 break;
-            case "Decaliter":
+            case "decaliter":
                 literUnit = literUnit*10;
                 break;
-            case "Hectoliter":
+            case "hectoliter":
                 literUnit = literUnit*100;
                 break;
-            case "Kiloliter":
+            case "kiloliter":
                 literUnit = literUnit*1000;
                 break;
-            case "Cups":
+            case "cups":
                 literUnit = literUnit*0.2365882365;
                 break;
-            case "Teaspoons":
+            case "teaspoons":
                 literUnit = literUnit*0.0049289216;
                 break;
-            case "Gallon":
+            case "gallon":
                 literUnit = literUnit*3.785411784;
                 break;
         }
@@ -91,45 +91,44 @@ public class VolumeConverterController {
     public double convertToTargetUnit(String unitName, double targetUnit) {
 
         switch (unitName) {
-            case "Milliliter":
+            case "milliliter":
                 targetUnit = targetUnit*1000;
                 break;
-            case "Centiliter":
+            case "centiliter":
                 targetUnit = targetUnit*100;
                 break;
-            case "Deciliter":
+            case "deciliter":
                 targetUnit = targetUnit*10;
                 break;
-            case "Decaliter":
+            case "decaliter":
                 targetUnit = targetUnit/10;
                 break;
-            case "Hectoliter":
+            case "hectoliter":
                 targetUnit = targetUnit/100;
                 break;
-            case "Kiloliter":
+            case "kiloliter":
                 targetUnit = targetUnit/1000;
                 break;
-            case "Cups":
+            case "cups":
                 targetUnit = targetUnit*4.2267528377;
                 break;
-            case "Teaspoons":
+            case "teaspoons":
                 targetUnit = targetUnit*202.88413621;
                 break;
-            case "Gallon":
+            case "gallon":
                 targetUnit = targetUnit*0.2641720524;
                 break;
         }
-
         return targetUnit;
     }
 
     @FXML
     public void handleClickOnConvertButton(ActionEvent event) {
-        String unitFromName = unitFrom.toString();
-        double unitFrom = Double.parseDouble(displayFrom.toString());
+        String unitFromName = unitFrom.getText();
+        double unitFrom = Double.parseDouble(displayFrom.getText());
         double inLiter = convertUnitToLiter(unitFromName, unitFrom);
 
-        String unitToName = unitTo.toString();
+        String unitToName = unitTo.getText();
         double unitTo = convertToTargetUnit(unitToName, inLiter);
 
         displayTo.setText(String.valueOf(unitTo));
