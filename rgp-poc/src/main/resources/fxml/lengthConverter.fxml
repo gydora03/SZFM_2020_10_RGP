@@ -109,16 +109,16 @@
                   <Font size="15.0" />
                </font>
                <items>
-                  <MenuItem mnemonicParsing="false" text="Millimeter" />
-                  <MenuItem mnemonicParsing="false" text="Centimeter" />
-                  <MenuItem mnemonicParsing="false" text="Decimeter" />
-                  <MenuItem mnemonicParsing="false" text="Meter" />
-                  <MenuItem mnemonicParsing="false" text="Decameter" />
-                  <MenuItem mnemonicParsing="false" text="Hectometer" />
-                  <MenuItem mnemonicParsing="false" text="Kilometer" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Millimeter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Centimeter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Decimeter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Meter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Decameter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Hectometer" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Kilometer" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Inch" />
-                  <MenuItem mnemonicParsing="false" text="Feet" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Inch" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Feet" />
                </items>
             </MenuButton>
             <GridPane layoutX="31.0" layoutY="142.0" prefHeight="65.0" prefWidth="579.0">
