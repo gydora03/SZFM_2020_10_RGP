@@ -21,12 +21,22 @@ public class LengthConverterController {
     @FXML
     TextField unitFrom;
 
+    @FXML
+    TextField unitTo;
+
 
     @FXML
     public void selectMenuItemFromFromMenuButton(ActionEvent event) {
 
         String menuItemText = ((MenuItem) event.getSource()).getText();
         unitFrom.setText(menuItemText.toLowerCase());
+    }
+
+    @FXML
+    public void selectMenuItemFromToMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitTo.setText(menuItemText.toLowerCase());
     }
 
     @FXML
