@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +17,17 @@ public class LengthConverterController {
 
     @FXML
     MenuBar menuBar;
+
+    @FXML
+    TextField unitFrom;
+
+
+    @FXML
+    public void selectMenuItemFromFromMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitFrom.setText(menuItemText.toLowerCase());
+    }
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
