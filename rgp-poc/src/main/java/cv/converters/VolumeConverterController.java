@@ -20,12 +20,6 @@ public class VolumeConverterController {
     MenuBar menuBar;
 
     @FXML
-    MenuButton fromMenuButton;
-
-    @FXML
-    MenuButton toMenuButton;
-
-    @FXML
     TextField unitFrom;
 
     @FXML
