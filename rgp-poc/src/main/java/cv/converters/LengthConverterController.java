@@ -74,6 +74,41 @@ public class LengthConverterController {
         return meterUnit;
     }
 
+    @FXML
+    public double convertToTargetUnit(String unitName, double targetUnit) {
+
+        switch (unitName) {
+            case "millimeter":
+                targetUnit = targetUnit/1000;
+                break;
+            case "centimeter":
+                targetUnit = targetUnit/100;
+                break;
+            case "decimeter":
+                targetUnit = targetUnit/10;
+                break;
+            case "decalmeter":
+                targetUnit = targetUnit*10;
+                break;
+            case "hectometer":
+                targetUnit = targetUnit*100;
+                break;
+            case "kilometer":
+                targetUnit = targetUnit*1000;
+                break;
+            case "inch":
+                targetUnit = targetUnit*39.37007874;
+                break;
+            case "feet":
+                targetUnit = targetUnit*3.280839895;
+                break;
+            case "yard":
+                targetUnit = targetUnit*1.0936132983;
+                break;
+        }
+        return targetUnit;
+    }
+
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
