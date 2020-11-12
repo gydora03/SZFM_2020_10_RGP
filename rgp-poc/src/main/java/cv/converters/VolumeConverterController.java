@@ -23,15 +23,30 @@ public class VolumeConverterController {
     MenuButton fromMenuButton;
 
     @FXML
+    MenuButton toMenuButton;
+
+    @FXML
     TextField unitFrom;
+
+    @FXML
+    TextField unitTo;
+
+    @FXML
+    TextField displayFrom;
 
 
     @FXML
     public void selectMenuItemFromFromMenuButton(ActionEvent event) {
 
         String menuItemText = ((MenuItem) event.getSource()).getText();
-        System.out.println(menuItemText.toLowerCase());
         unitFrom.setText(menuItemText.toLowerCase());
+    }
+
+    @FXML
+    public void selectMenuItemFromToMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitTo.setText(menuItemText.toLowerCase());
     }
 
 
