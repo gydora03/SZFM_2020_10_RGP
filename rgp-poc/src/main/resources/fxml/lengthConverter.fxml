@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cv.converters.LengthConverterController">
    <children>
@@ -64,16 +53,16 @@
          <children>
             <MenuButton alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" mnemonicParsing="false" popupSide="RIGHT" text="From">
               <items>
-                <MenuItem mnemonicParsing="false" text="Millimeter" />
-                <MenuItem mnemonicParsing="false" text="Centimeter" />
-                  <MenuItem mnemonicParsing="false" text="Decimeter" />
-                  <MenuItem mnemonicParsing="false" text="Meter" />
-                  <MenuItem mnemonicParsing="false" text="Decameter" />
-                  <MenuItem mnemonicParsing="false" text="Hectometer" />
-                  <MenuItem mnemonicParsing="false" text="Kilometer" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Millimeter" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Centimeter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Decimeter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Meter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Decameter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Hectometer" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Kilometer" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Inch" />
-                  <MenuItem mnemonicParsing="false" text="Feet" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Inch" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Feet" />
               </items>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
