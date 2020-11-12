@@ -34,6 +34,9 @@ public class VolumeConverterController {
     @FXML
     TextField displayFrom;
 
+    @FXML
+    TextField displayTo;
+
 
     @FXML
     public void selectMenuItemFromFromMenuButton(ActionEvent event) {
@@ -50,10 +53,8 @@ public class VolumeConverterController {
     }
 
     @FXML
-    public double convertUnitToLiter() {
+    public double convertUnitToLiter(String unitName, double displayValue) {
 
-        String unitName = unitFrom.toString();
-        double displayValue = Double.parseDouble(displayFrom.toString());
         switch (unitName) {
             case "Milliliter":
                 displayValue = displayValue/1000;
@@ -86,7 +87,23 @@ public class VolumeConverterController {
         return displayValue;
     }
 
+    @FXML
+    public double convertToTargetUnit(double targetUnit) {
+        //TODO
+        return targetUnit;
+    }
 
+    @FXML
+    public void clickOnConvertButton(ActionEvent event) {
+        String unitFromName = unitFrom.toString();
+        double unitFrom = Double.parseDouble(displayFrom.toString());
+        double inLiter = convertUnitToLiter(unitFromName, unitFrom); // unitFrom -> Liter
+
+        String unitToName = unitTo.toString();
+        double inTargetUnit = convertToTargetUnit(inLiter); // Liter -> unitTo
+
+        displayTo.setText(String.valueOf(inTargetUnit));
+    }
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
