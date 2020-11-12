@@ -40,6 +40,42 @@ public class LengthConverterController {
     }
 
     @FXML
+    public double convertUnitToMeter(String unitName, double meterUnit) {
+
+        switch (unitName) {
+            case "millimeter":
+                meterUnit = meterUnit/1000;
+                break;
+            case "centimeter":
+                meterUnit = meterUnit/100;
+                break;
+            case "decimeter":
+                meterUnit = meterUnit/10;
+                break;
+            case "decameter":
+                meterUnit = meterUnit*10;
+                break;
+            case "hectometer":
+                meterUnit = meterUnit*100;
+                break;
+            case "kilometer":
+                meterUnit = meterUnit*1000;
+                break;
+            case "inch":
+                meterUnit = meterUnit*0.0254;
+                break;
+            case "feet":
+                meterUnit = meterUnit*0.3048;
+                break;
+            case "yard":
+                meterUnit = meterUnit*0.9144;
+                break;
+        }
+        return meterUnit;
+    }
+
+
+    @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
         System.exit(0);
