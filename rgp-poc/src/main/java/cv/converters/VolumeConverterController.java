@@ -94,13 +94,13 @@ public class VolumeConverterController {
     }
 
     @FXML
-    public void clickOnConvertButton(ActionEvent event) {
+    public void handleClickOnConvertButton(ActionEvent event) {
         String unitFromName = unitFrom.toString();
         double unitFrom = Double.parseDouble(displayFrom.toString());
-        double inLiter = convertUnitToLiter(unitFromName, unitFrom); // unitFrom -> Liter
+        double inLiter = convertUnitToLiter(unitFromName, unitFrom);
 
         String unitToName = unitTo.toString();
-        double inTargetUnit = convertToTargetUnit(inLiter); // Liter -> unitTo
+        double inTargetUnit = convertToTargetUnit(inLiter);
 
         displayTo.setText(String.valueOf(inTargetUnit));
     }
