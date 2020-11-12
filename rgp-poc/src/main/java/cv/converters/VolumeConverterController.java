@@ -74,6 +74,12 @@ public class VolumeConverterController {
             case "kiloliter":
                 literUnit = literUnit*1000;
                 break;
+            case "cubic meter":
+                literUnit = literUnit*1000;
+                break;
+            case "cubic centimeter":
+                literUnit = literUnit/1000;
+                break;
             case "cups":
                 literUnit = literUnit*0.2365882365;
                 break;
@@ -108,6 +114,12 @@ public class VolumeConverterController {
                 break;
             case "kiloliter":
                 targetUnit = targetUnit/1000;
+                break;
+            case "cubic meter":
+                targetUnit = targetUnit/1000;
+                break;
+            case "cubic centimeter":
+                targetUnit = targetUnit*1000;
                 break;
             case "cups":
                 targetUnit = targetUnit*4.2267528377;
