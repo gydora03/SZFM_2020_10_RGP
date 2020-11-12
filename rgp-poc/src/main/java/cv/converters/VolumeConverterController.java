@@ -49,6 +49,44 @@ public class VolumeConverterController {
         unitTo.setText(menuItemText.toLowerCase());
     }
 
+    @FXML
+    public double convertUnitToLiter() {
+
+        String unitName = unitFrom.toString();
+        double displayValue = Double.parseDouble(displayFrom.toString());
+        switch (unitName) {
+            case "Milliliter":
+                displayValue = displayValue/1000;
+                break;
+            case "Centiliter":
+                displayValue = displayValue/100;
+                break;
+            case "Deciliter":
+                displayValue = displayValue/10;
+                break;
+            case "Decaliter":
+                displayValue = displayValue*10;
+                break;
+            case "Hectoliter":
+                displayValue = displayValue*100;
+                break;
+            case "Kiloliter":
+                displayValue = displayValue*1000;
+                break;
+            case "Cups":
+                displayValue = displayValue*0.2365882365;
+                break;
+            case "Teaspoons":
+                displayValue = displayValue*0.0049289216;
+                break;
+            case "Gallon":
+                displayValue = displayValue*3.785411784;
+                break;
+        }
+        return displayValue;
+    }
+
+
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
