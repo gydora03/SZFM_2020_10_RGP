@@ -104,17 +104,17 @@
             </GridPane>
             <MenuButton fx:id="toMenuButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" popupSide="RIGHT" text="To">
               <items>
-                  <MenuItem mnemonicParsing="false" text="Milliliter" />
-                  <MenuItem mnemonicParsing="false" text="Centiliter" />
-                  <MenuItem mnemonicParsing="false" text="Deciliter" />
-                  <MenuItem mnemonicParsing="false" text="Liter" />
-                  <MenuItem mnemonicParsing="false" text="Decaliter" />
-                  <MenuItem mnemonicParsing="false" text="Hectoliter" />
-                  <MenuItem mnemonicParsing="false" text="Kiloliter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Milliliter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Centiliter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Deciliter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Liter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Decaliter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Hectoliter" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Kiloliter" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Cups" />
-                  <MenuItem mnemonicParsing="false" text="Teaspoons" />
-                  <MenuItem mnemonicParsing="false" text="Gallon" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Cups" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Teaspoons" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Gallon" />
               </items>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
