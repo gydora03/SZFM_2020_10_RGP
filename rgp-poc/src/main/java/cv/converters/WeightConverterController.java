@@ -106,7 +106,7 @@ public class WeightConverterController {
                 targetUnit = targetUnit/453.59;
                 break;
         }
-        return gramUnit;
+        return targetUnit;
     }
 
     @FXML
