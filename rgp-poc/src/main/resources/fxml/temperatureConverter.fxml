@@ -105,9 +105,9 @@
                   <Font size="15.0" />
                </font>
                <items>
-                  <MenuItem mnemonicParsing="false" text="Celsius" />
-                  <MenuItem mnemonicParsing="false" text="Kelvin" />
-                  <MenuItem mnemonicParsing="false" text="Fahrenheit" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Celsius" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Kelvin" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Fahrenheit" />
                </items>
             </MenuButton>
             <GridPane layoutX="31.0" layoutY="142.0" prefHeight="65.0" prefWidth="579.0">
@@ -140,7 +140,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
             </GridPane>
-            <Button fx:id="convertButton" mnemonicParsing="false" text="Convert">
+            <Button fx:id="convertButton" mnemonicParsing="false" onAction="#handleClickOnConvertButton" text="Convert">
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
