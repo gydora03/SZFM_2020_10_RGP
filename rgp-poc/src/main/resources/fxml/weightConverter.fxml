@@ -119,15 +119,15 @@
                   <Font size="15.0" />
                </font>
                <items>
-                  <MenuItem mnemonicParsing="false" text="Milligram" />
-                  <MenuItem mnemonicParsing="false" text="Centigram" />
-                  <MenuItem mnemonicParsing="false" text="Decigram" />
-                  <MenuItem mnemonicParsing="false" text="Gram" />
-                  <MenuItem mnemonicParsing="false" text="Decagram" />
-                  <MenuItem mnemonicParsing="false" text="Hectogram" />
-                  <MenuItem mnemonicParsing="false" text="Kilogram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Milligram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Centigram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Decigram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Gram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Decagram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Hectogram" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Kilogram" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Pounds" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromToMenuButton" text="Pounds" />
                </items>
             </MenuButton>
             <GridPane layoutX="31.0" layoutY="142.0" prefHeight="65.0" prefWidth="579.0">
