@@ -33,6 +33,13 @@ public class TemperatureConverterController {
     TextField displayTo;
 
     @FXML
+    public void selectMenuItemFromFromMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitFrom.setText(menuItemText.toLowerCase());
+    }
+
+    @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
         System.exit(0);
