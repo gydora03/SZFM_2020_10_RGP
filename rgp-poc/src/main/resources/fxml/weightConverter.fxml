@@ -160,7 +160,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
             </GridPane>
-            <Button fx:id="convertButton" mnemonicParsing="false" text="Convert">
+            <Button fx:id="convertButton" mnemonicParsing="false" onAction="#handleClickOnConvertButton" text="Convert">
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
