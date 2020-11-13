@@ -45,6 +45,13 @@ public class WeightConverterController {
     }
 
     @FXML
+    public void selectMenuItemFromToMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitTo.setText(menuItemText.toLowerCase());
+    }
+
+    @FXML
     public void switchToBasicCalculator(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/basicCalculator.fxml"));
         Scene scene = new Scene(parent);
