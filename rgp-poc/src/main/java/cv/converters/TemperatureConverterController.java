@@ -47,6 +47,18 @@ public class TemperatureConverterController {
     }
 
     @FXML
+    public void handleClickOnConvertButton(ActionEvent event) {
+        String unitFromName = unitFrom.getText();
+        double unitFrom = Double.parseDouble(displayFrom.getText());
+        double inLiter = convertUnitToLiter(unitFromName, unitFrom);
+
+        String unitToName = unitTo.getText();
+        double unitTo = convertToTargetUnit(unitToName, inLiter);
+
+        displayTo.setText(String.valueOf(unitTo));
+    }
+
+    @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
         System.exit(0);
