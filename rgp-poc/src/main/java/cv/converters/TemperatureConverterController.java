@@ -21,6 +21,18 @@ public class TemperatureConverterController {
     MenuBar menuBar;
 
     @FXML
+    TextField unitFrom;
+
+    @FXML
+    TextField unitTo;
+
+    @FXML
+    TextField displayFrom;
+
+    @FXML
+    TextField displayTo;
+
+    @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
         System.exit(0);
