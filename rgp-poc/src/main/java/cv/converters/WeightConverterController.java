@@ -26,6 +26,18 @@ public class WeightConverterController {
     }
 
     @FXML
+    TextField unitFrom;
+
+    @FXML
+    TextField unitTo;
+
+    @FXML
+    TextField displayFrom;
+
+    @FXML
+    TextField displayTo;
+
+    @FXML
     public void switchToBasicCalculator(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/basicCalculator.fxml"));
         Scene scene = new Scene(parent);
