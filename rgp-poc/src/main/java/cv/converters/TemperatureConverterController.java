@@ -47,13 +47,27 @@ public class TemperatureConverterController {
     }
 
     @FXML
+    public double convertUnitToCelsius(String unitName, double celsiusUnit) {
+
+        switch (unitName) {
+            case "kelvin":
+                celsiusUnit = celsiusUnit-273;
+                break;
+            case "fahrenheit":
+                celsiusUnit = (celsiusUnit-32)*0.5556;
+                break;
+        }
+        return celsiusUnit;
+    }
+
+    @FXML
     public void handleClickOnConvertButton(ActionEvent event) {
         String unitFromName = unitFrom.getText();
         double unitFrom = Double.parseDouble(displayFrom.getText());
-        double inLiter = convertUnitToLiter(unitFromName, unitFrom);
+        double inCelsius = convertUnitToLiter(unitFromName, unitFrom);
 
         String unitToName = unitTo.getText();
-        double unitTo = convertToTargetUnit(unitToName, inLiter);
+        double unitTo = convertToTargetUnit(unitToName, inCelsius);
 
         displayTo.setText(String.valueOf(unitTo));
     }
