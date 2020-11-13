@@ -111,7 +111,14 @@ public class WeightConverterController {
 
     @FXML
     public void handleClickOnConvertButton(ActionEvent event) {
+        String unitFromName = unitFrom.getText();
+        double unitFrom = Double.parseDouble(displayFrom.getText());
+        double inGram = convertUnitToGram(unitFromName, unitFrom);
 
+        String unitToName = unitTo.getText();
+        double unitTo = convertToTargetUnit(unitToName, inGram);
+
+        displayTo.setText(String.valueOf(unitTo));
     }
 
     @FXML
