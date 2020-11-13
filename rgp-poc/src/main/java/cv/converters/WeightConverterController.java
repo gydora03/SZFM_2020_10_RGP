@@ -81,6 +81,35 @@ public class WeightConverterController {
     }
 
     @FXML
+    public double convertToTargetUnit(String unitName, double targetUnit) {
+
+        switch (unitName) {
+            case "milligram":
+                targetUnit = targetUnit*1000;
+                break;
+            case "centigram":
+                targetUnit = targetUnit*100;
+                break;
+            case "decigram":
+                targetUnit = targetUnit*10;
+                break;
+            case "decagram":
+                targetUnit = targetUnit/10;
+                break;
+            case "hectogram":
+                targetUnit = targetUnit/100;
+                break;
+            case "kilogram":
+                targetUnit = targetUnit/1000;
+                break;
+            case "pounds":
+                targetUnit = targetUnit/453.59;
+                break;
+        }
+        return gramUnit;
+    }
+
+    @FXML
     public void switchToBasicCalculator(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("/fxml/basicCalculator.fxml"));
         Scene scene = new Scene(parent);
