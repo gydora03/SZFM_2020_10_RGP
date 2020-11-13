@@ -56,9 +56,9 @@
          <children>
             <MenuButton alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="50.0" mnemonicParsing="false" popupSide="RIGHT" text="From">
               <items>
-                <MenuItem mnemonicParsing="false" text="Celsius" />
-                <MenuItem mnemonicParsing="false" text="Kelvin" />
-                  <MenuItem mnemonicParsing="false" text="Fahrenheit" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Celsius" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Kelvin" />
+                  <MenuItem mnemonicParsing="false" onAction="#selectMenuItemFromFromMenuButton" text="Fahrenheit" />
               </items>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
