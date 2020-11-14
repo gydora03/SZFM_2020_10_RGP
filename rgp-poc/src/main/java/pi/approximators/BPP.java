@@ -84,19 +84,17 @@ public class BPP implements IApproximator {
         return r;
     }
 
-    public Apfloat calculateSubFormula(int formulaPartId, long d) {
-        Apfloat result = Apfloat.ZERO;
-        Apint i;
-        Apint base = new Apint(16);
-        Apint exp, mod;
-        for (i = new Apint(0); i.compareTo(new Apint(d)) <= 0; i = i.add(Apint.ONE)) {
-            exp = new Apint(d).subtract(i);
-            mod = i.multiply(new Apint(8)).add(new Apint(formulaPartId));
-            result = result.add(expmod(base, exp, mod).divide(new Apfloat(mod.toString(), precision)));
-            result = result.subtract(ApfloatMath.floor(result));
-            System.out.println(i.toString(true));
+    public double calculateSubFormula(int formulaPartId, int d) {
+        double result = 0.0;
+        int i;
+        int base = 16;
+        int exp, mod;
+        for (i = 0; i <= d; i+=1) {
+            exp = d-i;
+            mod = i * 8 + formulaPartId;
+            result += (double) expmod(base, exp, mod) / mod;
+            result -= StrictMath.floor(result);
         }
-
         return result;
 
     }
