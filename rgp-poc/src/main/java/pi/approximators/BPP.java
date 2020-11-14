@@ -41,11 +41,11 @@ public class BPP implements IApproximator {
                 System.exit(-6);
             }
 
-            double pi = 4.0*d1-2.0*d4-d5-d6;
+            double pi = 4.0 * d1 - 2.0 * d4 - d5 - d6;
 
             pi = pi - StrictMath.floor(pi);
 
-            int digit = (int)StrictMath.floor(pi*16.0);
+            int digit = (int) StrictMath.floor(pi * 16.0);
             Character hex = Character.forDigit(digit, 16);
             hexLetters.append(hex.charValue());
 
@@ -54,7 +54,7 @@ public class BPP implements IApproximator {
     }
 
     private int expmod(int base, int exponent, int modulo) {
-        int t =1;
+        int t = 1;
         int r = 1;
         int e = exponent;
         while (t <= e) {
@@ -70,7 +70,7 @@ public class BPP implements IApproximator {
             t /= 2;
 
             if (t >= 1)
-                r = (int)(StrictMath.pow(r,2) % modulo);
+                r = (int) (StrictMath.pow(r, 2) % modulo);
             else
                 break;
         }
@@ -82,8 +82,8 @@ public class BPP implements IApproximator {
         int i;
         int base = 16;
         int exp, mod;
-        for (i = 0; i <= d; i+=1) {
-            exp = d-i;
+        for (i = 0; i <= d; i += 1) {
+            exp = d - i;
             mod = i * 8 + formulaPartId;
             result += (double) expmod(base, exp, mod) / mod;
             result -= StrictMath.floor(result);
