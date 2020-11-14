@@ -170,6 +170,7 @@ public class PICalculatorController {
                 piApproximator = new BPP();
                 fromTb.setDisable(false);
                 untilTb.setDisable(false);
+                iterationTb.setText("64");
                 iterationTb.setDisable(true);
                 break;
 

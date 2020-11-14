@@ -47,10 +47,11 @@ public class BPP implements IApproximator {
 
             int digit = (int) StrictMath.floor(pi * 16.0);
             Character hex = Character.forDigit(digit, 16);
+
             hexLetters.append(hex.charValue());
 
         }
-        return hexLetters.toString();
+        return hexLetters.toString().toUpperCase();
     }
 
     private int expmod(int base, int exponent, int modulo) {
