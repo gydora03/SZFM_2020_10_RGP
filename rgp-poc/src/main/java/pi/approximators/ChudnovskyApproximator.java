@@ -6,7 +6,6 @@ import org.apfloat.Apint;
 import org.apfloat.ApintMath;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.*;
 
 public class ChudnovskyApproximator implements IApproximator {
