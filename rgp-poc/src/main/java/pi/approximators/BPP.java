@@ -13,9 +13,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class BPP implements IApproximator {
-    private int precision = getFloatPrecision();
-    Apfloat d1 = null, d4 = null, d5 = null, d6 = null;
-    List<Future<Apfloat>> ds = null;
+    double d1, d4, d5, d6;
+    List<Future<Double>> ds = null;
 
     private ExecutorService execService;
 
@@ -27,7 +26,6 @@ public class BPP implements IApproximator {
     @Override
     public String approximate(int from, int limit) {
         StringBuilder hexLetters = new StringBuilder();
-        this.precision = Math.max(getFloatPrecision(), precision);
         execService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
         for (int i = from; i < limit; i++) {
 
@@ -50,14 +48,12 @@ public class BPP implements IApproximator {
                 System.exit(-6);
             }
 
+            double pi = 4.0*d1-2.0*d4-d5-d6;
 
-            Apfloat pi = (new Apfloat(4, this.precision).multiply(d1)).
-                    subtract(new Apfloat(2, this.precision).multiply(d4))
-                    .subtract(d5).subtract(d6);
-            pi = pi.subtract(ApfloatMath.floor(pi));
+            pi = pi - StrictMath.floor(pi);
 
-            Apint digit = ApfloatMath.floor(pi.multiply(new Apfloat(16, this.precision)));
-            Character hex = Character.forDigit(digit.intValue(), 16);
+            int digit = (int)StrictMath.floor(pi*16.0);
+            Character hex = Character.forDigit(digit, 16);
             hexLetters.append(hex.charValue());
 
         }
