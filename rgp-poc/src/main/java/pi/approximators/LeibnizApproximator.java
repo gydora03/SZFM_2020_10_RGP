@@ -23,7 +23,7 @@ public class LeibnizApproximator implements IApproximator {
     }
 
     @Override
-    public String approximate(int precision, int from, int until) {
-        return approximate(precision);
+    public String approximate(int from, int until) {
+        return approximate(getFloatPrecision());
     }
 }
