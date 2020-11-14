@@ -21,15 +21,15 @@ public class BPP implements IApproximator {
 
     @Override
     public String approximate(int precision) {
-        return approximate(precision, 0, 1000001);
+        return approximate(1000000, 1000001);
     }
 
     @Override
-    public String approximate(int precision, int n, int limit) {
+    public String approximate(int from, int limit) {
         StringBuilder hexLetters = new StringBuilder();
         this.precision = Math.max(getFloatPrecision(), precision);
         execService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        for (int i = n; i < limit; i++) {
+        for (int i = from; i < limit; i++) {
 
             final int iter = i;
             try {
