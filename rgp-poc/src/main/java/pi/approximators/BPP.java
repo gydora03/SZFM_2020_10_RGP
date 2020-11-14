@@ -60,24 +60,24 @@ public class BPP implements IApproximator {
         return hexLetters.toString();
     }
 
-    private Apint expmod(Apint base, Apint exponent, Apint modulo) {
-        Apint t = Apint.ONE;
-        Apint r = Apint.ONE;
-        Apint e = exponent.add(Apint.ZERO);
-        while (t.compareTo(e) <= 0) {
-            t = t.multiply(new Apint(2));
+    private int expmod(int base, int exponent, int modulo) {
+        int t =1;
+        int r = 1;
+        int e = exponent;
+        while (t <= e) {
+            t *= 2;
         }
 
         while (true) {
-            if (e.compareTo(t) >= 0) {
-                r = r.multiply(base).mod(modulo);
-                e = e.subtract(t);
+            if (e >= t) {
+                r = (r * base) % (modulo);
+                e -= t;
             }
 
-            t = t.divide(new Apint(2));
+            t /= 2;
 
-            if (t.compareTo(Apint.ONE) >= 0)
-                r = ApintMath.modPow(r, new Apint(2), modulo);
+            if (t >= 1)
+                r = (int)(StrictMath.pow(r,2) % modulo);
             else
                 break;
         }
