@@ -51,7 +51,7 @@ public class TemperatureConverterController {
 
         switch (unitName) {
             case "kelvin":
-                celsiusUnit = celsiusUnit-273;
+                celsiusUnit = celsiusUnit-273.15;
                 break;
             case "fahrenheit":
                 celsiusUnit = (celsiusUnit-32)*5/9;
@@ -65,7 +65,7 @@ public class TemperatureConverterController {
 
         switch (unitName) {
             case "kelvin":
-                targetUnit = targetUnit+273;
+                targetUnit = targetUnit+273.15;
                 break;
             case "fahrenheit":
                 targetUnit = targetUnit*9/5+32;
