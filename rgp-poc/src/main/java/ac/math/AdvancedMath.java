@@ -69,7 +69,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat gcd(Apfloat a, Apfloat b) {
-        return null;
+        return ApintMath.gcd(a.floor(),b.floor());
     }
 
     @Override
