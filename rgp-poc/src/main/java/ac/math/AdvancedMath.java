@@ -42,7 +42,8 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat ctg(Apfloat a) {
-        return null;
+        return a.compareTo(Apfloat.ZERO) == 0 ? Apfloat.ZERO : Apfloat.ONE.
+                divide(ApfloatMath.tan(ApfloatMath.toRadians(a)));
     }
 
     @Override
