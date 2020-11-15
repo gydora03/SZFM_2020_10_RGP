@@ -4,7 +4,7 @@ import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
 import org.apfloat.ApintMath;
 
-public class AdvancedMath implements IMathFunctionality<Apfloat>{
+public class AdvancedMath implements IMathFunctionality{
 
     @Override
     public Apfloat add(Apfloat a, Apfloat b) {

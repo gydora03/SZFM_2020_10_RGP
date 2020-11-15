@@ -1,32 +1,34 @@
 package ac.math;
 
-public interface IMathFunctionality<T> extends IMath {
-    public T add(T a, T b);
+import org.apfloat.Apfloat;
 
-    public T subtract(T a, T b);
+public interface IMathFunctionality extends IMath {
+    public Apfloat add(Apfloat a, Apfloat b);
 
-    public T multiply(T a, T b);
+    public Apfloat subtract(Apfloat a, Apfloat b);
 
-    public T divide(T a, T b);
+    public Apfloat multiply(Apfloat a, Apfloat b);
 
-    public T sin(T a);
+    public Apfloat divide(Apfloat a, Apfloat b);
 
-    public T cos(T a);
+    public Apfloat sin(Apfloat a);
 
-    public T tan(T a);
+    public Apfloat cos(Apfloat a);
 
-    public T ctg(T a);
+    public Apfloat tan(Apfloat a);
 
-    public T mod(T a, T b);
+    public Apfloat ctg(Apfloat a);
 
-    public T power(T a, T b);
+    public Apfloat mod(Apfloat a, Apfloat b);
 
-    public T sqrt(T a);
+    public Apfloat power(Apfloat a, Apfloat b);
 
-    public T factorial(T n);
+    public Apfloat sqrt(Apfloat a);
 
-    public T gcd(T a, T b);
+    public Apfloat factorial(Apfloat n);
 
-    public T lcm(T a, T b);
+    public Apfloat gcd(Apfloat a, Apfloat b);
+
+    public Apfloat lcm(Apfloat a, Apfloat b);
 
 }
