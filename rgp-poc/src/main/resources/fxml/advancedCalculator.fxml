@@ -26,7 +26,7 @@
             <Menu mnemonicParsing="false" text="Calculators">
                <items>
                   <MenuItem fx:id="basicCalculator" mnemonicParsing="false" onAction="#switchToBasicCalculator" text="Basic" />
-                  <MenuItem fx:id="advancedCalculator" mnemonicParsing="false" text="Advanced" />
+                  <MenuItem fx:id="_advancedCalculator" mnemonicParsing="false" text="Advanced" />
                   <MenuItem fx:id="piCalculator" mnemonicParsing="false" onAction="#switchToPICalculator" text="PI" />
                </items>
             </Menu>
