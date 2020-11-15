@@ -15,8 +15,8 @@ In order to run the _demo_ program you must execute
 	* This script was tested on an _**Arch Linux**_ system by _Racs Tamás_
 	* Result: _**it just works**_
 * the `runDemo.bat` script if you're using Windows
-	* This script was tested on a Windows system by ?
-	* Result: _**???**_
+	* This script was tested on a Windows system by _György Dóra_
+	* Result: _**it is works**_
 
 In order to see the logging entries inside the h2 tables please visit [http://localhost:8082-](the h2 console)    
 
