@@ -32,7 +32,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat cos(Apfloat a) {
-        return null;
+        return ApfloatMath.cos(a);
     }
 
     @Override
