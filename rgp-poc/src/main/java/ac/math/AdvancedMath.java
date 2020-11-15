@@ -58,7 +58,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat sqrt(Apfloat a) {
-        return null;
+        return ApfloatMath.sqrt(a);
     }
 
     @Override
