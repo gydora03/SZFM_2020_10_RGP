@@ -1,63 +1,62 @@
 package ac.math;
 
-public class BasicMath implements IMathFunctionality {
-    public double add(double a, double b) {
+public class BasicMath implements IMathFunctionality<Double> {
+    public Double add(Double a, Double b) {
         return a + b;
     }
 
-    public double subtract(double a, double b) {
+    public Double subtract(Double a, Double b) {
         return a - b;
     }
 
-    public double multiply(double a, double b) {
+    public Double multiply(Double a, Double b) {
         return a * b;
     }
 
-    public double divide(double a, double b) {
+    public Double divide(Double a, Double b) {
         if (b > 0 || b < 0)
             return a / b;
         else
             return Double.NaN;
     }
 
-    public double sin(double a) {
+    public Double sin(Double a) {
         return StrictMath.sin(StrictMath.toRadians(a));
     }
 
-    public double cos(double a) {
+    public Double cos(Double a) {
         return StrictMath.cos(StrictMath.toRadians(a));
     }
 
-    public double tan(double a) {
+    public Double tan(Double a) {
         return StrictMath.tan(StrictMath.toRadians(a));
     }
 
-    public double ctg(double a) {
+    public Double ctg(Double a) {
         if (a < 0 || a > 0)
             return 1.0 / StrictMath.tan(StrictMath.toRadians(a));
         else
             return Double.NaN;
     }
 
-    public double mod(double a, double b) {
+    public Double mod(Double a, Double b) {
         return a % b;
     }
 
-    public double power(double a, double b) {
+    public Double power(Double a, Double b) {
         return StrictMath.pow(a, b);
     }
 
-    public double sqrt(double a)
-    {
-        if(a >= 0)
+    public Double sqrt(Double a) {
+        if (a >= 0)
             return StrictMath.sqrt(a);
         else
             return Double.NaN;
     }
 
-    public double factorial(double n) {
-        double f = 1.0;
-        long input = (long) n;
+    public Double factorial(Double n) {
+        Double f = 1.0;
+        long input = n.longValue();
         for (; input > 0; input--) {
             f *= input;
         }
@@ -65,11 +64,11 @@ public class BasicMath implements IMathFunctionality {
         return f;
     }
 
-    public double gcd(double a, double b) {
-        int _b = (int) b;
+    public Double gcd(Double a, Double b) {
+        int _b =  b.intValue();
         if (_b == 0)
             return 0.0;
-        int _a = (int) a;
+        int _a = a.intValue();
 
         while (_b > 0) {
             int result = _a % _b;
@@ -77,10 +76,9 @@ public class BasicMath implements IMathFunctionality {
             _b = result;
         }
 
-        return _a;
-    }
+        return Double.parseDouble(String.valueOf(_a));    }
 
-    public double lcm(double a, double b) {
+    public Double lcm(Double a, Double b) {
         return (a * b) / gcd(a, b);
     }
 
