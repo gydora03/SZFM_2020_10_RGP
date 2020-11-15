@@ -53,7 +53,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat power(Apfloat a, Apfloat b) {
-        return null;
+        return ApfloatMath.pow(a,b);
     }
 
     @Override
