@@ -7,16 +7,39 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
 import java.io.IOException;
 
 public class AdvancedCalculatorController {
+    @FXML
+    public Menu constantsMenu;
+
+    @FXML
+    public Menu fileMenu;
+
+    @FXML
+    public MenuItem basicCalculator;
+
+    @FXML
+    public MenuItem piCalculator;
+
+    @FXML
+    public MenuItem _advancedCalculator;
+
+    @FXML
+    public MenuItem volumeConverter;
+
+    @FXML
+    public MenuItem temperatureConverter;
+
+    @FXML
+    public MenuItem weightConverter;
+
+    @FXML
+    public MenuItem lengthConverter;
 
     @FXML
     private MenuItem piMenuItem;
@@ -138,6 +161,7 @@ public class AdvancedCalculatorController {
     @FXML
     private MenuItem closeMenuItem;
 
+    @FXML
     private AdvancedCalculator advancedCalculator;
     private String memory_one = "";
     private String memory_two = "";
