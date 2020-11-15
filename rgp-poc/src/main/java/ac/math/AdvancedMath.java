@@ -2,6 +2,7 @@ package ac.math;
 
 import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
+import org.apfloat.ApintMath;
 
 public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
@@ -63,7 +64,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat factorial(Apfloat n) {
-        return null;
+        return ApintMath.factorial(n.longValue());
     }
 
     @Override
