@@ -21,7 +21,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat divide(Apfloat a, Apfloat b) {
-        return null;
+        return b.compareTo(Apfloat.ZERO) == 0 ? Apfloat.ZERO : a.divide(b);
     }
 
     @Override
