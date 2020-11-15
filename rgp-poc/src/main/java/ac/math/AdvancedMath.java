@@ -74,6 +74,6 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat lcm(Apfloat a, Apfloat b) {
-        return null;
+        return ApintMath.lcm(a.floor(),b.floor());
     }
 }
