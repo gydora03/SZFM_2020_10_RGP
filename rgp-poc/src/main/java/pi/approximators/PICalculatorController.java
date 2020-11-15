@@ -138,7 +138,7 @@ public class PICalculatorController {
                 if (from == 0 && until == 0)
                     screen.setText(piApproximator.approximate(iteration));
                 else
-                    screen.setText(piApproximator.approximate(iteration, from, until));
+                    screen.setText(piApproximator.approximate(from, until));
                 calcBtn.setDisable(false);
             }
         }).start();
@@ -152,21 +152,26 @@ public class PICalculatorController {
                 piApproximator = new ChudnovskyApproximator();
                 fromTb.setDisable(true);
                 untilTb.setDisable(true);
+                iterationTb.setDisable(false);
                 break;
             case "Zeta":
                 piApproximator = new ZetaApproximator();
                 fromTb.setDisable(true);
                 untilTb.setDisable(true);
+                iterationTb.setDisable(false);
                 break;
             case "Leibniz":
                 piApproximator = new LeibnizApproximator();
                 fromTb.setDisable(true);
                 untilTb.setDisable(true);
+                iterationTb.setDisable(false);
                 break;
             case "BPP":
                 piApproximator = new BPP();
                 fromTb.setDisable(false);
                 untilTb.setDisable(false);
+                iterationTb.setText("64");
+                iterationTb.setDisable(true);
                 break;
 
             default:

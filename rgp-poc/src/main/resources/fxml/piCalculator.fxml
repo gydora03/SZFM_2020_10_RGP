@@ -101,7 +101,7 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                             </rowConstraints>
                             <children>
-                                <Label text="Methods: ">
+                                <Label text="Method: ">
                                     <font>
                                         <Font name="Segoe UI Symbol" size="25.0"/>
                                     </font>
@@ -118,7 +118,7 @@
                                         </FXCollections>
                                     </items>
                                 </ComboBox>
-                                <Label text="Pontosság:" GridPane.rowIndex="1">
+                                <Label text="Iterations:" GridPane.rowIndex="1">
                                     <font>
                                         <Font name="Segoe UI Symbol" size="25.0"/>
                                     </font>
