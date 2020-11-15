@@ -235,7 +235,7 @@ public class AdvancedCalculatorController {
 
     @FXML
     private void handleClickOnAllClear() {
-        basicCalculator.clearCalculations();
+        advancedCalculator.clearCalculations();
         display.clear();
         memory_one = "";
         memory_two = "";
@@ -248,7 +248,7 @@ public class AdvancedCalculatorController {
     private void handleClickOnPlusMinusSign(ActionEvent event) {
         double displayText = Double.parseDouble(display.getText());
         displayText = displayText * (-1);
-        display.setText(String.valueOf(displayText));
+        display.setText(display.getText() +  String.valueOf(displayText));
     }
 
 
