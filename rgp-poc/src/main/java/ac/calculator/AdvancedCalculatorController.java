@@ -1,5 +1,6 @@
 package ac.calculator;
 
+import ac.math.ConstantProvider;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,7 +10,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 import java.io.IOException;
 
@@ -143,6 +146,166 @@ public class AdvancedCalculatorController {
 
     @FXML
     MenuBar menuBar;
+
+    @FXML
+    public void handleClickOnOperator(ActionEvent event) {
+        Logger.info("Operator was clicked");
+        Calculation calc = new Calculation();
+        double value = Double.parseDouble(display.getText());
+        calc.setCurrentValue(Double.valueOf(value));
+
+        String operator = ((Button) event.getSource()).getText();
+        switch (operator) {
+            case "+":
+                calc.setCurrentOperator("add");
+                break;
+            case "-":
+                calc.setCurrentOperator("subtract");
+                break;
+            case "X":
+                calc.setCurrentOperator("multiply");
+                break;
+            case "/":
+                calc.setCurrentOperator("divide");
+                break;
+            case "%":
+                calc.setCurrentOperator("mod");
+                break;
+            case "sin":
+            case "cos":
+            case "tan":
+            case "ctg":
+                isOperatorClicked = false;
+                calc.setCurrentOperator(operator);
+                break;
+            case "x^y":
+                calc.setCurrentOperator("power");
+                break;
+            case "sqrt(x)":
+                isOperatorClicked = false;
+                calc.setCurrentOperator("sqrt");
+                break;
+            case "x!":
+                isOperatorClicked = false;
+                calc.setCurrentOperator("factorial");
+                break;
+            case "gcd":
+            case "lcm":
+                calc.setCurrentOperator(operator);
+                break;
+            case "=":
+                calc.setCurrentOperator("=");
+                break;
+            default:
+                calc.setCurrentOperator("=");
+                break;
+
+        }
+
+        if(!isOperatorClicked) {
+            String result = String.valueOf(basicCalculator.evaluate(calc));
+            Logger.tag("BasicCalculator").debug("Evaluating Calculation...");
+            Logger.tag("BasicCalculator").debug("Permorming: {}", calc.getCurrentOperator() + " " + calc.getCurrentValue());
+            Logger.tag("BasicCalculator").debug("Evaluation has been completed, result is {}", result);
+            display.setText(result);
+        }
+        else {
+            basicCalculator.updateOperator(calc.getCurrentOperator());
+            return;
+        }
+        isOperatorClicked = true;
+    }
+
+    @FXML
+    private void handleClickOnNumber(ActionEvent event) {
+
+        if(isOperatorClicked)
+            display.setText("");
+        isOperatorClicked = false;
+
+        String digit = ((Button) event.getSource()).getText();
+        if(digit.equals(".") && display.getText().contains("."))
+            return;
+        display.setText(display.getText().concat(digit));
+    }
+    @FXML
+    private void handleClickOnClear() {
+        display.setText("");
+    }
+
+    @FXML
+    private void handleClickOnAllClear() {
+        basicCalculator.clearCalculations();
+        display.clear();
+        memory_one = "";
+        memory_two = "";
+        memory_three = "";
+        memory_four = "";
+    }
+
+
+    @FXML
+    private void handleClickOnPlusMinusSign(ActionEvent event) {
+        double displayText = Double.parseDouble(display.getText());
+        displayText = displayText * (-1);
+        display.setText(String.valueOf(displayText));
+    }
+
+
+    @FXML
+    private void handleClickOnMemory(ActionEvent event) {
+        if (event.getSource() == memoryOne) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 1);
+            if (memory_one.equals("")) {
+                memory_one = display.getText();
+            } else {
+                display.setText(memory_one);
+            }
+        }
+        if (event.getSource() == memoryTwo) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 2);
+            if (memory_two.equals("")) {
+                memory_two = display.getText();
+            } else {
+                display.setText(memory_two);
+            }
+        }
+        if (event.getSource() == memoryThree) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 3);
+            if (memory_three.equals("")) {
+                memory_three = display.getText();
+            } else {
+                display.setText(memory_three);
+            }
+        }
+        if (event.getSource() == memoryFour) {
+            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 4);
+            if (memory_four.equals("")) {
+                memory_four = display.getText();
+            } else {
+                display.setText(memory_four);
+            }
+        }
+    }
+    @FXML
+    private void handleClickOnConstant(ActionEvent event){
+        if(event.getSource() == piMenuItem){
+            Logger.tag("AdvancedCalculatorController").info("Constant PI was clicked");
+            display.setText(display.getText() +  String.valueOf(ConstantProvider.getPi()));
+        }
+        else if(event.getSource() == eulerMenuItem){
+            Logger.tag("AdvancedCalculatorController").info("Constant Euler was clicked");
+            display.setText(display.getText() +  String.valueOf(ConstantProvider.getEulerConstant()));
+        }
+        else if(event.getSource() == BernsteinMenuItem){
+            Logger.tag("AdvancedCalculatorController").info("Constant Bernstein was clicked");
+            display.setText(display.getText() +  String.valueOf(ConstantProvider.getBernsteinConstant()));
+        }
+        else if(event.getSource() == goldenRatioMenuItem){
+            Logger.tag("AdvancedCalculatorController").info("Constant GoldenRatio was clicked");
+            display.setText(display.getText() +  String.valueOf(ConstantProvider.getGoldenRatio()));
+        }
+    }
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
