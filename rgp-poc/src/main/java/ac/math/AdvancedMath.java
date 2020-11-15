@@ -37,7 +37,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat tan(Apfloat a) {
-        return null;
+        return ApfloatMath.tan(a);
     }
 
     @Override
