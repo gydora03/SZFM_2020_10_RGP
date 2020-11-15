@@ -255,35 +255,35 @@ public class AdvancedCalculatorController {
     @FXML
     private void handleClickOnMemory(ActionEvent event) {
         if (event.getSource() == memoryOne) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 1);
+            Logger.tag("AdvancedCalculatorController").debug("Memory button {} was clicked", 1);
             if (memory_one.equals("")) {
                 memory_one = display.getText();
             } else {
-                display.setText(memory_one);
+                display.setText(display.getText() +  memory_one);
             }
         }
         if (event.getSource() == memoryTwo) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 2);
+            Logger.tag("AdvancedCalculatorController").debug("Memory button {} was clicked", 2);
             if (memory_two.equals("")) {
                 memory_two = display.getText();
             } else {
-                display.setText(memory_two);
+                display.setText(display.getText() +  memory_two);
             }
         }
         if (event.getSource() == memoryThree) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 3);
+            Logger.tag("AdvancedCalculatorController").debug("Memory button {} was clicked", 3);
             if (memory_three.equals("")) {
                 memory_three = display.getText();
             } else {
-                display.setText(memory_three);
+                display.setText(display.getText() +  memory_three);
             }
         }
         if (event.getSource() == memoryFour) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 4);
+            Logger.tag("AdvancedCalculatorController").debug("Memory button {} was clicked", 4);
             if (memory_four.equals("")) {
                 memory_four = display.getText();
             } else {
-                display.setText(memory_four);
+                display.setText(display.getText() +  memory_four);
             }
         }
     }
