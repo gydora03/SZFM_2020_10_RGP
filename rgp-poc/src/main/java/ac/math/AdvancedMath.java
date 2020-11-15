@@ -16,7 +16,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat multiply(Apfloat a, Apfloat b) {
-        return null;
+        return a.multiply(b);
     }
 
     @Override
