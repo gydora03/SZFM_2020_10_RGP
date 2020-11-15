@@ -1,6 +1,7 @@
 package ac.math;
 
 import org.apfloat.Apfloat;
+import org.apfloat.ApfloatMath;
 
 public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
@@ -26,7 +27,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat sin(Apfloat a) {
-        return null;
+        return ApfloatMath.sin(a);
     }
 
     @Override
