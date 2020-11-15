@@ -7,14 +7,85 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+
 
 public class TemperatureConverterController {
 
     @FXML
     MenuBar menuBar;
+
+    @FXML
+    TextField unitFrom;
+
+    @FXML
+    TextField unitTo;
+
+    @FXML
+    TextField displayFrom;
+
+    @FXML
+    TextField displayTo;
+
+    @FXML
+    public void selectMenuItemFromFromMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitFrom.setText(menuItemText.toLowerCase());
+    }
+
+    @FXML
+    public void selectMenuItemFromToMenuButton(ActionEvent event) {
+
+        String menuItemText = ((MenuItem) event.getSource()).getText();
+        unitTo.setText(menuItemText.toLowerCase());
+    }
+
+    @FXML
+    public double convertUnitToCelsius(String unitName, double celsiusUnit) {
+
+        switch (unitName) {
+            case "kelvin":
+                celsiusUnit = celsiusUnit-273;
+                break;
+            case "fahrenheit":
+                celsiusUnit = (celsiusUnit-32)*5/9;
+                break;
+        }
+        return celsiusUnit;
+    }
+
+    @FXML
+    public double convertToTargetUnit(String unitName, double targetUnit) {
+
+        switch (unitName) {
+            case "kelvin":
+                targetUnit = targetUnit+273;
+                break;
+            case "fahrenheit":
+                targetUnit = targetUnit*9/5+32;
+                break;
+
+        }
+        return targetUnit;
+    }
+
+    @FXML
+    public void handleClickOnConvertButton(ActionEvent event) {
+        String unitFromName = unitFrom.getText();
+        double unitFrom = Double.parseDouble(displayFrom.getText());
+        double inCelsius = convertUnitToCelsius(unitFromName, unitFrom);
+
+        String unitToName = unitTo.getText();
+        double unitTo = convertToTargetUnit(unitToName, inCelsius);
+
+        displayTo.setText(String.valueOf(unitTo));
+    }
 
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
