@@ -1,32 +1,32 @@
 package ac.math;
 
-public interface IMathFunctionality extends IMath {
-    public double add(double a, double b);
+public interface IMathFunctionality<T> extends IMath {
+    public T add(T a, T b);
 
-    public double subtract(double a, double b);
+    public T subtract(T a, T b);
 
-    public double multiply(double a, double b);
+    public T multiply(T a, T b);
 
-    public double divide(double a, double b);
+    public T divide(T a, T b);
 
-    public double sin(double a);
+    public T sin(T a);
 
-    public double cos(double a);
+    public T cos(T a);
 
-    public double tan(double a);
+    public T tan(T a);
 
-    public double ctg(double a);
+    public T ctg(T a);
 
-    public double mod(double a, double b);
+    public T mod(T a, T b);
 
-    public double power(double a, double b);
+    public T power(T a, T b);
 
-    public double sqrt(double a);
+    public T sqrt(T a);
 
-    public double factorial(double n);
+    public T factorial(T n);
 
-    public double gcd(double a, double b);
+    public T gcd(T a, T b);
 
-    public double lcm(double a, double b);
+    public T lcm(T a, T b);
 
 }
