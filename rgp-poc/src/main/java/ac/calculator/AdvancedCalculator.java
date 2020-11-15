@@ -1,5 +1,10 @@
 package ac.calculator;
 
+import ac.math.IMathFunctionality;
+import ac.processing.ExpressionTree;
+import ac.processing.IParser;
+import ac.processing.ITokenizer;
+import org.apfloat.Apfloat;
 import org.tinylog.Logger;
 
 import java.lang.reflect.InvocationTargetException;
@@ -24,7 +29,7 @@ public class AdvancedCalculator implements ICalculator<Apfloat> {
     @Override
     public Apfloat evaluate() {
         
-        return Apfloat.ZERO;
+        return expression.evaluate();
 
     }
     
