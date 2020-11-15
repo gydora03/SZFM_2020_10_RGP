@@ -44,5 +44,9 @@ public class AdvancedCalculator implements ICalculator<Apfloat> {
     public void clearCalculations() {
         this.expression = null;
     }
+
+    public IMathFunctionality getMathImplementation() {
+        return bm;
+    }
     
 }
