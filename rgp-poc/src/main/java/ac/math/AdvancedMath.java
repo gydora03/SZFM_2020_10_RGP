@@ -6,7 +6,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat add(Apfloat a, Apfloat b) {
-        return null;
+        return a.add(b);
     }
 
     @Override
