@@ -48,7 +48,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat mod(Apfloat a, Apfloat b) {
-        return null;
+        return a.mod(b);
     }
 
     @Override
