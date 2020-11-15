@@ -27,17 +27,17 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat sin(Apfloat a) {
-        return ApfloatMath.sin(a);
+        return ApfloatMath.sin(ApfloatMath.toRadians(a));
     }
 
     @Override
     public Apfloat cos(Apfloat a) {
-        return ApfloatMath.cos(a);
+        return ApfloatMath.cos(ApfloatMath.toRadians(a));
     }
 
     @Override
     public Apfloat tan(Apfloat a) {
-        return ApfloatMath.tan(a);
+        return ApfloatMath.tan(ApfloatMath.toRadians(a));
     }
 
     @Override
