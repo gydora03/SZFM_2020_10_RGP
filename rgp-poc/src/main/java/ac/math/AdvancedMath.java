@@ -11,7 +11,7 @@ public class AdvancedMath implements IMathFunctionality<Apfloat>{
 
     @Override
     public Apfloat subtract(Apfloat a, Apfloat b) {
-        return null;
+        return a.subtract(b);
     }
 
     @Override
