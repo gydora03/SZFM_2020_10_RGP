@@ -149,71 +149,9 @@ public class AdvancedCalculatorController {
 
     @FXML
     public void handleClickOnOperator(ActionEvent event) {
-        Logger.info("Operator was clicked");
-        Calculation calc = new Calculation();
-        double value = Double.parseDouble(display.getText());
-        calc.setCurrentValue(Double.valueOf(value));
-
-        String operator = ((Button) event.getSource()).getText();
-        switch (operator) {
-            case "+":
-                calc.setCurrentOperator("add");
-                break;
-            case "-":
-                calc.setCurrentOperator("subtract");
-                break;
-            case "X":
-                calc.setCurrentOperator("multiply");
-                break;
-            case "/":
-                calc.setCurrentOperator("divide");
-                break;
-            case "%":
-                calc.setCurrentOperator("mod");
-                break;
-            case "sin":
-            case "cos":
-            case "tan":
-            case "ctg":
-                isOperatorClicked = false;
-                calc.setCurrentOperator(operator);
-                break;
-            case "x^y":
-                calc.setCurrentOperator("power");
-                break;
-            case "sqrt(x)":
-                isOperatorClicked = false;
-                calc.setCurrentOperator("sqrt");
-                break;
-            case "x!":
-                isOperatorClicked = false;
-                calc.setCurrentOperator("factorial");
-                break;
-            case "gcd":
-            case "lcm":
-                calc.setCurrentOperator(operator);
-                break;
-            case "=":
-                calc.setCurrentOperator("=");
-                break;
-            default:
-                calc.setCurrentOperator("=");
-                break;
-
-        }
-
-        if(!isOperatorClicked) {
-            String result = String.valueOf(basicCalculator.evaluate(calc));
-            Logger.tag("BasicCalculator").debug("Evaluating Calculation...");
-            Logger.tag("BasicCalculator").debug("Permorming: {}", calc.getCurrentOperator() + " " + calc.getCurrentValue());
-            Logger.tag("BasicCalculator").debug("Evaluation has been completed, result is {}", result);
-            display.setText(result);
-        }
-        else {
-            basicCalculator.updateOperator(calc.getCurrentOperator());
-            return;
-        }
-        isOperatorClicked = true;
+        var operator = ((Button)event.getSource()).getText();
+        Logger.info(operator + " operator was clicked");
+        display.setText(display.getText() + operator);
     }
 
     @FXML
