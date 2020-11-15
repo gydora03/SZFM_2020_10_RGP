@@ -36,14 +36,14 @@ public class TemperatureConverterController {
     public void selectMenuItemFromFromMenuButton(ActionEvent event) {
 
         String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitFrom.setText(menuItemText.toLowerCase());
+        unitFrom.setText(menuItemText);
     }
 
     @FXML
     public void selectMenuItemFromToMenuButton(ActionEvent event) {
 
         String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitTo.setText(menuItemText.toLowerCase());
+        unitTo.setText(menuItemText);
     }
 
     @FXML
