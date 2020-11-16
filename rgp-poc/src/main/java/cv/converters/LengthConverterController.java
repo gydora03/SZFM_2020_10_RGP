@@ -85,22 +85,22 @@ public class LengthConverterController {
 
         switch (unitName) {
             case "millimeter":
-                targetUnit = targetUnit/1000;
+                targetUnit = targetUnit*1000;
                 break;
             case "centimeter":
-                targetUnit = targetUnit/100;
-                break;
-            case "decimeter":
-                targetUnit = targetUnit/10;
-                break;
-            case "decalmeter":
-                targetUnit = targetUnit*10;
-                break;
-            case "hectometer":
                 targetUnit = targetUnit*100;
                 break;
+            case "decimeter":
+                targetUnit = targetUnit*10;
+                break;
+            case "decalmeter":
+                targetUnit = targetUnit/10;
+                break;
+            case "hectometer":
+                targetUnit = targetUnit/100;
+                break;
             case "kilometer":
-                targetUnit = targetUnit*1000;
+                targetUnit = targetUnit/1000;
                 break;
             case "inch":
                 targetUnit = targetUnit*39.37007874;

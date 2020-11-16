@@ -8,10 +8,12 @@
   <name>RGP-POC</name>
   <url>http://maven.apache.org</url>
   <properties>
-      <maven.compiler.target>11</maven.compiler.target>
-      <maven.compiler.source>11</maven.compiler.source>
-      <mainClass>Main</mainClass>
-      <initdb>src/main/resources/init_db.sql</initdb>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <mainClass>Main</mainClass>
+    <initdb>src/main/resources/init_db.sql</initdb>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <developers>
     <developer>

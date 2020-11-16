@@ -36,14 +36,14 @@ public class TemperatureConverterController {
     public void selectMenuItemFromFromMenuButton(ActionEvent event) {
 
         String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitFrom.setText(menuItemText.toLowerCase());
+        unitFrom.setText(menuItemText);
     }
 
     @FXML
     public void selectMenuItemFromToMenuButton(ActionEvent event) {
 
         String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitTo.setText(menuItemText.toLowerCase());
+        unitTo.setText(menuItemText);
     }
 
     @FXML
@@ -51,7 +51,7 @@ public class TemperatureConverterController {
 
         switch (unitName) {
             case "kelvin":
-                celsiusUnit = celsiusUnit-273;
+                celsiusUnit = celsiusUnit-273.15;
                 break;
             case "fahrenheit":
                 celsiusUnit = (celsiusUnit-32)*5/9;
@@ -65,7 +65,7 @@ public class TemperatureConverterController {
 
         switch (unitName) {
             case "kelvin":
-                targetUnit = targetUnit+273;
+                targetUnit = targetUnit+273.15;
                 break;
             case "fahrenheit":
                 targetUnit = targetUnit*9/5+32;
