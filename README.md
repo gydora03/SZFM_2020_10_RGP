@@ -16,17 +16,29 @@ In order to run the _demo_ program you must execute
 	* Result: _**it just works**_
 * the `runDemo.bat` script if you're using Windows
 	* This script was tested on a Windows system by _György Dóra_
-	* Result: _**it is works**_
+	* Result: _**in theory, it just works**_ 
+	* **IMPORTANT:** If you're on Windows you must start the h2 database and then the program manually as of now! Please see below for instructions.
 
 In order to see the logging entries inside the h2 tables please visit [http://localhost:8082-](the h2 console)    
 
 
-Without the scripts you must run the following _**IN ORDER:**_
+Without the scripts you must run the following _**IN ORDER:**_ on GNU/Linux or BSD platforms
 
 0. `cd rgp-poc`
 1. `mvn clean package`
 2. `mvn exec:java@console &`
-3. `sleep 0.1`
 4. `mvn exec:java@initdb &`
 5. `java -jar target/rgp*.jar`
+
+On Windows you must do the following:
+
+0. `cd rgp-poc'
+1. 'WIN+r` type in `cmd`
+2. Type `mvn clean package`
+3. Open another prompt like in step 1
+4. Type `mvn exec:java@console`
+5. Open another prompt like in step 1
+6. Type `mvn exec:java@initdb`
+7. Open another prompt like in step 1
+8. Run `java -jar target\rgp*.jar`
 
