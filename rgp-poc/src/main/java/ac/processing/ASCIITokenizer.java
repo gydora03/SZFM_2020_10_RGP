@@ -27,7 +27,6 @@ public class ASCIITokenizer implements ITokenizer {
     public List<Token> tokenize(String input) throws Exception {
 
         String _input = normalize(input);
-
         for (int i = 0; i < _input.length(); i++) {
             try {
                 String digit = _input.substring(i, i + 1);
@@ -60,7 +59,14 @@ public class ASCIITokenizer implements ITokenizer {
 
             }
         }
-
+        //Determining what type remained in the buffer
+        try {
+            Integer.parseInt(buffer.toString());
+            tokens.add(new Token(MathType.NUMBER, buffer.toString()));
+        }
+        catch (NumberFormatException nfe) {
+            tokens.add(new Token(MathType.OPERATOR, buffer.toString()));
+        }
 
         return tokens;
     }
