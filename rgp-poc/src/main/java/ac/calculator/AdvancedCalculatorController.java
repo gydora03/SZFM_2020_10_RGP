@@ -182,15 +182,7 @@ public class AdvancedCalculatorController {
         var operator = ((Button)event.getSource()).getText();
         Logger.info(operator + " operator was clicked");
 
-        if(operator.equals("=")) {
-            try {
-                display.setText(new ASCIITokenizer(advancedCalculator.getMathImplementation()).tokenize("5+3*2").toString());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        else
-            display.setText(display.getText() + operator);
+        display.setText(display.getText() + operator);
     }
 
     @FXML
