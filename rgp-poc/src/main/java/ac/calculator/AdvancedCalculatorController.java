@@ -1,6 +1,8 @@
 package ac.calculator;
 
+import ac.math.AdvancedMath;
 import ac.math.ConstantProvider;
+import ac.processing.ASCIITokenizer;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -54,7 +56,7 @@ public class AdvancedCalculatorController {
     private MenuItem goldenRatioMenuItem;
 
     @FXML
-    private TextField display;
+    private TextArea display;
 
     @FXML
     private Button clear;
@@ -171,11 +173,24 @@ public class AdvancedCalculatorController {
     @FXML
     MenuBar menuBar;
 
+    public AdvancedCalculatorController() {
+        advancedCalculator = new AdvancedCalculator(new AdvancedMath());
+    }
+
     @FXML
     public void handleClickOnOperator(ActionEvent event) {
         var operator = ((Button)event.getSource()).getText();
         Logger.info(operator + " operator was clicked");
-        display.setText(display.getText() + operator);
+
+        if(operator.equals("=")) {
+            try {
+                display.setText(new ASCIITokenizer(advancedCalculator.getMathImplementation()).tokenize("5+3*2").toString());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        else
+            display.setText(display.getText() + operator);
     }
 
     @FXML
