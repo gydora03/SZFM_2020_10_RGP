@@ -27,8 +27,12 @@ public class AdvancedCalculator implements ICalculator<Apfloat> {
 
 
     @Override
-    public Apfloat evaluate() {
-        
+    public Apfloat evaluate(String input) {
+        try {
+            expression = parser.parse(tokenizer.tokenize(input));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return expression.evaluate();
 
     }
