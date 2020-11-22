@@ -31,40 +31,33 @@ public class ASCIITokenizer implements ITokenizer {
             try {
                 String digit = _input.substring(i, i + 1);
                 Integer.parseInt(digit);
-                if (!numberMode)
-                    throw new NumberFormatException();
-                buffer.append(digit);
-
-            } catch (NumberFormatException nfe) {
-
-                if (numberMode) {
-                    var operatorChar = _input.substring(i, i + 1);
-                    if (buffer.length() != 0) {
-                        var value = buffer.toString();
-                        tokens.add(new Token(MathType.NUMBER, value));
-                        buffer.delete(0, buffer.length());
-                    }
-                    buffer.append(operatorChar);
-                    numberMode = false;
-                } else {
-                    var digit = _input.substring(i, i + 1);
+                if (!numberMode) {
                     if (buffer.length() != 0) {
                         var value = buffer.toString();
                         tokens.add(new Token(MathType.OPERATOR, value));
                         buffer.delete(0, buffer.length());
                     }
-                    buffer.append(digit);
                     numberMode = true;
                 }
+                buffer.append(digit);
 
+            } catch (NumberFormatException nfe) {
+
+                var operatorChar = _input.substring(i, i + 1);
+                if (numberMode && buffer.length() != 0) {
+                    var value = buffer.toString();
+                    tokens.add(new Token(MathType.NUMBER, value));
+                    buffer.delete(0, buffer.length());
+                }
+                buffer.append(operatorChar);
+                numberMode = false;
             }
         }
         //Determining what type remained in the buffer
         try {
             Integer.parseInt(buffer.toString());
             tokens.add(new Token(MathType.NUMBER, buffer.toString()));
-        }
-        catch (NumberFormatException nfe) {
+        } catch (NumberFormatException nfe) {
             tokens.add(new Token(MathType.OPERATOR, buffer.toString()));
         }
 
