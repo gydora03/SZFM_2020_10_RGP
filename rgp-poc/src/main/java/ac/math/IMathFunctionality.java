@@ -27,8 +27,4 @@ public interface IMathFunctionality extends IMath {
 
     public Apfloat factorial(Apfloat n);
 
-    public Apfloat gcd(Apfloat a, Apfloat b);
-
-    public Apfloat lcm(Apfloat a, Apfloat b);
-
 }

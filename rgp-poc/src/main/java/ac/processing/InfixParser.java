@@ -17,7 +17,17 @@ public class InfixParser implements IParser{
     @Override
     public ExpressionTree parse(List<Token> input) {
 
-        //TODO please implement this
+        ExpressionTree etree = new ExpressionTree();
+
+        //Rules of engagement
+        //1. Number: left child, if not full, then right
+        //2. Operator:
+        //same or lower precedence: root = new temp().left(root)
+        //higher precedence: root.right(new node)
+
+        for(int i=0; i<input.size(); i++) {
+
+        }
 
         return tree;
     }

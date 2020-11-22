@@ -67,13 +67,4 @@ public class AdvancedMath implements IMathFunctionality{
         return ApintMath.factorial(n.longValue());
     }
 
-    @Override
-    public Apfloat gcd(Apfloat a, Apfloat b) {
-        return ApintMath.gcd(a.floor(),b.floor());
-    }
-
-    @Override
-    public Apfloat lcm(Apfloat a, Apfloat b) {
-        return ApintMath.lcm(a.floor(),b.floor());
-    }
 }
