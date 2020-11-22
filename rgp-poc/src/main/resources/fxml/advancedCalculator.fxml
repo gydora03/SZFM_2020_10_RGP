@@ -92,14 +92,6 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                         <Button fx:id="greatestCommonDivisor" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="gcd" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </GridPane.margin>
-                        </Button>
                         <Button fx:id="tangens" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="tan" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
@@ -117,14 +109,6 @@
                            </GridPane.margin>
                         </Button>
                         <Button fx:id="sinus" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="sin" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </GridPane.margin>
-                        </Button>
-                        <Button fx:id="leastCommonMultiple" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="lcm" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -315,14 +299,6 @@
                         <Button fx:id="subtraction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="-" onAction="#handleClickOnOperator" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </GridPane.margin>
-                        </Button>
-                        <Button fx:id="percentage" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" onAction="#handleClickOnOperator" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="\%" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
                            <GridPane.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
