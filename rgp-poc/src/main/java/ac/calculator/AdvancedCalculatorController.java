@@ -1,9 +1,7 @@
 package ac.calculator;
 
-import ac.math.AdvancedMath;
 import ac.math.ConstantProvider;
-import ac.processing.ASCIITokenizer;
-import ac.processing.InfixParser;
+
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -165,7 +163,6 @@ public class AdvancedCalculatorController {
     private MenuItem closeMenuItem;
 
     @FXML
-    private AdvancedCalculator advancedCalculator;
     private String memory_one = "";
     private String memory_two = "";
     private String memory_three = "";
@@ -174,23 +171,9 @@ public class AdvancedCalculatorController {
     @FXML
     MenuBar menuBar;
 
-    public AdvancedCalculatorController() {
-
-        advancedCalculator = new AdvancedCalculator(new AdvancedMath());
-        advancedCalculator.registerTokenizer(new ASCIITokenizer(advancedCalculator.getMathImplementation()));
-        advancedCalculator.registerParser(new InfixParser());
-    }
-
     @FXML
     public void handleClickOnOperator(ActionEvent event) {
-        var operator = ((Button)event.getSource()).getText();
-        Logger.info(operator + " operator was clicked");
-        if(!operator.equals(("=")))
-            display.setText(display.getText() + operator);
-        else {
-            var result = advancedCalculator.evaluate(display.getText());
-            display.setText(result.toString(true));
-        }
+        //TODO
     }
 
     @FXML
@@ -205,7 +188,6 @@ public class AdvancedCalculatorController {
 
     @FXML
     private void handleClickOnAllClear() {
-        advancedCalculator.clearCalculations();
         display.clear();
         memory_one = "";
         memory_two = "";
