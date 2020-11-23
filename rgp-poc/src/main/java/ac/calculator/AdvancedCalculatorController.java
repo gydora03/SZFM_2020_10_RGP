@@ -1,5 +1,7 @@
 package ac.calculator;
 
+
+import ac.math.ConstantProvider;
 import ac.module.HistoryModule;
 import ac.providers.AdvancedMath;
 import ac.providers.Calculation;
@@ -37,96 +39,6 @@ public class AdvancedCalculatorController {
     private TextField display;
 
     @FXML
-    private Button clear;
-
-    @FXML
-    private Button allClear;
-
-    @FXML
-    private Button addition;
-
-    @FXML
-    private Button subtraction;
-
-    @FXML
-    private Button multiplication;
-
-    @FXML
-    private Button division;
-
-    @FXML
-    private Button percentage;
-
-    @FXML
-    private Button sinus;
-
-    @FXML
-    private Button cosinus;
-
-    @FXML
-    private Button tangens;
-
-    @FXML
-    private Button cotangens;
-
-    @FXML
-    private Button modulo;
-
-    @FXML
-    private Button xPowY;
-
-    @FXML
-    private Button squareRoot;
-
-    @FXML
-    private Button greatestCommonDivisor;
-
-    @FXML
-    private Button leastCommonMultiple;
-
-    @FXML
-    private Button factorial;
-
-    @FXML
-    private Button equal;
-
-    @FXML
-    private Button zero;
-
-    @FXML
-    private Button one;
-
-    @FXML
-    private Button two;
-
-    @FXML
-    private Button three;
-
-    @FXML
-    private Button four;
-
-    @FXML
-    private Button five;
-
-    @FXML
-    private Button six;
-
-    @FXML
-    private Button seven;
-
-    @FXML
-    private Button eight;
-
-    @FXML
-    private Button nine;
-
-    @FXML
-    private Button decimalDot;
-
-    @FXML
-    private Button plusMinus;
-
-    @FXML
     private Button memoryOne;
 
     @FXML
@@ -139,8 +51,6 @@ public class AdvancedCalculatorController {
     private Button memoryFour;
 
     @FXML
-    private MenuItem closeMenuItem;
-
     private AdvancedCalculator basicCalculator;
     private String memory_one = "";
     private String memory_two = "";
@@ -223,6 +133,7 @@ public class AdvancedCalculatorController {
             return;
         }
         isOperatorClicked = true;
+
     }
 
     @FXML
@@ -386,6 +297,16 @@ public class AdvancedCalculatorController {
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
         stage.setTitle("Temperature Converter");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void switchToTextConverter(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/textConverter.fxml"));
+        Scene scene = new Scene(parent);
+        Stage stage = (Stage) menuBar.getScene().getWindow();
+        stage.setTitle("Text Converter");
         stage.setScene(scene);
         stage.show();
     }

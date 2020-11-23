@@ -181,4 +181,13 @@ public class WeightConverterController {
         stage.show();
     }
 
+    @FXML
+    public void switchToTextConverter(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/textConverter.fxml"));
+        Scene scene = new Scene(parent);
+        Stage stage = (Stage) menuBar.getScene().getWindow();
+        stage.setTitle("Text Converter");
+        stage.setScene(scene);
+        stage.show();
+    }
 }

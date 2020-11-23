@@ -36,15 +36,15 @@
                   <MenuItem fx:id="lengthConverter" mnemonicParsing="false" onAction="#switchToLengthConverter" text="Length" />
                   <MenuItem fx:id="weightConverter" mnemonicParsing="false" onAction="#switchToWeightConverter" text="Weight" />
                   <MenuItem fx:id="temperatureConverter" mnemonicParsing="false" onAction="#switchToTemperatureConverter" text="Temperature" />
+                  <MenuItem fx:id="textConverter" mnemonicParsing="false" onAction="#switchToTextConverter" text="Text" />
                </items>
             </Menu>
             <Menu fx:id="constantsMenu" mnemonicParsing="false" text="Constants">
                <items>
-                  <MenuItem fx:id="piMenuItem" mnemonicParsing="false" text="Pi" 
-                            onAction="#handleClickOnConstant"/>
-                  <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" text="Euler Constant" onAction="#handleClickOnConstant" />
-                  <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" text="Bernstein Constant" onAction="#handleClickOnConstant"/>
-                  <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" text="Golden Ratio" onAction="#handleClickOnConstant"/>
+                  <MenuItem fx:id="piMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Pi" />
+                  <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Euler Constant" />
+                  <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Bernstein Constant" />
+                  <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" onAction="#handleClickOnConstant" text="Golden Ratio" />
                </items>
                <graphic>
                   <Separator blendMode="ADD" orientation="VERTICAL">
@@ -159,7 +159,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="cotangens" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" onAction="#handleClickOnOperator" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="ctg" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                        <Button fx:id="cotangens" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="ctg" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -167,7 +167,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="factorial" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnOperator" minWidth="-Infinity" mnemonicParsing="false" text="x!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <Button fx:id="factorial" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnOperator" text="x!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -195,7 +195,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Button fx:id="zero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="0" onAction="#handleClickOnNumber" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                        <Button fx:id="zero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="0" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -203,7 +203,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="equal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="=" onAction="#handleClickOnOperator" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="TOP">
+                        <Button fx:id="equal" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="TOP">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -211,7 +211,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="decimalDot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="." onAction="#handleClickOnNumber" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                        <Button fx:id="decimalDot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -219,7 +219,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="one" maxHeight="1.7976931348623157E308" onAction="#handleClickOnNumber" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                        <Button fx:id="one" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -227,7 +227,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="two" maxHeight="1.7976931348623157E308" onAction="#handleClickOnNumber" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                        <Button fx:id="two" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -235,7 +235,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="four" maxHeight="1.7976931348623157E308" onAction="#handleClickOnNumber" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                        <Button fx:id="four" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -243,7 +243,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="seven" maxHeight="1.7976931348623157E308" onAction="#handleClickOnNumber" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <Button fx:id="seven" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -251,7 +251,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="division" maxHeight="1.7976931348623157E308" onAction="#handleClickOnOperator" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Button fx:id="division" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="/" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -259,7 +259,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="eight" maxHeight="1.7976931348623157E308" onAction="#handleClickOnNumber" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <Button fx:id="eight" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -267,7 +267,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="five" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="5" onAction="#handleClickOnNumber" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                        <Button fx:id="five" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -275,7 +275,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="three" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="3" onAction="#handleClickOnNumber" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                        <Button fx:id="three" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -283,7 +283,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="multiplication" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="X" onAction="#handleClickOnOperator" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Button fx:id="multiplication" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="X" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -291,7 +291,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="nine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="9" onAction="#handleClickOnNumber" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <Button fx:id="nine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -299,7 +299,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="six" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="6" onAction="#handleClickOnNumber" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                        <Button fx:id="six" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnNumber" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -307,7 +307,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="addition" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="+" onAction="#handleClickOnOperator" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="TOP">
+                        <Button fx:id="addition" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="TOP">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -315,7 +315,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="subtraction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="-" onAction="#handleClickOnOperator" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Button fx:id="subtraction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleClickOnOperator" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -349,6 +349,8 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
+                        <Button fx:id="clear" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnClear" text="C" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+
                         <Button fx:id="history" cache="true" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" onAction="#handleHistoryButton" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Hist" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
@@ -365,7 +367,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="memoryOne" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnMemory" minWidth="-Infinity" mnemonicParsing="false" text="M1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                        <Button fx:id="memoryOne" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnMemory" text="M1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -373,7 +375,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="memoryTwo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnMemory" minWidth="-Infinity" mnemonicParsing="false" text="M2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                        <Button fx:id="memoryTwo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnMemory" text="M2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -381,7 +383,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="memoryThree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnMemory" minWidth="-Infinity" mnemonicParsing="false" text="M3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                        <Button fx:id="memoryThree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnMemory" text="M3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -389,7 +391,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="memoryFour" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnMemory" minWidth="-Infinity" mnemonicParsing="false" text="M4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                        <Button fx:id="memoryFour" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnMemory" text="M4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
@@ -397,7 +399,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="plusMinus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnPlusMinusSign" minWidth="-Infinity" mnemonicParsing="false" text="+/-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <Button fx:id="plusMinus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnPlusMinusSign" text="+/-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
@@ -405,7 +407,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="allClear" cache="true" contentDisplay="CENTER" layoutX="15.0" layoutY="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" onAction="#handleClickOnAllClear" minWidth="-Infinity" mnemonicParsing="false" text="AC" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Button fx:id="allClear" cache="true" contentDisplay="CENTER" layoutX="15.0" layoutY="15.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClickOnAllClear" text="AC" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="14.0" />
                            </font>
