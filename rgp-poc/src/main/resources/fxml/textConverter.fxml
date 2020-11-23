@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cv.converters.TextConverterController">
    <children>
@@ -67,19 +77,14 @@
             </MenuButton>
             <GridPane prefHeight="120.0" prefWidth="559.0">
                <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="370.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="560.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="0.0" prefWidth="0.0" />
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <TextField fx:id="unitFrom" alignment="CENTER_RIGHT" promptText="none" GridPane.columnIndex="1">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </TextField>
-                  <TextArea fx:id="displayFrom" promptText="0" wrapText="true">
+                  <TextArea fx:id="displayFrom" promptText="Input" wrapText="true">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
@@ -104,19 +109,14 @@
             </MenuButton>
             <GridPane layoutX="31.0" layoutY="142.0" prefHeight="120.0" prefWidth="559.0">
                <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="370.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="560.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="0.0" prefWidth="0.0" />
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <TextField fx:id="unitTo" alignment="CENTER_RIGHT" promptText="none" GridPane.columnIndex="1">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </TextField>
-                  <TextArea fx:id="displayTo" promptText="0" wrapText="true">
+                  <TextArea fx:id="displayTo" prefHeight="88.0" prefWidth="287.0" promptText="Output" wrapText="true">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>

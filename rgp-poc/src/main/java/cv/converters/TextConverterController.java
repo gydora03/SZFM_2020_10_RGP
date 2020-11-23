@@ -6,24 +6,21 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
+import t2.Translator;
 
 import java.io.IOException;
 
 public class TextConverterController {
 
     @FXML
+    MenuButton fromMenuButton;
+    @FXML
+    MenuButton toMenuButton;
+    @FXML
     MenuBar menuBar;
 
-    @FXML
-    TextField unitFrom;
-
-    @FXML
-    TextField unitTo;
 
     @FXML
     TextArea displayFrom;
@@ -33,22 +30,20 @@ public class TextConverterController {
 
 
     @FXML
-    public void selectMenuItemFromFromMenuButton(ActionEvent event) {
-
-        String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitFrom.setText(menuItemText.toLowerCase());
-    }
-
-    @FXML
-    public void selectMenuItemFromToMenuButton(ActionEvent event) {
-
-        String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitTo.setText(menuItemText.toLowerCase());
-    }
-
-    @FXML
     public void handleClickOnConvertButton(ActionEvent event) {
-        //TODO
+        String input = displayFrom.getText();
+
+        if(fromMenuButton.getText().equals("Morse"))
+            input = Translator.translateMorseToText(input);
+        if(fromMenuButton.getText().equals("Binary"))
+            input = Translator.translateBinaryToText(input);
+
+        if(toMenuButton.getText().equals("Morse"))
+            displayTo.setText(Translator.translateTextToMorse(input));
+        else if(toMenuButton.getText().equals("Binary"))
+            displayTo.setText(Translator.translateTextToBinary(input));
+        else
+            displayTo.setText(input);
     }
 
 
