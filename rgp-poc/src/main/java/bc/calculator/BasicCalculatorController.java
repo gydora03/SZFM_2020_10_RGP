@@ -1,6 +1,5 @@
 package bc.calculator;
 
-import bc.module.HistoryModule;
 import bc.providers.BasicMath;
 import bc.providers.Calculation;
 import bc.providers.ConstantProvider;
@@ -260,7 +259,6 @@ public class BasicCalculatorController {
             display.setText(String.valueOf(ConstantProvider.getGoldenRatio()));
         }
     }
-
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
