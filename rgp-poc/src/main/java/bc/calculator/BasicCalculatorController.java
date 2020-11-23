@@ -1,6 +1,5 @@
 package bc.calculator;
 
-import bc.module.HistoryModule;
 import bc.providers.BasicMath;
 import bc.providers.Calculation;
 import bc.providers.ConstantProvider;
@@ -180,31 +179,6 @@ public class BasicCalculatorController {
             case "%":
                 calc.setCurrentOperator("mod");
                 break;
-            case "sin":
-            case "cos":
-            case "tan":
-            case "ctg":
-                isOperatorClicked = false;
-                calc.setCurrentOperator(operator);
-                break;
-            case "x^y":
-                calc.setCurrentOperator("power");
-                break;
-            case "sqrt(x)":
-                isOperatorClicked = false;
-                calc.setCurrentOperator("sqrt");
-                break;
-            case "x!":
-                isOperatorClicked = false;
-                calc.setCurrentOperator("factorial");
-                break;
-            case "gcd":
-            case "lcm":
-                calc.setCurrentOperator(operator);
-                break;
-            case "=":
-                calc.setCurrentOperator("=");
-                break;
             default:
                 calc.setCurrentOperator("=");
                 break;
@@ -315,13 +289,6 @@ public class BasicCalculatorController {
         else if(event.getSource() == goldenRatioMenuItem){
             Logger.tag("BasicCalculatorController").info("Constant GoldenRatio was clicked");
             display.setText(String.valueOf(ConstantProvider.getGoldenRatio()));
-        }
-    }
-    public void handleHistoryButton(ActionEvent actionEvent) {
-        HistoryModule hm = basicCalculator.<HistoryModule>getModule("history");
-        if(hm != null){
-            hm.dumpLogs();
-            display.setText("History was saved to historyLogs.txt!");
         }
     }
     @FXML

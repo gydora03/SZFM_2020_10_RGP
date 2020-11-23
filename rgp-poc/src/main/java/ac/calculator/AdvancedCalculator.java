@@ -1,20 +1,24 @@
-package bc.calculator;
+package ac.calculator;
 
-import bc.providers.Calculation;
-import bc.providers.IBasicMathFunctionality;
+import ac.module.HistoryModule;
+import ac.module.IModule;
+import ac.providers.Calculation;
+import ac.providers.IAdvancedMathFunctionality;
 import org.tinylog.Logger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class BasicCalculator implements ICalculator<Double> {
+public class AdvancedCalculator implements ICalculator<Double> {
 
     private Calculation storedCalculation;
-    private IBasicMathFunctionality bm;
+    private IAdvancedMathFunctionality bm;
+    private HashMap<String, IModule> modules;
     private HashMap<String, Method> functions;
 
-    public BasicCalculator(IBasicMathFunctionality bm) {
+    public AdvancedCalculator(IAdvancedMathFunctionality bm) {
+        modules = new HashMap<>();
         functions = new HashMap<>();
         this.bm = bm;
 
@@ -22,6 +26,7 @@ public class BasicCalculator implements ICalculator<Double> {
             functions.put(m.getName(), m);
         }
 
+        registerModule("history", HistoryModule.getInstance());
 
         Logger.tag("BasicCalculator").debug("Constructor has been executed successfully");
 
@@ -32,6 +37,7 @@ public class BasicCalculator implements ICalculator<Double> {
     public Double evaluate(Calculation calculation) {
         if (storedCalculation == null || storedCalculation.getCurrentOperator().equals("=")) {
             storedCalculation = calculation;
+            this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
             Method m = getMathMethod(storedCalculation);
             if (m == null)
                 return storedCalculation.getCurrentValue();
@@ -39,6 +45,7 @@ public class BasicCalculator implements ICalculator<Double> {
                 if (m.getParameterCount() == 1) {
                     storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
                     storedCalculation.setCurrentValue((Double) m.invoke(bm, storedCalculation.getCurrentValue()));
+                    this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
                     return storedCalculation.getCurrentValue();
                 } else
                     return storedCalculation.getCurrentValue();
@@ -56,6 +63,7 @@ public class BasicCalculator implements ICalculator<Double> {
             else
                 storedCalculation.setCurrentValue((Double) method.invoke(bm, storedCalculation.getCurrentValue(), calculation.getCurrentValue()));
             storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
+            this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
             return storedCalculation.getCurrentValue();
 
         } catch (InvocationTargetException | IllegalAccessException iae) {
@@ -88,6 +96,19 @@ public class BasicCalculator implements ICalculator<Double> {
 
 
         return method;
+    }
+
+    public void registerModule(String moduleName, IModule m) {
+
+        modules.put(moduleName, m);
+
+    }
+
+    public <T extends IModule> T getModule(String moduleName) {
+        if (modules.containsKey(moduleName))
+            return (T) modules.get(moduleName);
+        else
+            return null;
     }
 
     public void clearCalculations() {
