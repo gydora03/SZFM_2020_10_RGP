@@ -14,14 +14,10 @@ import java.io.IOException;
 
 public class TextConverterController {
 
-    @FXML
-    MenuButton fromMenuButton;
-    @FXML
-    MenuButton toMenuButton;
+    @FXML ComboBox toCb;
+    @FXML ComboBox fromCb;
     @FXML
     MenuBar menuBar;
-
-
     @FXML
     TextArea displayFrom;
 
@@ -32,15 +28,26 @@ public class TextConverterController {
     @FXML
     public void handleClickOnConvertButton(ActionEvent event) {
         String input = displayFrom.getText();
+        var fromSelection = fromCb.getSelectionModel().getSelectedItem();
+        var toSelection = toCb.getSelectionModel().getSelectedItem();
 
-        if(fromMenuButton.getText().equals("Morse"))
+        if(fromSelection == null) {
+            displayFrom.setText("Please provide the type of your input! [Text,Morse,Binary]");
+            return;
+        }
+        if(toSelection == null) {
+            displayTo.setText("Please provide the type of the output! [Text,Morse,Binary]");
+            return;
+        }
+
+        if(fromSelection.equals("Morse"))
             input = Translator.translateMorseToText(input);
-        if(fromMenuButton.getText().equals("Binary"))
+        if(fromSelection.equals("Binary"))
             input = Translator.translateBinaryToText(input);
 
-        if(toMenuButton.getText().equals("Morse"))
+        if(toSelection.equals("Morse"))
             displayTo.setText(Translator.translateTextToMorse(input));
-        else if(toMenuButton.getText().equals("Binary"))
+        else if(toSelection.equals("Binary"))
             displayTo.setText(Translator.translateTextToBinary(input));
         else
             displayTo.setText(input);
