@@ -73,19 +73,24 @@ public class Translator {
         StringBuilder sb = new StringBuilder();
 
         for(char c : text.toUpperCase().toCharArray()) {
-            var representation = morseTable.getOrDefault(c,"?");
-            sb.append(representation);
+            var representation = morseTable.getOrDefault(c+"","?");
+            if(c == ' ')
+                sb.append(" ");
+            else
+                sb.append(representation + " ");
         }
         return sb.toString().strip();
-
     }
 
     public static String translateMorseToText(String morseText) {
         StringBuilder sb = new StringBuilder();
 
-        for(char c : morseText.toCharArray()) {
-            var representation = inverseMorseTable.getOrDefault(c,"?");
-            sb.append(representation);
+        for(String c : morseText.split(" ")) {
+            var representation = inverseMorseTable.getOrDefault(c+"","?");
+            if(c.equals(" "))
+                sb.append(" ");
+            else
+                sb.append(representation);
         }
         return sb.toString().strip();
     }
@@ -97,7 +102,7 @@ public class Translator {
             if(c == ' ')
                 sb.append(" ");
             else
-                sb.append(Integer.toBinaryString(c));
+                sb.append(Integer.toBinaryString(c) + " ");
         }
         return sb.toString().strip();
     }
