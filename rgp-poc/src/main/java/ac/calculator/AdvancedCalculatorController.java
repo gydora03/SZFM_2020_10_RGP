@@ -1,7 +1,6 @@
 package ac.calculator;
 
 
-import ac.math.ConstantProvider;
 import ac.module.HistoryModule;
 import ac.providers.AdvancedMath;
 import ac.providers.Calculation;
