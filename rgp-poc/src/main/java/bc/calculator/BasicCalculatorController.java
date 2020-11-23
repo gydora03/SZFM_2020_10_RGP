@@ -180,28 +180,6 @@ public class BasicCalculatorController {
             case "%":
                 calc.setCurrentOperator("mod");
                 break;
-            case "sin":
-            case "cos":
-            case "tan":
-            case "ctg":
-                isOperatorClicked = false;
-                calc.setCurrentOperator(operator);
-                break;
-            case "x^y":
-                calc.setCurrentOperator("power");
-                break;
-            case "sqrt(x)":
-                isOperatorClicked = false;
-                calc.setCurrentOperator("sqrt");
-                break;
-            case "x!":
-                isOperatorClicked = false;
-                calc.setCurrentOperator("factorial");
-                break;
-            case "gcd":
-            case "lcm":
-                calc.setCurrentOperator(operator);
-                break;
             case "=":
                 calc.setCurrentOperator("=");
                 break;
@@ -237,6 +215,7 @@ public class BasicCalculatorController {
             return;
         display.setText(display.getText().concat(digit));
     }
+
     @FXML
     private void handleClickOnClear() {
         display.setText("");
@@ -244,7 +223,6 @@ public class BasicCalculatorController {
 
     @FXML
     private void handleClickOnAllClear() {
-        basicCalculator.clearCalculations();
         display.clear();
         memory_one = "";
         memory_two = "";
@@ -261,41 +239,6 @@ public class BasicCalculatorController {
     }
 
 
-    @FXML
-    private void handleClickOnMemory(ActionEvent event) {
-        if (event.getSource() == memoryOne) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 1);
-            if (memory_one.equals("")) {
-                memory_one = display.getText();
-            } else {
-                display.setText(memory_one);
-            }
-        }
-        if (event.getSource() == memoryTwo) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 2);
-            if (memory_two.equals("")) {
-                memory_two = display.getText();
-            } else {
-                display.setText(memory_two);
-            }
-        }
-        if (event.getSource() == memoryThree) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 3);
-            if (memory_three.equals("")) {
-                memory_three = display.getText();
-            } else {
-                display.setText(memory_three);
-            }
-        }
-        if (event.getSource() == memoryFour) {
-            Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 4);
-            if (memory_four.equals("")) {
-                memory_four = display.getText();
-            } else {
-                display.setText(memory_four);
-            }
-        }
-    }
     @FXML
     private void handleClickOnConstant(ActionEvent event){
         isOperatorClicked = false;
@@ -317,13 +260,7 @@ public class BasicCalculatorController {
             display.setText(String.valueOf(ConstantProvider.getGoldenRatio()));
         }
     }
-    public void handleHistoryButton(ActionEvent actionEvent) {
-        HistoryModule hm = basicCalculator.<HistoryModule>getModule("history");
-        if(hm != null){
-            hm.dumpLogs();
-            display.setText("History was saved to historyLogs.txt!");
-        }
-    }
+
     @FXML
     public void handleClickOnCloseMenuItem(ActionEvent event) {
         Platform.exit();
@@ -386,6 +323,16 @@ public class BasicCalculatorController {
         Scene scene = new Scene(parent);
         Stage stage = (Stage) menuBar.getScene().getWindow();
         stage.setTitle("Temperature Converter");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    public void switchToTextConverter(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("/fxml/textConverter.fxml"));
+        Scene scene = new Scene(parent);
+        Stage stage = (Stage) menuBar.getScene().getWindow();
+        stage.setTitle("Text Converter");
         stage.setScene(scene);
         stage.show();
     }
