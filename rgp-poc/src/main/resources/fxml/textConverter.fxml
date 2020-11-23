@@ -27,7 +27,7 @@
                   <MenuItem fx:id="lengthConverter" mnemonicParsing="false" onAction="#switchToLengthConverter" text="Length" />
                   <MenuItem fx:id="weightConverter" mnemonicParsing="false" onAction="#switchToWeightConverter" text="Weight" />
                   <MenuItem fx:id="temperatureConverter" mnemonicParsing="false" onAction="#switchToTemperatureConverter" text="Temperature" />
-                  <MenuItem fx:id="textConverter" mnemonicParsing="false" text="Temperature" />
+                  <MenuItem fx:id="textConverter" mnemonicParsing="false" text="Text" />
                </items>
             </Menu>
             <Menu fx:id="constantsMenu1" disable="true" mnemonicParsing="false" text="Constants">
