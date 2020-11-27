@@ -45,6 +45,9 @@ class AdvancedMathTest {
 
     @Test
     void testCtg() {
+        assertNotEquals(9, new AdvancedMath().ctg(4.7));
+        assertNotEquals(6, new AdvancedMath().ctg(3.3));
+        assertEquals(38.188, new AdvancedMath().ctg(1.5), 0.3);
     }
 
     @Test
