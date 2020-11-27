@@ -61,7 +61,7 @@ public class Translator {
         morseTable.put("+", "._._.");
         morseTable.put("X", "_.._");
         morseTable.put("@", ".__._.");
-        morseTable.put(" ", " ");
+        morseTable.put(" ", "|");
 
         inverseMorseTable = new HashMap<>();
         for(Map.Entry<String,String> e : morseTable.entrySet())
@@ -73,18 +73,17 @@ public class Translator {
         StringBuilder sb = new StringBuilder();
 
         for(char c : text.toUpperCase().toCharArray()) {
-            var representation = morseTable.getOrDefault(c,"?");
-            sb.append(representation);
+            var representation = morseTable.getOrDefault(c+"","?");
+            sb.append(representation + " ");
         }
         return sb.toString().strip();
-
     }
 
     public static String translateMorseToText(String morseText) {
         StringBuilder sb = new StringBuilder();
 
-        for(char c : morseText.toCharArray()) {
-            var representation = inverseMorseTable.getOrDefault(c,"?");
+        for(String c : morseText.split(" ")) {
+            var representation = inverseMorseTable.getOrDefault(c+"","?");
             sb.append(representation);
         }
         return sb.toString().strip();
@@ -95,9 +94,9 @@ public class Translator {
 
         for(char c : text.toCharArray()) {
             if(c == ' ')
-                sb.append(" ");
+                sb.append("| ");
             else
-                sb.append(Integer.toBinaryString(c));
+                sb.append(Integer.toBinaryString(c) + " ");
         }
         return sb.toString().strip();
     }
@@ -105,7 +104,7 @@ public class Translator {
         StringBuilder sb = new StringBuilder();
 
         for(String c : binaryText.split(" ")) {
-           if(c.equals(" "))
+           if(c.equals("|"))
                sb.append(" ");
            else
             sb.append((char)Integer.parseInt(c,2));

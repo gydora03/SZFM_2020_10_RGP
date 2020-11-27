@@ -6,25 +6,18 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
+import t2.Translator;
 
 import java.io.IOException;
 
 public class TextConverterController {
 
+    @FXML ComboBox toCb;
+    @FXML ComboBox fromCb;
     @FXML
     MenuBar menuBar;
-
-    @FXML
-    TextField unitFrom;
-
-    @FXML
-    TextField unitTo;
-
     @FXML
     TextArea displayFrom;
 
@@ -33,22 +26,31 @@ public class TextConverterController {
 
 
     @FXML
-    public void selectMenuItemFromFromMenuButton(ActionEvent event) {
-
-        String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitFrom.setText(menuItemText.toLowerCase());
-    }
-
-    @FXML
-    public void selectMenuItemFromToMenuButton(ActionEvent event) {
-
-        String menuItemText = ((MenuItem) event.getSource()).getText();
-        unitTo.setText(menuItemText.toLowerCase());
-    }
-
-    @FXML
     public void handleClickOnConvertButton(ActionEvent event) {
-        //TODO
+        String input = displayFrom.getText();
+        var fromSelection = fromCb.getSelectionModel().getSelectedItem();
+        var toSelection = toCb.getSelectionModel().getSelectedItem();
+
+        if(fromSelection == null) {
+            displayFrom.setText("Please provide the type of your input! [Text,Morse,Binary]");
+            return;
+        }
+        if(toSelection == null) {
+            displayTo.setText("Please provide the type of the output! [Text,Morse,Binary]");
+            return;
+        }
+
+        if(fromSelection.equals("Morse"))
+            input = Translator.translateMorseToText(input);
+        if(fromSelection.equals("Binary"))
+            input = Translator.translateBinaryToText(input);
+
+        if(toSelection.equals("Morse"))
+            displayTo.setText(Translator.translateTextToMorse(input));
+        else if(toSelection.equals("Binary"))
+            displayTo.setText(Translator.translateTextToBinary(input));
+        else
+            displayTo.setText(input);
     }
 
 
