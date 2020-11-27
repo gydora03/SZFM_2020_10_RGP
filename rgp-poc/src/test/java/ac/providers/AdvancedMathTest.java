@@ -24,6 +24,9 @@ class AdvancedMathTest {
 
     @Test
     void testSin() {
+        assertNotEquals(5, new AdvancedMath().sin(9));
+        assertNotEquals(2, new AdvancedMath().sin(10));
+        assertEquals(0.0175, new AdvancedMath().sin(1), 0.3);
     }
 
     @Test
