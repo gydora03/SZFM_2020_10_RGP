@@ -5,7 +5,7 @@
 
 A program fő célja, hogy az erediteleg megrendelt program hibáinak kijavítását és a hiányzó elemek pótolását demonstrálja.      
 A legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljenek a kért algoritmusok.     
-Ehhez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontatlanságát.     
+Ehhez az első lépés, hogy elkészítsünk egy egyszerűsített számológépet, majd annak egy haladott változatát   
 A második célja, hogy a mérleghez készült szoftveren is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a algoritmus minőségén javítsunk.     
 A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően működjön.     
 
@@ -22,9 +22,9 @@ A szoftvereket speciális hardverekre szánják, például egy __*nanogépekkel 
 A szoftverek jelenleg adatokat mentenek a lemezre.    
 A korlátolt működés legfőbbképpen a lebegőpontos aritmetika pontatlanságában mutatkozik meg, de panaszkodnak a kapott forráskódok tesztelhetőségére is.   
 A megrendelés 3 szoftverre szól, ezeknek speciális hibáik a következőek:
-1. **OCR számológép**:
-    * Hibás tokenizer és parser
-    * Hibás kifejezéskiértékelés
+1. **Számológépek**:
+    * Hibás kiértékelési sorrend
+    * Hibás kifejezésértelmezés
     * Aritmetikai pontatlanság
 2. **Nanogépekkel működő univerzális mérleg**:
     * Aritmetikai pontatlanság ami bevételkiesést jelent hosszútávon a termék felhasználóinak(gazdasági szereplők)
@@ -50,11 +50,10 @@ Szeretnék, hogy a programok ne egyszerűen egy szimpla fájlba rögzítsét a s
 Cross-platform elvárás miatt a Java platformra kell megírnunk a forráskódot, illetve a Maven build rendszert kell használnunk a projekthez, mivel ők is ezt használják cégen belül.    
 
 Kimondott fejlesztések:
-1. **OCR számológép**:
-    * Tokenizer
-    * Parser
-    * Kifejezéskiértékelés környezetfüggetlen grammatikával
-        * Double típus pontásságával dolgozhatunk
+1. **Számológépek**:
+    * Helyes kifejezéskiértékelő alrendszer
+    * Pontos kifejezésfelismerés
+    * Double típus pontásságával dolgozhatunk
     * Adatbázisba való mentés
     
 2. **Nanogépekkel működő univerzális mérleg**:
@@ -112,10 +111,9 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
         * Haladó matematikai koncepciókat támogat
             - Konverziók, trigonometriai függvények, híres konstansok ...
             - A funkciók típus szerint vannak csoportosítva, a műveletek könnyebb megtalálása érdekében
-        * Matematikai kifejezések megadását támogatja
-            - Zárojelezésre alkalmas gombok is vannak erre a célra, melyek segítenek a kifejezések megadásában
+        * Matematikai helyesség
             - A számológép tudja kezelni a kijezéseket
-            - A számológép logikája ismeri a műveletek helyes kiértékelési sorrendjét (a műveletek prioritása)
+            - A számológép logikája ismeri a műveletek helyes kiértékelési sorrendjét
     3. PI számológép
         * Támogatja a következő formulákat:
             - Chudnovsky, Zeta, Ramahujan, Leibniz
@@ -167,7 +165,7 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 - K05. Előzmény mód
 - K06. Matematikai alapműveletek
 - K07. Matematikai haladó műveletek
-- K08. Matematikai kifejezések kiértékelése
+- K08. Matematikai kifejezések helyes kiértékelése
 - K09. PI megközelítése különböző algoritmusokkal
 - K10. Térfogat/Űrtartalom konvertáló
 - K11. Hosszúség (Length) konvertáló
@@ -180,10 +178,9 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 ---
 
 
-### Használati esetek [Use cases]
-A PoC programunk, technikai és üzleti okok miatt, tartalmaz egy plusz programot:     
+### Használati esetek [Use cases]      
 ## **BasicCalculator**     
-Ennek célja, hogy egyszerűen tudjuk demózni, tesztelni néhány matematikai könyvtárt magunk, fejlesztők, között illetve ügyfelek előtt.     
+Az első megrendelt program, egyfajta PoC szerűség az implementációra nézre.  
 Ennek a következők a _Használati esetei_:      
 
 
@@ -206,29 +203,7 @@ Ennek a következők a _Használati esetei_:
    1c. Értelmezhetetlen matematikai művelet akar elvégezni a user
    * Pl: 0-val osztás esetén dobjon hibát 
 
-
-2. __Title:__  A demózó megtekinti eddigi számításait  
-   __Main Success Scenario:__     
-   1. Kiválasztja a Történelem funckiót.
-   2. Lemezre lementődnek az eddig elvégzett számítások
-   3. Megnyitja az aktuális _historyLog.txt_ állományt.
-   4. Ha akarja, vágolapra másolja adott számítást.
-   5. Ha akarja, törli az előzményeket.
-
-   __Extensions:__   
-   1a-5a. Bármilyen hiba esetén azonnal megsemmisíti önmagát(processzus) maga után hagyva a log fájlt a host adminisztárotai számára.   
-
-3. __Title:__ A user elmenti memóriába az aktuális értéket        
-   __Main Success Scenario:__       
-   1. A user elvégzett számítást.
-   2. Az értéket a rendszer kijelzi a _kijelzőn_.
-   3. A user a  memóriagombok egyikére kattint
-   4. A rendszer elmenti a megfelelő slotba az értéket
-
-   __Extensions__:    
-   1a. Begépel egy értéket   
-
-4. __Title:__ A user lekér egy mentett értéket     
+2. __Title:__ A user lekér egy mentett értéket     
    __Main Success Scenario:__      
    1. A user a memóriagombok egyikére kattint
    2. A mentett érték bekerül egy rendszerváltozóba
@@ -237,7 +212,7 @@ Ennek a következők a _Használati esetei_:
    __Extension:__    
    2a. Amennyiben nincs mentett érték semmi nem történik.   
 
-5. __Title:__ A user lekér egy konstanst   
+3. __Title:__ A user lekér egy konstanst   
    __Main Success Scenario:__    
    1. A user az kurzort a menüre viszi
    2. Megnyílik az adott menüelem alatt az opciók

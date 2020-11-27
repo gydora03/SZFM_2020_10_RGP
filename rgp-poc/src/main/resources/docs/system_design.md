@@ -5,7 +5,7 @@
 
 A program fő célja, hogy az erediteleg megrendelt program hibáinak kijavítását és a hiányzó elemek pótolását demonstrálja.      
 A legfontosabb feladat, hogy a magas szintű tudományos kiállítás minőségi feltételeinek megfeleljenek a kért algoritmusok.     
-Ehhez az első lépés, hogy kijavítsuk a számológép hibás tokenizer-ét és parser-ét és a számítási pontatlanságát.     
+Ehhez az első lépés, hogy kijavítsuk a számológép hibás kifejezéseket értelmező alrendszereit és a számítási pontatlanságát.     
 A második célja, hogy a mérleghez készült szoftveren is javítsunk a lebegőpontos számokkal végzett műveleteket, hogy a algoritmus minőségén javítsunk.     
 A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően működjön.     
 
@@ -85,9 +85,6 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
     - Alap műveletek végrehajtása
         * művelet végrehajtásának a menete: operandus megadása -> művelethez szükséges operátor -> újabb operandus -> egyenlő operátor -> az eredmény megjelenik a kijelzőn
         * összetettebb műveletsorok elvégzése is lehetséges, ekkor az egyenlő operátor helyett újabb alap műveletet jelölő operátor jön, majd újabb operandus. A műveletsor végén, ha már nem akarunk újabb műveleteket elvégezni, akkor az egyenlő operátor megnyomásával lezárjuk a műveletsort és megjelenítjük az eredmény.
-    - Haladó matekatikai koncepciók végrehajtása
-        * művelet végrehajtásának a menete: operandus megadása -> a művelethez szükséges operátor -> az eredmény autómatikusan megjelenik a kijelzőn, anélkül, hogy megnyomnánk az egyenlő operátort.
-        * műveletsorok elvégzése közben is használhóak ezek a funkciók.
 2. Haladó (Advanced) számológép
     - Alap műveletek végrehajtása
         * művelet végrehajtásának a menete: operandus megadása -> művelethez szükséges operátor -> újabb operandus -> egyenlő operátor -> az eredmény megjelenik a kijelzőn
@@ -95,8 +92,6 @@ A harmadik lépés, hogy a randomszámgenerátor részmodulja is megfelelően m�
     - Haladó matekatikai koncepciók végrehajtása
         * művelet végrehajtásának a menete: operandus megadása -> a művelethez szükséges operátor -> az eredmény autómatikusan megjelenik a kijelzőn, anélkül, hogy megnyomnánk az egyenlő operátort.
         * műveletsorok elvégzése közben is használhóak ezek a funkciók.
-    - Öszetett matematikai kifejezések végrehajtása:
-        * művelet végrehajtásának a menete: zárójelek, operandusok és operátorok segítéségével megadni a matematikai kifejezést -> egyenló operátor -> az ifejezés eredménye megjelenik a kijelzőn.
 3. PI számológép
     - művelet végrehajtásának a menete: ki kell választani hogy melyik módszert szeretnénk használni -> megadni a számításhoz szükséges paramétereket -> Calculate gomb megnyomása -> az eredmény megjelenik a képernyőn
 4. Térfogat/Űrtartalom (Volume) konvertáló
@@ -144,11 +139,6 @@ A rendszer főbb osztályai:
 * _ConstantProvider_ osztály:
     * Statikus osztály, nem példányosítható
     * Statikus függvények révén ad vissza definiált konstans értékeket    
-* _HistoryModule_ osztály:
-    * Singleton osztály
-    * Minden részkiértékelés eredménye rögzítésre kerül ```logCalculation(Calculation c)``` metódusa révén
-    * Biztosítja a Történelem funkciót
-    * Module Interfészből ered
 * _BasiCalculatorApplication_ osztály:
     * Lényegében a Main()-t definiáló osztály, _Controller_
     * Itt történik az FXML betöltése     
@@ -160,18 +150,13 @@ A rendszer főbb osztályai:
 ![classdiagram](diagrams/class_diagram_bc.png)
 
 ## **AdvancedCalculator esetén a következőket mondhatjuk el:**  
-Azonos az architekturális a **BasicCalculator** programmal, viszont bővel egy _Tokenizer_ és _Parser_ osztállyal egy új csomagban.   
+Azonos az architekturális a **BasicCalculator** programmal, viszont bővel egy Modul alrendszerrel is egy új csomagban.   
 
-A _Tokenizer_ osztály:
-* A bemenetet karakterenként olvassa _Token_-eket állít elő
-* Az előállított _Token_-eket olvasási sorrendet megtartva kerül átadásra a _Parser_ példánynak
-* Hibát dob ismeretlen bemenet esetén
-_Token_ osztály:     
-* Érvényes matematikai kifejezést/utasítást reprezentáló osztály
-
-_Parser_ osztály:
-* Kapott tokensorozatot értékel ki a beprogramozott nyelvtani szabályok alapján
-* Hibát dob szintaktikai hiba esetén
+* _HistoryModule_ osztály:
+    * Singleton osztály
+    * Minden részkiértékelés eredménye rögzítésre kerül ```logCalculation(Calculation c)``` metódusa révén
+    * Biztosítja a Történelem funkciót
+    * Module Interfészből ered
 
 ![classdiagram](diagrams/ac_class_diagram.png)
 
@@ -249,8 +234,6 @@ A forráskódokat a megadott igények mentén kell tesztelnünk, ha ezek a teszt
 4. Használató-e más IAdvancedMath interfészt implementáló osztály-e?
 5. A program helyesen naplózza az elvégzett műveleteket az adatbázisba?
 6. A program megfelelő lebegőpontos aritmetikai pontosság mellett dolgozik?
-7. A tokenizer dob-e hibát érvénytelen karakter feldolgozásakor?
-8. A parser helyesen alkalmazza a nyelvtani szabályokat?
 
 
 ## **Nanógépes alapokon működő univerzális mérleg konverziós könyvtára esetében:**

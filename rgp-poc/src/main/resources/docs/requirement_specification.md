@@ -8,8 +8,8 @@ A megrendelés végrehajtását már el is kezdtük, az igényelt szoftvereket m
 Ezekért a szoftverekért jelentős összeget adtunk ki, nem akarjuk elbukni a rájuk szánt támogatást, szeretnék ezeket a szoftvereket úgy átalakítani, hogy megfeleljen a megrendelőknek. Tisztában vagyunk azzal, hogy előfordulhat esetlegesen, hogy egy-egy szoftvert teljesen újra kell írni.     
 Az érintett szoftverek matematikai programok amiket különböző új, innovatív eszközökre szántak.      
 
-Az egyik érintett szoftver egy __*számológép program amit egy könnyen hordozható, handheld scanner eszközre*__ írtak. Az eszköz használatával tetszőleges matematikai kifejezés értékelhető ki scannelés után, természetesen nem fedi le a matematika teljes területét a funkcionalitás a képességei dokumentálva vannak. Az eszközt oktatók számára tervezték, hogy időt spórolva, gyorsan tudjanak dolgozatokat javítani.
-A gond vele az, a _megrendelő_ szerint, hogy hibásan implementálták a _tokenizer_ és _parser_ részeit, illetve a nyelvtani szabályokat is szintén. Helytelen eredménnyel szolgáltat, ami nem tudható be a hardver hibájába.     
+Az egyik érintett szoftver egy __*számológép programok amit egy könnyen hordozható, handheld scanner eszközre*__ írtak. Az eszköz használatával tetszőleges matematikai kifejezés értékelhető ki scannelés után, természetesen nem fedi le a matematika teljes területét a funkcionalitás a képességei dokumentálva vannak. Az eszközt oktatók számára tervezték, hogy időt spórolva, gyorsan tudjanak dolgozatokat javítani.
+A gond vele az, a _megrendelő_ szerint, hogy hibásan implementálták a kifejezések értelmezésére készült alrendszereinek részeit, illetve a nyelvtani szabályokat is szintén. Helytelen eredménnyel szolgáltat, ami nem tudható be a hardver hibájába.     
 
 A másik egy __*nanogépekkel működő univerzális mérlegre*__ írt konverziós program. A mérleget több település piaca rendelte már meg, viszont a programja nagymértékben korlátolt, ugyanis limitált a lebegőpontos aritmetikája. Hosszú távon ez bevételkiesést jelent a kereskedők számára.    
 
@@ -75,8 +75,6 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
     1. Alap (Basic) számológép:
         * Támogasson alap matematikai műveleteket
             - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
-        * Támogasson haladó matematikai koncepciókat 
-            - Konverziók, trigonometriai függvények, híres konstansok ...
             - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
     2. Haladó (Advanced) számológép:
         * Kinézetre hasonló vagy ugyanolyan is lehet mint az alap számológép
@@ -85,10 +83,9 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
         * Támogasson haladó matematikai koncepciókat 
             - Konverziók, trigonometriai függvények, híres konstansok...
             - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
-        * Támogassa matematikai kifejezések megadását
-            - Legyenek zárojelezésre alkalmas gombok, melyek segítenek a kifejezések megadásában
-            - A számológép tudja kezelni a kijezéseket
-            - A számológép ismerje a műveletek helyes kiértékelési sorrendjét (a műveletek prioritása)
+        * Támogasson helyes matematikai értelmezést
+            - A számológép tudja kezelni a kijezéseket szemantikailag
+            - A számológép ismerje a műveletek helyes kiértékelési sorrendjét
     3. PI számológép
         * Támogassa a következő formulákat:
             - Chudnovsky, Zeta, Ramahujan, Leibniz
