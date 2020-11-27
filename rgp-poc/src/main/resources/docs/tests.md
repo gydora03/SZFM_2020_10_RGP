@@ -13,3 +13,11 @@
 | 11 | György Dóra | 2020.11.27 17:53 | Basic Calculator - kivonás művelet | 8 - 5 | 3 | Igen |
 | 12 | György Dóra | 2020.11.27 17:54 | Basic Calculator - szorzás művelet | 7 * 8 | 56 | Igen |
 | 13 | György Dóra | 2020.11.27 17:55 | Basic Calculator - osztás művelet | 28 / 7 | 4 | Igen |
+| 14 | György Dóra | 2020.11.27 17:55 | Basic Calculator - moduló művelet | 24 mod 5 | 4 | Igen |
+| 15 | György Dóra | 2020.11.27 18:06 | Advanced Calculator - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 16 | György Dóra | 2020.11.27 18:06 | Advanced Calculator - szinusz művelet | sin(1) | 0.0175 | Igen |
+| 17 | György Dóra | 2020.11.27 18:07 | Advanced Calculator - koszinusz művelet | cos(1) | 0.99985 | Igen |
+| 18 | György Dóra | 2020.11.27 18:07 | Advanced Calculator - tangens művelet | tg(1.5) | 0.026 | Igen |
+| 19 | György Dóra | 2020.11.27 18:07 | Advanced Calculator - kotangens művelet | ctg(1.5) | 38.188 | Igen |
+| 20 | György Dóra | 2020.11.27 18:08 | Advanced Calculator - moduló művelet | 24 mod 5 | 4 | Igen |
+| 21 | György Dóra | 2020.11.27 18:08 | Advanced Calculator - hatványozás művelet | 5 ^ 4 | 625 | Igen |
