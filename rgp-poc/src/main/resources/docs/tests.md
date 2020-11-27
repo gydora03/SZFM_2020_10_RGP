@@ -1,7 +1,7 @@
 | Sorszám | Tesztelő | Tesztelés időpontja | Teszetlés tárgya | Elvégzett művelet | Kapott eredmény | Helyes mülködés |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 1 | György Dóra | 2020.11.24 10:59 | Váltás a Basic Calcultor-ról az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
-| 2 | György Dóra | 2020.11.24 10:59 | Váltás az Advanced Calcultor-ról az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
+| 2 | György Dóra | 2020.11.24 11:00 | Váltás az Advanced Calcultor-ról az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
 | 3 | György Dóra | 2020.11.27 17:26 | Váltás a PI Calcultor-ról az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
 | 4 | György Dóra | 2020.11.27 17:26 | Váltás a Volume Converter-ről az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
 | 5 | György Dóra | 2020.11.27 17:27 | Váltás a Length Converter-ről az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
@@ -21,7 +21,10 @@
 | 19 | György Dóra | 2020.11.27 18:07 | Advanced Calculator - kotangens művelet | ctg(1.5) | 38.188 | Igen |
 | 20 | György Dóra | 2020.11.27 18:08 | Advanced Calculator - moduló művelet | 24 mod 5 | 4 | Igen |
 | 21 | György Dóra | 2020.11.27 18:08 | Advanced Calculator - hatványozás művelet | 5 ^ 4 | 625 | Igen |
-| 22 | György Dóra | 2020.11.27 18:22| Weight Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
-| 23 | György Dóra | 2020.11.27 18:22| Weight Converter - grammba alakítás | az egyes mértékegységekből grammba való átalakítás | a megadott mennyiség grammban | Igen |
-| 24 | György Dóra | 2020.11.27 18:22| Weight Converter - milligrammba alakítás | az egyes mértékegységekből milligrammba való átalakítás | a megadott mennyiség milligrammban | Igen |
-
+| 22 | György Dóra | 2020.11.27 18:22 | Weight Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 23 | György Dóra | 2020.11.27 18:25 | Weight Converter - grammba alakítás | az egyes mértékegységekből grammba való átalakítás | a megadott mennyiség grammban | Igen |
+| 24 | György Dóra | 2020.11.27 18:26 | Weight Converter - milligrammba alakítás | az egyes mértékegységekből milligrammba való átalakítás | a megadott mennyiség milligrammban | Igen |
+| 25 | György Dóra | 2020.11.27 18:34 | Temperature Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 26 | György Dóra | 2020.11.27 18:36 | Temperature Converter - Celsius-ba alakítás | az egyes mértékegységekből Celsius-ba való átalakítás | a megadott mennyiség Celsius-ban | Igen |
+| 27 | György Dóra | 2020.11.27 18:37 | Temperature Converter - Fahrenheit alakítás | az egyes mértékegységekből Fahrenheit-be való átalakítás | a megadott mennyiség Fahrenheit-ben | Igen |
+| 28 | György Dóra | 2020.11.27 18:38 | Temperature Converter - Kelvin-ben alakítás | az egyes mértékegységekből Kelvin-be való átalakítás | a megadott mennyiség Kelvin-ben | Igen |
