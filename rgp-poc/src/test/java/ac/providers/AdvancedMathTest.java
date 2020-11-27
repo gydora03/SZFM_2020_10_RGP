@@ -44,6 +44,9 @@ class AdvancedMathTest {
 
     @Test
     void testPower() {
+        assertNotEquals(5, new AdvancedMath().power(3, 2));
+        assertNotEquals(34, new AdvancedMath().power(6, 7));
+        assertEquals(625, new AdvancedMath().power(5, 4));
     }
 
     @Test
