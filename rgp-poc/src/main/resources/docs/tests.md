@@ -21,3 +21,7 @@
 | 19 | György Dóra | 2020.11.27 18:07 | Advanced Calculator - kotangens művelet | ctg(1.5) | 38.188 | Igen |
 | 20 | György Dóra | 2020.11.27 18:08 | Advanced Calculator - moduló művelet | 24 mod 5 | 4 | Igen |
 | 21 | György Dóra | 2020.11.27 18:08 | Advanced Calculator - hatványozás művelet | 5 ^ 4 | 625 | Igen |
+| 22 | György Dóra | 2020.11.27 18:22| Weight Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 23 | György Dóra | 2020.11.27 18:22| Weight Converter - grammba alakítás | az egyes mértékegységekből grammba való átalakítás | a megadott mennyiség grammban | Igen |
+| 24 | György Dóra | 2020.11.27 18:22| Weight Converter - milligrammba alakítás | az egyes mértékegységekből milligrammba való átalakítás | a megadott mennyiség milligrammban | Igen |
+
