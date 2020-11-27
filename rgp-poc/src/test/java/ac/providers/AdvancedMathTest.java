@@ -52,6 +52,9 @@ class AdvancedMathTest {
 
     @Test
     void testMod() {
+        assertNotEquals(2, new AdvancedMath().mod(8, 2));
+        assertNotEquals(7, new AdvancedMath().mod(9, 6));
+        assertEquals(4, new AdvancedMath().mod(24, 5));
     }
 
     @Test
