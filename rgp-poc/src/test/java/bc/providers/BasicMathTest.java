@@ -36,5 +36,8 @@ class BasicMathTest {
 
     @Test
     void testMod() {
+        assertNotEquals(2, new BasicMath().mod(8, 2));
+        assertNotEquals(7, new BasicMath().mod(9, 6));
+        assertEquals(4, new BasicMath().mod(24, 5));
     }
 }
