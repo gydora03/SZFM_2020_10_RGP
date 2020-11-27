@@ -15,6 +15,9 @@ class BasicMathTest {
 
     @Test
     void testSubtract() {
+        assertNotEquals(9, new BasicMath().subtract(21, 4));
+        assertNotEquals(12, new BasicMath().subtract(22, 19));
+        assertEquals(3, new BasicMath().subtract(8, 5));
     }
 
     @Test
