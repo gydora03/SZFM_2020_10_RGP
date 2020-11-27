@@ -38,6 +38,9 @@ class AdvancedMathTest {
 
     @Test
     void testTan() {
+        assertNotEquals(7, new AdvancedMath().tan(2.4));
+        assertNotEquals(8, new AdvancedMath().tan(6.5));
+        assertEquals(0.026, new AdvancedMath().tan(1.5), 0.3);
     }
 
     @Test
