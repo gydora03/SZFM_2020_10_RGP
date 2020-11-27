@@ -15,5 +15,8 @@ class TemperatureConverterControllerTest {
 
     @Test
     void testConvertToTargetUnit() {
+        assertNotEquals(6, new TemperatureConverterController().convertToTargetUnit("kelvin", 56));
+        assertNotEquals(150, new TemperatureConverterController().convertToTargetUnit("fahrenheit", 73));
+        assertEquals(303.15, new TemperatureConverterController().convertToTargetUnit("kelvin", 30));
     }
 }
