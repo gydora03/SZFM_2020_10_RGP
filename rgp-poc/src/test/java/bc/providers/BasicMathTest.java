@@ -22,6 +22,9 @@ class BasicMathTest {
 
     @Test
     void testMultiply() {
+        assertNotEquals(41, new BasicMath().multiply(3, 4));
+        assertNotEquals(37, new BasicMath().multiply(2, 8));
+        assertEquals(56, new BasicMath().multiply(7, 8));
     }
 
     @Test
