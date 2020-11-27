@@ -29,3 +29,4 @@
 | 27 | György Dóra | 2020.11.27 18:37 | Temperature Converter - Fahrenheit alakítás | az egyes mértékegységekből Fahrenheit-be való átalakítás | a megadott mennyiség Fahrenheit-ben | Igen |
 | 28 | György Dóra | 2020.11.27 18:38 | Temperature Converter - Kelvin-ben alakítás | az egyes mértékegységekből Kelvin-be való átalakítás | a megadott mennyiség Kelvin-ben | Igen |
 | 29 | György Dóra | 2020.11.27 18:40 | Close menügomb | File -> Close menügomb lenyomása | A program bezárása | Igen |
+| 30 | György Dóra | 2020.11.27 18:42 | PI konstans menügombos mülködése | PI konstans lenyomása | PI konstans megjelenése a kijelzőn | Igen |
