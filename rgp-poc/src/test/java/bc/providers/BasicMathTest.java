@@ -29,6 +29,9 @@ class BasicMathTest {
 
     @Test
     void testDivide() {
+        assertNotEquals(10, new BasicMath().divide(8, 4));
+        assertNotEquals(3, new BasicMath().divide(25, 5));
+        assertEquals(4, new BasicMath().divide(28, 7));
     }
 
     @Test
