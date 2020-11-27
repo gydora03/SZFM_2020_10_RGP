@@ -8,10 +8,8 @@
 | 6 | György Dóra | 2020.11.27 17:28 | Váltás a Weight Converter-ről az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
 | 7 | György Dóra | 2020.11.27 17:29 | Váltás a Temperature Converter-ről az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
 | 8 | György Dóra | 2020.11.27 17:30 | Váltás a Text Converter-ről az összes többire | Calculators / Converters -> számológép / konverter kiválasztása | Megjelenik a kiválasztott számológép / konverter | Igen |
-| 9 |  |  |  |  |  |  |
-| 10 |  |  |  |  |  |  |
-| 11 |  |  |  |  |  |  |
-| 12 |  |  |  |  |  |  |
-| 13 |  |  |  |  |  |  |
-| 14 |  |  |  |  |  |  |
-| 15 |  |  |  |  |  |  |
+| 9 | György Dóra | 2020.11.27 17:51 | Basic Calculator - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 10 | György Dóra | 2020.11.27 17:53 | Basic Calculator - összeadás művelet | 5 + 5 | 10 | Igen |
+| 11 | György Dóra | 2020.11.27 17:53 | Basic Calculator - kivonás művelet | 8 - 5 | 3 | Igen |
+| 12 | György Dóra | 2020.11.27 17:54 | Basic Calculator - szorzás művelet | 7 * 8 | 56 | Igen |
+| 13 | György Dóra | 2020.11.27 17:55 | Basic Calculator - osztás művelet | 28 / 7 | 4 | Igen |
