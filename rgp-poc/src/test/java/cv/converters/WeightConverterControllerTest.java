@@ -15,5 +15,8 @@ class WeightConverterControllerTest {
 
     @Test
     void testConvertToTargetUnit() {
+        assertNotEquals(70, new WeightConverterController().convertToTargetUnit("kilogram", 685));
+        assertNotEquals(68, new WeightConverterController().convertToTargetUnit("pounds", 89));
+        assertEquals(1, new WeightConverterController().convertToTargetUnit("hectogram", 100));
     }
 }
