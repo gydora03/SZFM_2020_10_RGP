@@ -31,6 +31,9 @@ class AdvancedMathTest {
 
     @Test
     void testCos() {
+        assertNotEquals(6, new AdvancedMath().cos(2));
+        assertNotEquals(23, new AdvancedMath().cos(4));
+        assertEquals(0.99985, new AdvancedMath().cos(1), 0.3);
     }
 
     @Test
