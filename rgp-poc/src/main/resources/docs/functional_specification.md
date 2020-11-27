@@ -142,6 +142,12 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
             - Kelvin
             - Fahrenheit
         * Egy listából lehet kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
+    8. Szöveg (Text) konvertáló
+        * A számológép támogatja a következő mértékegységeket és az átváltást köztük:
+            - Text
+            - Morse
+            - Binary
+        * Egy listából lehet kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
 
 2. Mindegyik számológép típushoz tartozik egy saját scene
 
@@ -171,10 +177,11 @@ Kérnek ezenkívül **Markdown** formátumban dokumentált, **JUnit** keretrends
 - K11. Hosszúség (Length) konvertáló
 - K12. Tömeg (Weight) konvertáló
 - K13. Hőmérséklet (Temperature) konvertáló
-- K14. BUILD SYSTEM: **MAVEN**
-- K15. GUI TOOLKIT: **JAVAFX**
-- K16. LEBEGŐPONTOS ARITMETIKA: **APFLOAT**
-- K17. PoC program ami demonstrálja a kért _feature-öket_
+- K14. Szöveg (Text) konvertáló
+- K15. BUILD SYSTEM: **MAVEN**
+- K16. GUI TOOLKIT: **JAVAFX**
+- K17. LEBEGŐPONTOS ARITMETIKA: **APFLOAT**
+- K18. PoC program ami demonstrálja a kért _feature-öket_
 ---
 
 

@@ -114,6 +114,12 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
             - Kelvin
             - Fahrenheit
         * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
+    8. Szöveg átalakító
+        * A számológép támogassa a következő mértékegységeket és az átváltást köztük:
+            - Text
+            - Morse
+            - Binary
+        * Lehessen kiválasztani azt, hogy milyen mértékegységből szeretnénk átalakítani milyen mértékegységbe
 
 2. Mindegyik számológép típushoz tartozzon egy saját oldal
 
@@ -160,10 +166,11 @@ Maga a PoC program legyen reszponzív, licence kérdések miatt a JavaFX könyvt
 - K11. Hosszúség (Length) konvertáló
 - K12. Tömeg (Weight) konvertáló
 - K13. Hőmérséklet (Temperature) konvertáló
-- K14. BUILD SYSTEM: **MAVEN**
-- K15. GUI TOOLKIT: **JAVAFX**
-- K16. LEBEGŐPONTOS ARITMETIKA: **APFLOAT**
-- K17. PoC program ami demonstrálja a kért _feature-öket_
+- K14. Szöveg (Text) kopnvertáló
+- K15. BUILD SYSTEM: **MAVEN**
+- K16. GUI TOOLKIT: **JAVAFX**
+- K17. LEBEGŐPONTOS ARITMETIKA: **APFLOAT**
+- K18. PoC program ami demonstrálja a kért _feature-öket_
 
 
 ---
