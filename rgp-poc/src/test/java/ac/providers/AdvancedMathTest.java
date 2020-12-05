@@ -29,6 +29,9 @@ class AdvancedMathTest {
 
     @Test
     void testDivide() {
+        assertNotEquals(5, new AdvancedMath().divide(3,2));
+        assertNotEquals(3, new AdvancedMath().divide(6,3));
+        assertEquals(1, new AdvancedMath().divide(5,5));
     }
 
     @Test
