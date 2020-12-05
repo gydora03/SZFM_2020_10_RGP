@@ -22,6 +22,9 @@ class AdvancedMathTest {
 
     @Test
     void testMultiply() {
+        assertNotEquals(5, new AdvancedMath().multiply(3,2));
+        assertNotEquals(87, new AdvancedMath().multiply(10,10));
+        assertEquals(25, new AdvancedMath().multiply(5,5));
     }
 
     @Test
