@@ -15,7 +15,9 @@ class AdvancedMathTest {
 
     @Test
     void testSubtract() {
-
+        assertNotEquals(5, new AdvancedMath().subtract(3,2));
+        assertNotEquals(20, new AdvancedMath().subtract(32,17));
+        assertEquals(1, new AdvancedMath().subtract(5,4));
     }
 
     @Test
