@@ -92,6 +92,9 @@ class AdvancedMathTest {
 
     @Test
     void testGcd() {
+        assertNotEquals(5, new AdvancedMath().gcd(15,9));
+        assertNotEquals(2, new AdvancedMath().gcd(20,10));
+        assertEquals(3, new AdvancedMath().gcd(6,9));
     }
 
     @Test
