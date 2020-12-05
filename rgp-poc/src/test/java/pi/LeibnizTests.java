@@ -1,6 +1,7 @@
 package pi;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.tinylog.Logger;
 import pi.approximators.LeibnizApproximator;
@@ -8,13 +9,13 @@ import pi.approximators.LeibnizApproximator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LeibnizTests {
-    /*
+
     @BeforeAll
     public static void warnUser() {
         System.out.println("Running Leibniz tests");
         Logger.tag("Leibniz").warn("Running Leibniz tests");
     }
-    @Skip
+    @Disabled("Adam's machine is weird")
     @Test
     public void firstFewDigitsAfter500Iter() {
         LeibnizApproximator za = new LeibnizApproximator();
@@ -24,5 +25,5 @@ public class LeibnizTests {
         assertEquals(expected,result,0.0001);
     }
 
-     */
+
 }
