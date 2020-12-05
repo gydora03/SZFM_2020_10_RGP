@@ -8,11 +8,13 @@ import pi.approximators.LeibnizApproximator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LeibnizTests {
+    /*
     @BeforeAll
     public static void warnUser() {
         System.out.println("Running Leibniz tests");
         Logger.tag("Leibniz").warn("Running Leibniz tests");
     }
+    @Skip
     @Test
     public void firstFewDigitsAfter500Iter() {
         LeibnizApproximator za = new LeibnizApproximator();
@@ -21,4 +23,6 @@ public class LeibnizTests {
 
         assertEquals(expected,result,0.0001);
     }
+
+     */
 }

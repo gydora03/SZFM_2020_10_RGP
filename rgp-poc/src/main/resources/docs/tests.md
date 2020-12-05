@@ -30,3 +30,18 @@
 | 28 | György Dóra | 2020.11.27 18:38 | Temperature Converter - Kelvin-ben alakítás | az egyes mértékegységekből Kelvin-be való átalakítás | a megadott mennyiség Kelvin-ben | Igen |
 | 29 | György Dóra | 2020.11.27 18:40 | Close menügomb | File -> Close menügomb lenyomása | A program bezárása | Igen |
 | 30 | György Dóra | 2020.11.27 18:42 | PI konstans menügombos mülködése | PI konstans lenyomása | PI konstans megjelenése a kijelzőn | Igen |
+| 31 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 32 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - szorzás művelet | 5 * 5 | 25 | Igen |
+| 33 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - osztás művelet | 5 / 5 | 1 | Igen |
+| 34 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - összeadás művelet | 1 + 1 | 2 | Igen |
+| 35 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - kivonás művelet | 5 - 4 | 1 | Igen |
+| 36 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - gyökvonás művelet | sqrt(16) | 4 | Igen |
+| 37 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - faktoriális művelet | 3! | 6 | Igen |
+| 38 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - LNKO művelet | LNKO(6,9) | 3 | Igen |
+| 39 | Pallagi Ádám | 2020.12.5 14:21 | Advanced Calculator - LKKT művelet | LKKT(2,4) | 4 | Igen |
+| 40 | Pallagi Ádám | 2020.12.5 14:21 | Volume Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 41 | Pallagi Ádám | 2020.12.5 14:21 | Volume Converter - JUnit literbe átváltás |  az egyes mértékegységekből literbe való átalakítás | a megadott mennyiség literben | Igen |
+| 42 | Pallagi Ádám | 2020.12.5 14:21 | Volume Converter - JUnit literbe átváltás |  az egyes mértékegységekből deciliterbe való átalakítás | a megadott mennyiség deciliterben | Igen |
+| 43 | Pallagi Ádám | 2020.12.5 14:21 | Length Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 44 | Pallagi Ádám | 2020.12.5 14:21 | Length Converter - JUnit literbe átváltás |  az egyes mértékegységekből méterbe való átalakítás | a megadott mennyiség méterben | Igen |
+| 45 | Pallagi Ádám | 2020.12.5 14:21 | Length Converter - JUnit literbe átváltás |  az egyes mértékegységekből kilometerbe való átalakítás | a megadott mennyiség kilometerben | Igen |
