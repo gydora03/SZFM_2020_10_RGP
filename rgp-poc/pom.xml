@@ -51,7 +51,7 @@
               <mainClass>org.h2.tools.RunScript</mainClass>
               <arguments>
                 <argument>-url</argument>
-                <argument>jdbc:h2:~/test</argument>
+                <argument>jdbc:h2:tcp://localhost/~/test</argument>
                 <argument>-script</argument>
                 <argument>${initdb}</argument>
               </arguments>
