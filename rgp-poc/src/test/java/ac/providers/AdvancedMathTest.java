@@ -85,6 +85,9 @@ class AdvancedMathTest {
 
     @Test
     void testFactorial() {
+        assertNotEquals(100, new AdvancedMath().factorial(9));
+        assertNotEquals(32, new AdvancedMath().factorial(2));
+        assertEquals(6, new AdvancedMath().factorial(3));
     }
 
     @Test
