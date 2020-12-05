@@ -78,6 +78,9 @@ class AdvancedMathTest {
 
     @Test
     void testSqrt() {
+        assertNotEquals(5, new AdvancedMath().sqrt(9));
+        assertNotEquals(10, new AdvancedMath().sqrt(81));
+        assertEquals(4, new AdvancedMath().sqrt(16));
     }
 
     @Test
