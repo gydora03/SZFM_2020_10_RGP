@@ -45,3 +45,34 @@
 | 43 | Pallagi Ádám | 2020.12.5 14:21 | Length Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
 | 44 | Pallagi Ádám | 2020.12.5 14:21 | Length Converter - JUnit literbe átváltás |  az egyes mértékegységekből méterbe való átalakítás | a megadott mennyiség méterben | Igen |
 | 45 | Pallagi Ádám | 2020.12.5 14:21 | Length Converter - JUnit literbe átváltás |  az egyes mértékegységekből kilometerbe való átalakítás | a megadott mennyiség kilometerben | Igen |
+| 46 | Racs Tamás | 2020.12.05 10:59 | Váltás a PI számológépekről az összes többire | A menüpontokon történi végigiterálás során click események meghívása az itemeken | Igen |
+| 47 | Racs Tamás  | 2020.12.05 11:00 | Váltás a PI számológép BPP-ről az összes többire | Combobox műveleteinek meghívása egér eseményeken alapulva | Igen |
+| 48 | Racs Tamás  | 2020.12.05 17:26 |Váltás a PI számológép Zeta-ról az összes többire | Combobox műveleteinek meghívása egér eseményeken alapulva | Igen |
+| 49 | Racs Tamás  | 2020.12.05 17:26 | Váltás a PI számológép Chudnovsky-ról az összes többire| Combobox műveleteinek meghívása egér eseményeken alapulva | Igen |
+| 50 | Racs Tamás  | 2020.12.05 17:27 | Váltás a PI számológép Leibniz-ről az összes többire | Combobox műveleteinek meghívása egér eseményeken alapulva | Igen |
+| 51 | Racs Tamás  | 2020.12.05 17:28 | Váltás a BPPre | Megfelelő iterációs pontossági szám kerül felhasználásara | Igen |
+| 52 | Racs Tamás  | 2020.12.05 17:29 | Váltás a Zetare | Írásvédettet felső alsó tartomány controllok| Igen |
+| 53 | Racs Tamás  | 2020.12.05 17:30 | Váltás a Chudnovskyre | Írásvédettet felső alsó tartomány controllok| Igen |
+| 54 | Racs Tamás  | 2020.12.05 17:51 | PI számológépek - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 55 | Racs Tamás  | 2020.12.05 17:53 | BPP 1.000.000. |6 64 | 6 | Igen |
+| 56 | Racs Tamás  | 2020.12.05 17:53 | Chudnovsky | 3,14 1 | 3,14 | Igen |
+| 57 | Racs Tamás  | 2020.12.05 17:54 | Zeta | 3,14 1000 | 3,14 | Igen |
+| 58 | Racs Tamás  | 2020.12.05 17:55 | Leibniz | 3,14 500 | 3,14 | Igen |
+| 59 | Racs Tamás  | 2020.12.05 17:55 | Zeta - Decimális - 128 pontosság | 128 | 128 típusú Apfloat | Igen |
+| 60 | Racs Tamás  | 2020.12.05 17:55 | Chudnvosky - Decimális - 128 pontosság | 128 | 128 típusú Apfloat | Igen |
+| 61 | Racs Tamás  | 2020.12.05 17:55 | Leibniz - Decimális - 128 pontosság | 128 | 128 típusú Apfloat | Igen |
+| 62 | Racs Tamás  | 2020.12.05 17:55 | BPP - Hexa - 64 pontosság | 64 | 64 típusú Double | Igen |
+| 63 | Racs Tamás  | 2020.12.05 18:06 | Advanced Calculator - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 64 | Racs Tamás  | 2020.12.05 18:07 | Advanced Calculator - kotangens művelet - fokokban| ctg(45) | fok | Igen |
+| 65 | Racs Tamás  | 2020.12.05 18:08 | Advanced Calculator - moduló művelet - Double| 24 mod 5 | Double | Igen |
+| 66 | Racs Tamás  | 2020.12.05 18:08 | Advanced Calculator - hatványozás művelet - Double | 5 ^ 4 | Double | Igen |
+| 67 | Racs Tamás  | 2020.12.05 18:22 | Text Converter - JUnit tesztek | JUnit tesztek a metódusokhoz | Helyesen lefutott tesztek | Igen |
+| 68 | Racs Tamás  | 2020.12.05 18:25 | Text Converter - binárissá alakítás | input:text output:binary | binary | Igen |
+| 69 | Racs Tamás  | 2020.12.05 18:26 | Text Converter - binárissá alakítás | input:morse output:binary | binary | Igen |
+| 70 | Racs Tamás  | 2020.12.05 18:34 | Text Converter - morse alakítás | input:text output:morse | morse | Igen |
+| 71 | Racs Tamás  | 2020.12.05 18:36 | Text Converter - morse alakítás | input:binary output:morse | morse | Igen |
+| 72 | Racs Tamás  | 2020.12.05 18:37 | Text Converter - text alakítás | input:morse output:text | text | Igen |
+| 73 | Racs Tamás  | 2020.12.05 18:38 | Text Converter - text alakítás | input:binary output:text | text | Igen |
+| 74 | Racs Tamás  | 2020.12.05 18:40 | Text Converter - binárissá alakítás 1 | input:text output:morse | morse | Igen |
+| 75 | Racs Tamás  | 2020.12.05 18:42 | Text Converter - binárissá alakítás 2 | input:morse output:binary | binary | Igen |
+| 76 | Racs Tamás  | 2020.12.05 17:30 | Váltás a Leibnizre | Írásvédettet felső alsó tartomány controllok| Igen |
