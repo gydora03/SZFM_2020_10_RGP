@@ -99,5 +99,8 @@ class AdvancedMathTest {
 
     @Test
     void testLcm() {
+        assertNotEquals(22, new AdvancedMath().lcm(3,6));
+        assertNotEquals(30, new AdvancedMath().lcm(10,21));
+        assertEquals(4, new AdvancedMath().lcm(2,4));
     }
 }
