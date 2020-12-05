@@ -8,10 +8,14 @@ class AdvancedMathTest {
 
     @Test
     void testAdd() {
+        assertNotEquals(5, new AdvancedMath().add(1,2));
+        assertNotEquals(20, new AdvancedMath().add(5,6));
+        assertEquals(2, new AdvancedMath().add(1,1));
     }
 
     @Test
     void testSubtract() {
+
     }
 
     @Test
